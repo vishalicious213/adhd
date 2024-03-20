@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Question = () => {
+const Question = ({ question, answer }) => {
     return (
-        <div>Question</div>
+        <>
+            <div>{question}</div>
+        </>
     )
 }
 

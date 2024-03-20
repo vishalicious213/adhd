@@ -1,9 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import Instructions from './components/Instructions'
 
 const Index = () => {
     return (
-        <div>index</div>
+        <>
+            <div>index</div>
+            <Instructions />
+        </>
     )
 }
 

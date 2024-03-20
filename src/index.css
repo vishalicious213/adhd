@@ -12,7 +12,7 @@ h1 {
     font-variation-settings: "slnt" 0;
 }
 
-p {
+.text {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 200;
@@ -23,4 +23,14 @@ p {
 
 .italics {
     font-style: italic;
+}
+
+.question {
+    margin: 1.5rem 0 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid gainsboro;
+}
+
+.answer {
+    margin-bottom: .25rem;
 }

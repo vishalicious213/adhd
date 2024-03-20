@@ -34,3 +34,12 @@ h1 {
 .answer {
     margin-bottom: .25rem;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 500px) {
+    fieldset {
+        display: flex;
+        gap: 1rem;
+    }
+}

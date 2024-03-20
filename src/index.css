@@ -2,3 +2,25 @@ body {
     background: #1c1c1c;
     color: white;
 }
+
+h1 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-size: .9rem;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
+.italics {
+    font-style: italic;
+}

@@ -48,6 +48,13 @@ p {
 
 .answer {
     margin-bottom: .25rem;
+    border-radius: .25rem;
+}
+
+.answer:hover {
+    background: rgba(255, 215, 0, .5);
+    color: black;
+    font-weight: 500;
 }
 
 fieldset {
@@ -56,6 +63,10 @@ fieldset {
 
 legend {
     color: gold;
+}
+
+label {
+    margin-left: .5rem;
 }
 
 /* MEDIA QUERIES */

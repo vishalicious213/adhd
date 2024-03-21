@@ -47,4 +47,28 @@ export const questionsArray = [
         id: 12,
         text: "How often do you leave your seat in meetings or other situations in which you are expected to remain seated?"
     },
+    {
+        id: 13,
+        text: "How often do you feel restless or fidgety?"
+    },
+    {
+        id: 14,
+        text: "How often do you have difficulty unwinding and relaxing when you have time to yourself?"
+    },
+    {
+        id: 15,
+        text: "How often do you find yourself talking too much when you are in social situations?"
+    },
+    {
+        id: 16,
+        text: "When you’re in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?"
+    },
+    {
+        id: 17,
+        text: "How often do you have difficulty waiting your turn in situations when turn taking is required?"
+    },
+    {
+        id: 18,
+        text: "How often do you interrupt others when they are busy?"
+    }
 ]

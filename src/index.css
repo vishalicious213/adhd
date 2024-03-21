@@ -42,13 +42,14 @@ p {
 
 .question-num {
     font-size: 1.5rem;
-    width: 2rem;
+    width: 1.25rem;
     color: gold;
 }
 
 .answer {
     margin-bottom: .25rem;
     border-radius: .25rem;
+    padding: .25rem 0;
 }
 
 .answer:hover {
@@ -67,11 +68,13 @@ legend {
 
 label {
     margin-left: .5rem;
+    font-size: .8rem;
+    padding-right: .75rem;
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
     fieldset {
         display: flex;
         gap: 1rem;

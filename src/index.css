@@ -30,13 +30,32 @@ p {
     font-style: italic;
 }
 
+.question-container {
+    display: flex;
+    gap: 1rem;
+    margin: 1.5rem 0 .75rem;
+}
+
 .question {
-    margin: 1.5rem 0 1rem;
     font-weight: 300;
+}
+
+.question-num {
+    font-size: 1.5rem;
+    width: 2rem;
+    color: gold;
 }
 
 .answer {
     margin-bottom: .25rem;
+}
+
+fieldset {
+    margin-bottom: 2rem;
+}
+
+legend {
+    color: gold;
 }
 
 /* MEDIA QUERIES */

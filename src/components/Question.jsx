@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Question = ({ question, answer }) => {
+const Question = ({ question, num }) => {
     return (
         <>
-            <div className="text question">{question}</div>
+            <div className="question-container">
+                <div className="question-num">{num}</div>
+                <div className="text question">{question}</div>
+            </div>
 
             <fieldset className="text">
                 <legend>Frequency over past 6 months</legend>

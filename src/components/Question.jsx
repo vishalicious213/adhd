@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Question = ({ question, num, handleChange }) => {
-    console.log(num)
     return (
         <>
             <div className="question-container">
@@ -19,7 +18,7 @@ const Question = ({ question, num, handleChange }) => {
                         name={`answer${num}`} // same name for all; associates with same property in state
                         value="never" // the value that will be saved to state
                         checked={`formData.answer${num}` === "never"} // make it a controlled input
-                        onChange={() => handleChange(event)} // used to connect to event handler
+                        onChange={handleChange} // used to connect to event handler
                     />
                     <label htmlFor={`never${num}`}>Never</label>
                 </div>
@@ -31,7 +30,7 @@ const Question = ({ question, num, handleChange }) => {
                         name={`answer${num}`}
                         value="rarely"
                         checked={`formData.answer${num}` === "rarely"}
-                        onChange={() => handleChange(event)}
+                        onChange={handleChange}
                     />
                     <label htmlFor={`rarely${num}`}>Rarely</label>
                 </div>
@@ -43,7 +42,7 @@ const Question = ({ question, num, handleChange }) => {
                         name={`answer${num}`}
                         value="sometimes"
                         checked={`formData.answer${num}` === "sometimes"}
-                        onChange={() => handleChange(event)}
+                        onChange={handleChange}
                     />
                     <label htmlFor={`sometimes${num}`}>Sometimes</label>
                 </div>
@@ -55,7 +54,7 @@ const Question = ({ question, num, handleChange }) => {
                         name={`answer${num}`}
                         value="often"
                         checked={`formData.answer${num}` === "often"}
-                        onChange={() => handleChange(event)}
+                        onChange={handleChange}
                     />
                     <label htmlFor={`often${num}`}>Often</label>
                 </div>
@@ -67,7 +66,7 @@ const Question = ({ question, num, handleChange }) => {
                         name={`answer${num}`}
                         value="very-often"
                         checked={`formData.answer${num}` === "very-often"}
-                        onChange={() => handleChange(event)}
+                        onChange={handleChange}
                     />
                     <label htmlFor={`very-often${num}`}>Very Often</label>
                 </div>

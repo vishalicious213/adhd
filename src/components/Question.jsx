@@ -17,7 +17,7 @@ const Question = ({ question, num }) => {
                         id="never"
                         name={`answer${num}`} // same name for all; associates with same property in state
                         value="never" // the value that will be saved to state
-                        // checked={formData.employment === "unemployed"} // make it a controlled input
+                        checked={`formData.answer${num}` === "never"} // make it a controlled input
                         // onChange={handleChange} // used to connect to event handler
                     />
                     <label htmlFor="never">Never</label>
@@ -29,7 +29,7 @@ const Question = ({ question, num }) => {
                         id="rarely"
                         name={`answer${num}`}
                         value="rarely"
-                        // checked={formData.employment === "part-time"}
+                        checked={`formData.answer${num}` === "rarely"}
                         // onChange={handleChange}
                     />
                     <label htmlFor="rarely">Rarely</label>
@@ -41,7 +41,7 @@ const Question = ({ question, num }) => {
                         id="sometimes"
                         name={`answer${num}`}
                         value="sometimes"
-                        // checked={formData.employment === "full-time"}
+                        checked={`formData.answer${num}` === "sometimes"}
                         // onChange={handleChange}
                     />
                     <label htmlFor="sometimes">Sometimes</label>
@@ -53,7 +53,7 @@ const Question = ({ question, num }) => {
                         id="often"
                         name={`answer${num}`}
                         value="often"
-                        // checked={formData.employment === "full-time"}
+                        checked={`formData.answer${num}` === "often"}
                         // onChange={handleChange}
                     />
                     <label htmlFor="often">Often</label>
@@ -65,7 +65,7 @@ const Question = ({ question, num }) => {
                         id="very-often"
                         name={`answer${num}`}
                         value="very-often"
-                        // checked={formData.employment === "full-time"}
+                        checked={`formData.answer${num}` === "very-often"}
                         // onChange={handleChange}
                     />
                     <label htmlFor="very-often">Very Often</label>

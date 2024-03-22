@@ -17,8 +17,7 @@ const Question = ({ question, num, checked, handleChange }) => {
                         id={`never${num}`}
                         name={`answer${num}`} // same name for all; associates with same property in state
                         value="never" // the value that will be saved to state
-                        // checked={`formData.answer${num}` === "never"} // make it a controlled input
-                        checked={checked === "never"}
+                        checked={checked === "never"} // make it a controlled input
                         onChange={handleChange} // used to connect to event handler
                     />
                     <label htmlFor={`never${num}`}>Never</label>
@@ -30,7 +29,6 @@ const Question = ({ question, num, checked, handleChange }) => {
                         id={`rarely${num}`}
                         name={`answer${num}`}
                         value="rarely"
-                        // checked={`formData.answer${num}` === "rarely"}
                         checked={checked === "rarely"}
                         onChange={handleChange}
                     />
@@ -43,7 +41,6 @@ const Question = ({ question, num, checked, handleChange }) => {
                         id={`sometimes${num}`}
                         name={`answer${num}`}
                         value="sometimes"
-                        // checked={`formData.answer${num}` === "sometimes"}
                         checked={checked === "sometimes"}
                         onChange={handleChange}
                     />
@@ -56,7 +53,6 @@ const Question = ({ question, num, checked, handleChange }) => {
                         id={`often${num}`}
                         name={`answer${num}`}
                         value="often"
-                        // checked={`formData.answer${num}` === "often"}
                         checked={checked === "often"}
                         onChange={handleChange}
                     />
@@ -69,7 +65,6 @@ const Question = ({ question, num, checked, handleChange }) => {
                         id={`very-often${num}`}
                         name={`answer${num}`}
                         value="very-often"
-                        // checked={`formData.answer${num}` === "very-often"}
                         checked={checked === "very-often"}
                         onChange={handleChange}
                     />

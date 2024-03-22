@@ -44,15 +44,9 @@ const Form = () => {
                 question={q.text} 
                 num={q.id} 
                 key={q.id} 
-                // checked={`formData.answer${q.id}` != ""}
                 checked={Object.values(formData)[q.id - 1]}
                 handleChange={handleChange}
             />) }
-            {/* {questionsArray.map(q => {
-                // let values = (Object.values(formData))
-                // console.log(values[q.id - 1])
-                console.log(Object.values(formData)[q.id - 1])
-            })} */}
         </>
     )
 }

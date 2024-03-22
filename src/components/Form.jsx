@@ -26,12 +26,33 @@ const Form = () => {
     })
 
     function handleChange(event) {
-        console.log(event.target.name, event.target.value)
+        const { name, value, checked } = event.target
+        // console.log(name, value, checked)
+        setFormData(prevFormData => {
+            return {
+                ...prevFormData,
+                [name]: value,
+                // checked: checked ? value : false
+            }
+        })
+        console.log(formData)
     }
 
     return (
         <>
-            {questionsArray.map(q => <Question question={q.text} num={q.id} key={q.id} handleChange={handleChange}/>) }
+            {questionsArray.map(q => <Question 
+                question={q.text} 
+                num={q.id} 
+                key={q.id} 
+                // checked={`formData.answer${q.id}` != ""}
+                checked={Object.values(formData)[q.id - 1]}
+                handleChange={handleChange}
+            />) }
+            {/* {questionsArray.map(q => {
+                // let values = (Object.values(formData))
+                // console.log(values[q.id - 1])
+                console.log(Object.values(formData)[q.id - 1])
+            })} */}
         </>
     )
 }

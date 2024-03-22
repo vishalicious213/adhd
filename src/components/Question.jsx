@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Question = ({ question, num, handleChange }) => {
+const Question = ({ question, num, checked, handleChange }) => {
     return (
         <>
             <div className="question-container">
@@ -17,7 +17,8 @@ const Question = ({ question, num, handleChange }) => {
                         id={`never${num}`}
                         name={`answer${num}`} // same name for all; associates with same property in state
                         value="never" // the value that will be saved to state
-                        checked={`formData.answer${num}` === "never"} // make it a controlled input
+                        // checked={`formData.answer${num}` === "never"} // make it a controlled input
+                        checked={checked === "never"}
                         onChange={handleChange} // used to connect to event handler
                     />
                     <label htmlFor={`never${num}`}>Never</label>
@@ -29,7 +30,8 @@ const Question = ({ question, num, handleChange }) => {
                         id={`rarely${num}`}
                         name={`answer${num}`}
                         value="rarely"
-                        checked={`formData.answer${num}` === "rarely"}
+                        // checked={`formData.answer${num}` === "rarely"}
+                        checked={checked === "rarely"}
                         onChange={handleChange}
                     />
                     <label htmlFor={`rarely${num}`}>Rarely</label>
@@ -41,7 +43,8 @@ const Question = ({ question, num, handleChange }) => {
                         id={`sometimes${num}`}
                         name={`answer${num}`}
                         value="sometimes"
-                        checked={`formData.answer${num}` === "sometimes"}
+                        // checked={`formData.answer${num}` === "sometimes"}
+                        checked={checked === "sometimes"}
                         onChange={handleChange}
                     />
                     <label htmlFor={`sometimes${num}`}>Sometimes</label>
@@ -53,7 +56,8 @@ const Question = ({ question, num, handleChange }) => {
                         id={`often${num}`}
                         name={`answer${num}`}
                         value="often"
-                        checked={`formData.answer${num}` === "often"}
+                        // checked={`formData.answer${num}` === "often"}
+                        checked={checked === "often"}
                         onChange={handleChange}
                     />
                     <label htmlFor={`often${num}`}>Often</label>
@@ -65,7 +69,8 @@ const Question = ({ question, num, handleChange }) => {
                         id={`very-often${num}`}
                         name={`answer${num}`}
                         value="very-often"
-                        checked={`formData.answer${num}` === "very-often"}
+                        // checked={`formData.answer${num}` === "very-often"}
+                        checked={checked === "very-often"}
                         onChange={handleChange}
                     />
                     <label htmlFor={`very-often${num}`}>Very Often</label>

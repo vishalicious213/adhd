@@ -15,7 +15,7 @@ const Question = ({ question, num }) => {
                     <input 
                         type="radio"
                         id="never"
-                        name="answer" // same name for all; associates with same property in state
+                        name={`answer-${num}`} // same name for all; associates with same property in state
                         value="never" // the value that will be saved to state
                         // checked={formData.employment === "unemployed"} // make it a controlled input
                         // onChange={handleChange} // used to connect to event handler
@@ -27,10 +27,10 @@ const Question = ({ question, num }) => {
                     <input 
                         type="radio"
                         id="rarely"
-                        name="answer" // same name for all; associates with same property in state
-                        value="rarely" // the value that will be saved to state
-                        // checked={formData.employment === "part-time"} // make it a controlled input
-                        // onChange={handleChange} // used to connect to event handler
+                        name={`answer-${num}`}
+                        value="rarely"
+                        // checked={formData.employment === "part-time"}
+                        // onChange={handleChange}
                     />
                     <label htmlFor="rarely">Rarely</label>
                 </div>
@@ -39,10 +39,10 @@ const Question = ({ question, num }) => {
                     <input 
                         type="radio"
                         id="sometimes"
-                        name="answer" // same name for all; associates with same property in state
-                        value="sometimes" // the value that will be saved to state
-                        // checked={formData.employment === "full-time"} // make it a controlled input
-                        // onChange={handleChange} // used to connect to event handler
+                        name={`answer-${num}`}
+                        value="sometimes"
+                        // checked={formData.employment === "full-time"}
+                        // onChange={handleChange}
                     />
                     <label htmlFor="sometimes">Sometimes</label>
                 </div>
@@ -51,10 +51,10 @@ const Question = ({ question, num }) => {
                     <input 
                         type="radio"
                         id="often"
-                        name="answer" // same name for all; associates with same property in state
-                        value="often" // the value that will be saved to state
-                        // checked={formData.employment === "full-time"} // make it a controlled input
-                        // onChange={handleChange} // used to connect to event handler
+                        name={`answer-${num}`}
+                        value="often"
+                        // checked={formData.employment === "full-time"}
+                        // onChange={handleChange}
                     />
                     <label htmlFor="often">Often</label>
                 </div>
@@ -63,10 +63,10 @@ const Question = ({ question, num }) => {
                     <input 
                         type="radio"
                         id="very-often"
-                        name="answer" // same name for all; associates with same property in state
-                        value="very-often" // the value that will be saved to state
-                        // checked={formData.employment === "full-time"} // make it a controlled input
-                        // onChange={handleChange} // used to connect to event handler
+                        name={`answer-${num}`}
+                        value="very-often"
+                        // checked={formData.employment === "full-time"}
+                        // onChange={handleChange}
                     />
                     <label htmlFor="very-often">Very Often</label>
                 </div>

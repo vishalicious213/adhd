@@ -1,6 +1,7 @@
 import React from 'react'
 
-const Question = ({ question, num }) => {
+const Question = ({ question, num, handleChange }) => {
+    console.log(num)
     return (
         <>
             <div className="question-container">
@@ -14,61 +15,61 @@ const Question = ({ question, num }) => {
                 <div className="answer">
                     <input 
                         type="radio"
-                        id="never"
+                        id={`never${num}`}
                         name={`answer${num}`} // same name for all; associates with same property in state
                         value="never" // the value that will be saved to state
                         checked={`formData.answer${num}` === "never"} // make it a controlled input
-                        // onChange={handleChange} // used to connect to event handler
+                        onChange={() => handleChange(event)} // used to connect to event handler
                     />
-                    <label htmlFor="never">Never</label>
+                    <label htmlFor={`never${num}`}>Never</label>
                 </div>
 
                 <div className="answer">
                     <input 
                         type="radio"
-                        id="rarely"
+                        id={`rarely${num}`}
                         name={`answer${num}`}
                         value="rarely"
                         checked={`formData.answer${num}` === "rarely"}
-                        // onChange={handleChange}
+                        onChange={() => handleChange(event)}
                     />
-                    <label htmlFor="rarely">Rarely</label>
+                    <label htmlFor={`rarely${num}`}>Rarely</label>
                 </div>
 
                 <div className="answer">
                     <input 
                         type="radio"
-                        id="sometimes"
+                        id={`sometimes${num}`}
                         name={`answer${num}`}
                         value="sometimes"
                         checked={`formData.answer${num}` === "sometimes"}
-                        // onChange={handleChange}
+                        onChange={() => handleChange(event)}
                     />
-                    <label htmlFor="sometimes">Sometimes</label>
+                    <label htmlFor={`sometimes${num}`}>Sometimes</label>
                 </div>
 
                 <div className="answer">
                     <input 
                         type="radio"
-                        id="often"
+                        id={`often${num}`}
                         name={`answer${num}`}
                         value="often"
                         checked={`formData.answer${num}` === "often"}
-                        // onChange={handleChange}
+                        onChange={() => handleChange(event)}
                     />
-                    <label htmlFor="often">Often</label>
+                    <label htmlFor={`often${num}`}>Often</label>
                 </div>
 
                 <div className="answer">
                     <input 
                         type="radio"
-                        id="very-often"
+                        id={`very-often${num}`}
                         name={`answer${num}`}
                         value="very-often"
                         checked={`formData.answer${num}` === "very-often"}
-                        // onChange={handleChange}
+                        onChange={() => handleChange(event)}
                     />
-                    <label htmlFor="very-often">Very Often</label>
+                    <label htmlFor={`very-often${num}`}>Very Often</label>
                 </div>
 
             </fieldset>

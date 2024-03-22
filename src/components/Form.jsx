@@ -25,9 +25,13 @@ const Form = () => {
         answer18: ""
     })
 
+    function handleChange(event) {
+        console.log(event.target.name, event.target.value)
+    }
+
     return (
         <>
-            {questionsArray.map(q => <Question question={q.text} num={q.id} key={q.id}/>) }
+            {questionsArray.map(q => <Question question={q.text} num={q.id} key={q.id} handleChange={handleChange}/>) }
         </>
     )
 }

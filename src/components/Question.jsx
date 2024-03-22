@@ -15,7 +15,7 @@ const Question = ({ question, num }) => {
                     <input 
                         type="radio"
                         id="never"
-                        name={`answer-${num}`} // same name for all; associates with same property in state
+                        name={`answer${num}`} // same name for all; associates with same property in state
                         value="never" // the value that will be saved to state
                         // checked={formData.employment === "unemployed"} // make it a controlled input
                         // onChange={handleChange} // used to connect to event handler
@@ -27,7 +27,7 @@ const Question = ({ question, num }) => {
                     <input 
                         type="radio"
                         id="rarely"
-                        name={`answer-${num}`}
+                        name={`answer${num}`}
                         value="rarely"
                         // checked={formData.employment === "part-time"}
                         // onChange={handleChange}
@@ -39,7 +39,7 @@ const Question = ({ question, num }) => {
                     <input 
                         type="radio"
                         id="sometimes"
-                        name={`answer-${num}`}
+                        name={`answer${num}`}
                         value="sometimes"
                         // checked={formData.employment === "full-time"}
                         // onChange={handleChange}
@@ -51,7 +51,7 @@ const Question = ({ question, num }) => {
                     <input 
                         type="radio"
                         id="often"
-                        name={`answer-${num}`}
+                        name={`answer${num}`}
                         value="often"
                         // checked={formData.employment === "full-time"}
                         // onChange={handleChange}
@@ -63,7 +63,7 @@ const Question = ({ question, num }) => {
                     <input 
                         type="radio"
                         id="very-often"
-                        name={`answer-${num}`}
+                        name={`answer${num}`}
                         value="very-often"
                         // checked={formData.employment === "full-time"}
                         // onChange={handleChange}

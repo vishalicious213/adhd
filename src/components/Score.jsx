@@ -1,8 +1,14 @@
 import React from 'react'
 
 const Score = () => {
+
+    function getScore() {
+        console.log("clicked")
+    }
     return (
-        <div>Score</div>
+        <>
+            <button onClick={getScore}>SCORE</button>
+        </>
     )
 }
 

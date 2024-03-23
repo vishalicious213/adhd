@@ -22,7 +22,8 @@ const Form = () => {
         answer15: "",
         answer16: "",
         answer17: "",
-        answer18: ""
+        answer18: "",
+        score: 0
     })
 
     function handleChange(event) {
@@ -43,7 +44,7 @@ const Form = () => {
                 key={q.id} 
                 checked={Object.values(formData)[q.id - 1]}
                 handleChange={handleChange}
-            />) }
+            />)}
         </>
     )
 }

@@ -24,7 +24,6 @@ const Form = () => {
         answer16: "",
         answer17: "",
         answer18: "",
-        score: 0
     })
 
     function handleChange(event) {

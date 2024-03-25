@@ -72,6 +72,11 @@ label {
     padding-right: .75rem;
 }
 
+#score {
+    display: flex;
+    gap: 2rem;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 600px) {

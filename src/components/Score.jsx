@@ -37,10 +37,13 @@ const Score = ({ scores }) => {
     }
     return (
         <>
-            <div>
+            <div id="score">
                 <button onClick={getScore}>SCORE</button>
-                <div id="score">
-                    {score < 4 ? "ADHD unlikely" : score < 6 ? "ADHD possible" : "ADHD likely"}
+                <div className="text">
+                    {score === 0 ? "" 
+                    : score < 4 ? "ADHD unlikely" 
+                    : score < 6 ? "ADHD possible" 
+                    : "ADHD likely"}
                 </div>
             </div>
         </>

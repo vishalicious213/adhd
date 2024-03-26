@@ -38,7 +38,6 @@ const Form = () => {
 
     return (
         <>
-            <Score scores={formData} />
             {questionsArray.map(q => <Question 
                 question={q.text} 
                 num={q.id} 
@@ -47,6 +46,7 @@ const Form = () => {
                 handleChange={handleChange}
             />)}
 
+            <Score scores={formData} />
         </>
     )
 }

@@ -1,5 +1,5 @@
 body {
-    background: #1c1c1c;
+    background: #2d3a72;
     color: white;
 }
 
@@ -50,11 +50,15 @@ p {
     margin-bottom: .25rem;
     border-radius: .25rem;
     padding: .25rem 0;
+    font-weight: 300;
+    max-width: 9rem;
+    display: flex;
+    align-items: center;
 }
 
 .answer:hover {
-    background: rgba(255, 215, 0, .5);
-    color: black;
+    background: white;
+    color: #2d3a72;
     font-weight: 500;
 }
 
@@ -67,21 +71,26 @@ legend {
 }
 
 label {
-    margin-left: .5rem;
+    margin-left: .25rem;
     font-size: .8rem;
-    padding-right: .75rem;
 }
 
 #score {
     display: flex;
     gap: 2rem;
+    margin-bottom: 5rem;
 }
 
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 600px) {
     fieldset {
-        display: flex;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        gap: .5rem;
+    }
+
+    .answer {
+        outline: 1px solid rgba(240, 248, 255, .25);
     }
 }

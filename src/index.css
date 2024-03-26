@@ -4,6 +4,8 @@
     --text: white;
     --offwhite: #EDF2F8;
     --lightborder: rgba(240, 248, 255, .25);
+    --btn-back: #969CB8;
+    --btn-hover: #EAEBF0;
 }
 
 body {
@@ -88,6 +90,24 @@ label {
     display: flex;
     gap: 2rem;
     margin-bottom: 5rem;
+}
+
+.score-btn {
+    padding: .25rem .75rem;
+    border-radius: .25rem;
+    border: none;
+    font-weight: 600;
+    background: var(--btn-back);
+    color: var(--main);
+}
+
+.score-btn:hover {
+    outline: 1px solid var(--offwhite);
+    background: var(--btn-hover);
+}
+
+button:hover {
+    cursor: pointer;
 }
 
 /* MEDIA QUERIES */

@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import Question from './Question'
 import Score from './Score'
-import { questionsArray } from '../data/questions'
+import { questionsArray } from '../../data/questions'
 
 const Form = () => {
     const [formData, setFormData] = useState({

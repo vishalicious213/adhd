@@ -6,7 +6,7 @@ import Form from './components/asrs1/Form'
 const App = () => {
     return (
         <>
-        <Index />
+            <Index />
         </>
     )
 }

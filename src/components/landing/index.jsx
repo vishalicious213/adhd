@@ -1,11 +1,10 @@
 import React from 'react'
-import Instructions from '../asrs1/Instructions'
-import Form from '../asrs1/Form'
+import Asrs1 from '../asrs1'
 
 const Index = () => {
     return (
         <div>
-            
+            <Asrs1 />
         </div>
     )
 }

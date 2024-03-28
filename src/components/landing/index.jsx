@@ -12,24 +12,29 @@ const Index = () => {
         setSelected(choice)
     }
 
+    function RenderSectionArray({ sectionArr }) {
+        let data = sectionArr[0]
+
+        return (
+            <RenderSection
+                key={data.name}
+                name={data.name}
+                def={data.def}
+                links={data.links}
+                tools={data.tools}
+                click={handleClick}
+            />
+        )
+    }
+
     return (
         <div>
             <button onClick={() => handleClick("home")}>HOME</button>
-            <button onClick={() => handleClick("asrs1")}>ASRS v1.1</button>
-
-            {sectionsAdhdArray.map(section => (
-                <RenderSection
-                    key={section.name}
-                    name={section.name}
-                    def={section.def}
-                    tools={section.tools}
-                    links={section.links}
-                    click={handleClick}
-                />
-            ))}
+            <button onClick={() => handleClick("adhd")}>ADHD</button>
 
             <div>{
                 selected === "home" ? "" :
+                selected === "adhd" ? <RenderSectionArray sectionArr={sectionsAdhdArray} /> :
                 selected === "asrs1" ? <Asrs1 /> :
                 ""
                 }

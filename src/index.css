@@ -32,6 +32,15 @@ h2 {
     font-variation-settings: "slnt" 0;
 }
 
+h3 {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+}
+
 p {
     border-bottom: 1px solid var(--lightborder);
     padding-bottom: 1rem;
@@ -126,12 +135,20 @@ button:hover {
 }
 
 .tools {
-    display: flex;
-    gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
 }
 
 .tool {
+    border: 1px solid var(--lightborder);
+    border-radius: .5rem;
+    padding: 1rem;
     margin-bottom: 1rem;
+}
+
+.tool button {
+    margin: 1rem 0;
 }
 
 /* MEDIA QUERIES */

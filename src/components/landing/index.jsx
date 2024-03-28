@@ -29,8 +29,10 @@ const Index = () => {
 
     return (
         <div>
-            <button onClick={() => handleClick("home")}>HOME</button>
-            <button onClick={() => handleClick("adhd")}>ADHD</button>
+            <nav>
+                <button onClick={() => handleClick("home")}>HOME</button>
+                <button onClick={() => handleClick("adhd")}>ADHD</button>
+            </nav>
 
             <div>{
                 selected === "home" ? "" :

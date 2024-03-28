@@ -5,7 +5,7 @@ function renderTool({ button, choice, title, desc }, click) {
         <div className="tool" key={choice}>
             <h3>{title}</h3>
             <div className="text">{desc}</div>
-            <button className="score-btn" onClick={() => click(choice)}>{button}</button>
+            <button onClick={() => click(choice)}>{button}</button>
         </div>
     )
 }

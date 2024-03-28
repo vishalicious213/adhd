@@ -7,7 +7,7 @@ const sectionsArray = [
     {
         name: "ADHD",
         def: "ADHD is one of the most common neurodevelopmental disorders of childhood. It is usually first diagnosed in childhood and often lasts into adulthood. Children with ADHD may have trouble paying attention, controlling impulsive behaviors (may act without thinking about what the result will be), or be overly active.",
-        tools: "adhd tools",
+        tools: [{tool: "ASRS v1.1", choice: "asrs1"}, {tool: "ASRS v5", choice: "asrs5"}],
         links: "adhd links"
     }
 ]

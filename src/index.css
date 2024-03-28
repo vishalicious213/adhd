@@ -125,6 +125,15 @@ button:hover {
     margin-top: 1rem;
 }
 
+.tools {
+    display: flex;
+    gap: 1rem;
+}
+
+.tool {
+    margin-bottom: 1rem;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 600px) {

@@ -1,10 +1,11 @@
 import React from 'react'
 
-function renderTool({ tool, choice }) {
+function renderTool({ tool, choice, desc }) {
     return (
-        <div key={tool}>
-            <div>{tool}</div>
-            <div>{choice}</div>
+        <div className="tool" key={tool}>
+            <div className="text">{tool}</div>
+            <div className="text">{desc}</div>
+            <div className="text">{choice}</div>
         </div>
     )
 }

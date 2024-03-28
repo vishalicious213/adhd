@@ -1,5 +1,6 @@
 :root {
     --main: #2d3a72;
+    --main-light: #344074;
     --secondary: gold;
     --text: white;
     --offwhite: #EDF2F8;
@@ -145,6 +146,10 @@ button:hover {
     border-radius: .5rem;
     padding: 1rem;
     margin-bottom: 1rem;
+}
+
+.tool:hover {
+    background: var(--main-light);
 }
 
 .tool button {

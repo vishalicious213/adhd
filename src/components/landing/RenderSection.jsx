@@ -1,9 +1,10 @@
 import React from 'react'
 
-const RenderSection = ({ def="Definition", tools="Tools", links="Links" }) => {
+const RenderSection = ({ name="name", def="Definition", tools="Tools", links="Links" }) => {
     return (
         <section className="section">
-            <div className="definition text">{def}</div>
+            <h2>{name}</h2>
+            <p className="definition text">{def}</p>
             <div className="tools">{tools}</div>
             <div className="links text">{links}</div>
         </section>

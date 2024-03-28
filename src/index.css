@@ -110,6 +110,12 @@ button:hover {
     cursor: pointer;
 }
 
+/* LANDING */
+
+.section {
+    margin-top: 1rem;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 600px) {

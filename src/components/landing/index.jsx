@@ -43,6 +43,7 @@ const Index = () => {
                     def={section.def}
                     tools={section.tools}
                     links={section.links}
+                    click={handleClick}
                 />
             ))}
 

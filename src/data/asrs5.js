@@ -1,26 +1,26 @@
 export const questionsArray = [
     {
         id: 1,
-        text: "How often do you have trouble wrapping up the final details of a project, once the challenging parts have been done?",
+        text: "How often do you have difficulty concentrating on what people are saying to you even when they are speaking to you directly?",
     },
     {
         id: 2,
-        text: "How often do you have difficulty getting things in order when you have to do a task that requires organization?",
+        text: "How often do you leave your seat in meetings or other situations in which you are expected to remain seated?",
     },
     {
         id: 3,
-        text: "How often do you have problems remembering appointments or obligations?",
+        text: "How often do you have difficulty unwinding and relaxing when you have time to yourself?",
     },
     {
         id: 4,
-        text: "When you have a task that requires a lot of thought, how often do you avoid or delay getting started?",
+        text: "When you’re in a conversation, how often do you find yourself finishing the sentences of the people you are talking to before they can finish them themselves?",
     },
     {
         id: 5,
-        text: "How often do you fidget or squirm with your hands or feet when you have to sit down for a long time?",
+        text: "How often do you put things off until the last minute?",
     },
     {
         id: 6,
-        text: "How often do you feel overly active and compelled to do things, like you were driven by a motor?"
+        text: "How often do you depend on others to keep your life in order and attend to details??"
     }
 ]

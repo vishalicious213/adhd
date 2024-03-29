@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Question = ({ question, num, checked, handleChange }) => {
+const ADHDScaleQuestions = ({ question, num, checked, handleChange }) => {
     return (
         <>
             <div className="question-container">
@@ -76,4 +76,4 @@ const Question = ({ question, num, checked, handleChange }) => {
     )
 }
 
-export default Question
+export default ADHDScaleQuestions

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import Question from '../asrs1/Question'
+import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
 import { questionsArray } from '../../data/asrs5'
 
 const Form = () => {
@@ -25,7 +25,7 @@ const Form = () => {
 
     return (
         <>
-            {questionsArray.map(q => <Question 
+            {questionsArray.map(q => <ADHDScaleQuestions 
                 question={q.text} 
                 num={q.id} 
                 key={q.id} 

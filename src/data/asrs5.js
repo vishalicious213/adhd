@@ -24,3 +24,26 @@ export const questionsArray = [
         text: "How often do you depend on others to keep your life in order and attend to details??"
     }
 ]
+
+export const additionalQuestions = [
+    {
+        id: 1,
+        text: "Core symptoms of inattention, impulsivity and hyperactivity are present",
+    },
+    {
+        id: 2,
+        text: "Symptoms are chronic and since 12years of age",
+    },
+    {
+        id: 3,
+        text: "Symptoms occur in more than one setting (Home, Work, Social life)",
+    },
+    {
+        id: 4,
+        text: "Symptoms are impairing",
+    },
+    {
+        id: 5,
+        text: "Symptoms are not mainly attributable to any other mental or physical illness",
+    }
+]

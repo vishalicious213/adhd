@@ -34,6 +34,7 @@ const Form = () => {
                 handleChange={handleChange}
             />)}
 
+            <h3>Additional screening questions highly suggestive of ADHD:</h3>
             <RenderCheckboxQuestions questions={additionalQuestions} />
         </>
     )

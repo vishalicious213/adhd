@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
 import RenderCheckboxQuestions from '../render/RenderCheckboxQuestions'
-import { questionsArray } from '../../data/asrs5'
+import { questionsArray, additionalQuestions } from '../../data/asrs5'
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -34,7 +34,7 @@ const Form = () => {
                 handleChange={handleChange}
             />)}
 
-            <RenderCheckboxQuestions />
+            <RenderCheckboxQuestions questions={additionalQuestions} />
         </>
     )
 }

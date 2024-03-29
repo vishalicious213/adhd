@@ -1,8 +1,15 @@
 import React from 'react'
 
-const RenderCheckboxQuestions = () => {
+const RenderCheckboxQuestions = ({ questions }) => {
+    console.log(questions)
     return (
-        <div>RenderCheckboxQuestions</div>
+        <section>
+            {questions.map(q => (
+                <div key={q.id}>
+                    <div>{q.text}</div>
+                </div>
+            ))}
+        </section>
     )
 }
 

@@ -5,8 +5,11 @@ const RenderCheckboxQuestions = ({ questions }) => {
     return (
         <section>
             {questions.map(q => (
-                <div key={q.id}>
-                    <div>{q.text}</div>
+                <div>
+                    <label key={q.id} className="text">
+                        <input type="checkbox" id={q.id}></input>
+                            {q.text}
+                    </label>
                 </div>
             ))}
         </section>

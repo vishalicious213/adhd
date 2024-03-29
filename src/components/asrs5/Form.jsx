@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
+import RenderCheckboxQuestions from '../render/RenderCheckboxQuestions'
 import { questionsArray } from '../../data/asrs5'
 
 const Form = () => {
@@ -32,6 +33,8 @@ const Form = () => {
                 checked={Object.values(formData)[q.id - 1]}
                 handleChange={handleChange}
             />)}
+
+            <RenderCheckboxQuestions />
         </>
     )
 }

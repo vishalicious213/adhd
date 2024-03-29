@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import Question from '../asrs1/Question'
-// import Score from './Score'
 import { questionsArray } from '../../data/asrs5'
 
 const Form = () => {
@@ -33,8 +32,6 @@ const Form = () => {
                 checked={Object.values(formData)[q.id - 1]}
                 handleChange={handleChange}
             />)}
-
-            {/* <Score scores={formData} /> */}
         </>
     )
 }

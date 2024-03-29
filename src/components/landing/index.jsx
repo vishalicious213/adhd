@@ -9,7 +9,6 @@ const Index = () => {
     const [selected, setSelected] = useState("home")
 
     function handleClick(choice) {
-        console.log(choice)
         setSelected(choice)
     }
 

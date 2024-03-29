@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Asrs1 from '../asrs1'
+import Asrs5 from '../asrs5'
 import RenderSection from './RenderSection'
 import { sectionsAdhdArray } from '../../data/sectionsAdhd'
 
@@ -38,6 +39,7 @@ const Index = () => {
                 selected === "home" ? "" :
                 selected === "adhd" ? <RenderSectionArray sectionArr={sectionsAdhdArray} /> :
                 selected === "asrs1" ? <Asrs1 /> :
+                selected === "asrs5" ? <Asrs5 /> :
                 ""
                 }
             </div>

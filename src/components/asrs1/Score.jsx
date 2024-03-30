@@ -36,17 +36,15 @@ const Score = ({ scores }) => {
         console.log("Score", score)
     }
     return (
-        <>
-            <div id="score">
-                <button className="score-btn" onClick={getScore}>SCORE</button>
-                <div className="text">
-                    {score === 0 ? "" 
-                    : score < 4 ? "ADHD unlikely" 
-                    : score < 6 ? "ADHD possible" 
-                    : "ADHD likely"}
-                </div>
+        <div id="score">
+            <button className="score-btn" onClick={getScore}>SCORE</button>
+            <div className="text">
+                {score === 0 ? "" 
+                : score < 4 ? "ADHD unlikely" 
+                : score < 6 ? "ADHD possible" 
+                : "ADHD likely"}
             </div>
-        </>
+        </div>
     )
 }
 

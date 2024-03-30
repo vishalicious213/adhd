@@ -144,6 +144,7 @@ button:hover {
     border-radius: .5rem;
     padding: 1rem;
     margin-bottom: 1rem;
+    display: grid;
 }
 
 .tool:hover {
@@ -152,7 +153,10 @@ button:hover {
 
 .tool button {
     margin: 1rem 0;
+    align-self: flex-end;
 }
+
+/* ADHD TOOLS */
 
 .asrs5checkbox {
     margin-right: .5rem;

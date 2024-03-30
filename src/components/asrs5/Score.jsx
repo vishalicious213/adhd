@@ -7,8 +7,6 @@ const Score = ({ scores }) => {
     function getScore() {
         let adhdScore = 0
         let scoresArray = Object.values(scores)
-        // console.log(scores)
-        // console.log(scoresArray)
 
         scoresArray.forEach(score => {
             if (score === "rarely") {
@@ -18,24 +16,26 @@ const Score = ({ scores }) => {
             if (score === "sometimes") {
                 adhdScore = adhdScore + 2
             }
-            
+
             if (score === "often") {
                 adhdScore = adhdScore + 3
             }
-            
+
             if (score === "very-often") {
                 adhdScore = adhdScore + 4
             }
         })
 
         setScore(adhdScore)
-        console.log("Score", score)
     }
 
     return (
-        <div>
+        <div id="score">
             <button className="score-btn" onClick={getScore}>SCORE</button>
-            <div>{score}</div>
+            <div className="text">
+                {score >= 14 ? `Score of ${score} suggests ADHD is possible` 
+                : `Score of ${score} suggests ADHD is unlikely`}
+            </div>
         </div>
     )
 }

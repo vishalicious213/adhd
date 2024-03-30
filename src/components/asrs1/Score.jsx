@@ -32,9 +32,8 @@ const Score = ({ scores }) => {
         }
 
         setScore(adhdScore)
-
-        console.log("Score", score)
     }
+
     return (
         <div id="score">
             <button className="score-btn" onClick={getScore}>SCORE</button>

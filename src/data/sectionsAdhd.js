@@ -14,6 +14,23 @@ export const sectionsAdhdArray = [
                 title: "Adult ADHD Self-Report Scale (ASRS-v5) Symptom Checklist",
                 desc: "The ASRS5 is a self-report questionnaire designed to assess symptoms of ADHD in adults. It consists of 6 questions related to symptoms of inattention and hyperactivity / impulsivity. It is an updated version of the ASRS v1.1."}
         ],
-        links: "adhd links"
+        links: [
+            {
+                name: "Centers for Disease Control and Prevention: What is ADHD",
+                url: "https://www.cdc.gov/ncbddd/adhd/facts.html"
+            },
+            {
+                name: "National Institute of Mental Health: Attention-Deficit/Hyperactivity Disorder",
+                url: "https://www.nimh.nih.gov/health/topics/attention-deficit-hyperactivity-disorder-adhd"
+            },
+            {
+                name: "Psychiatry.org: What is ADHD",
+                url: "https://www.psychiatry.org/patients-families/adhd/what-is-adhd"
+            },
+            {
+                name: "Mayo Clinic: Adult attention-deficit/hyperactivity disorder (ADHD)",
+                url: "https://www.mayoclinic.org/diseases-conditions/adult-adhd/symptoms-causes/syc-20350878"
+            }
+        ]
     }
 ]

@@ -60,6 +60,14 @@ p {
     font-style: italic;
 }
 
+.link {
+    color: var(--text);
+}
+
+.link:visited {
+    color: var(--text);
+}
+
 /* MAIN */
 
 nav {

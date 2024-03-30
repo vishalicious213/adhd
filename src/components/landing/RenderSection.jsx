@@ -16,7 +16,21 @@ const RenderSection = ({ name="name", def="Definition", tools="Tools", links="Li
             <h2>{name}</h2>
             <p className="definition text">{def}</p>
             <div className="tools">{tools.map(tool => renderTool(tool, click))}</div>
-            <div className="links text">{links}</div>
+            <h3>Resources</h3>
+            <ul>
+                {links.map(link => (
+                    <li key={link.name}>
+                        <a 
+                            className="text link" 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            href={link.url}
+                        >
+                            {link.name}
+                        </a>
+                    </li>
+                ))}
+            </ul>
         </section>
     )
 }

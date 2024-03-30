@@ -3,7 +3,7 @@ import React from 'react'
 const RenderCheckboxQuestions = ({ questions }) => {
     // console.log(questions)
     return (
-        <section>
+        <section id="checkbox-questions">
             {questions.map(q => (
                 <div key={q.id}>
                     <label className="text checkbox-label">

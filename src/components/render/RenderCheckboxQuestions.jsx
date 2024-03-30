@@ -1,7 +1,7 @@
 import React from 'react'
 
 const RenderCheckboxQuestions = ({ questions }) => {
-    console.log(questions)
+    // console.log(questions)
     return (
         <section>
             {questions.map(q => (

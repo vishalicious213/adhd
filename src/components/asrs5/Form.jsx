@@ -2,6 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
 import RenderCheckboxQuestions from '../render/RenderCheckboxQuestions'
+import Score from './Score'
 import { questionsArray, additionalQuestions } from '../../data/asrs5'
 
 const Form = () => {
@@ -36,6 +37,8 @@ const Form = () => {
 
             <h3>Additional screening questions highly suggestive of ADHD:</h3>
             <RenderCheckboxQuestions questions={additionalQuestions} />
+
+            <Score scores={formData} />
         </>
     )
 }

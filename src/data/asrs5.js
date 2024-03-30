@@ -32,7 +32,7 @@ export const additionalQuestions = [
     },
     {
         id: 2,
-        text: "Symptoms are chronic and since 12years of age",
+        text: "Symptoms are chronic and since 12 years of age",
     },
     {
         id: 3,

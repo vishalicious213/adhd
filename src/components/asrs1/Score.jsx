@@ -3,12 +3,17 @@ import { useState } from 'react'
 
 const Score = ({ scores }) => {
     const [score, setScore] = useState(0)
+    const [complete, setComplete] = useState(false)
 
     function getScore() {
         let adhdScore = 0
+        let scoresArray = Object.values(scores)
+        let unfinishedQuestions = 6
+        setComplete(false)
+
 
         if (scores.answer1 === "sometimes" || scores.answer1 === "often" || scores.answer1 === "very-often") {
-            adhdScore = adhdScore + 1
+            adhdScore = adhdScore + 1            
         }
 
         if (scores.answer2 === "sometimes" || scores.answer2 === "often" || scores.answer2 === "very-often") {
@@ -31,17 +36,26 @@ const Score = ({ scores }) => {
             adhdScore = adhdScore + 1
         }
 
-        setScore(adhdScore)
+        scoresArray.forEach(scoreValue => {
+            if (["never", "rarely", "sometimes", "often", "very-often"].includes(scoreValue)) {
+                unfinishedQuestions--
+            }
+        })
+
+        if (unfinishedQuestions === 0) {
+            setScore(adhdScore)
+            setComplete(true)
+        }
     }
 
     return (
         <div id="score">
             <button className="score-btn" onClick={getScore}>SCORE</button>
             <div className="text">
-                {score === 0 ? "" 
+                { !complete ? `Please answer all 6 questions` 
                 : score < 4 ? "ADHD unlikely" 
                 : score < 6 ? "ADHD possible" 
-                : "ADHD likely"}
+                : "ADHD likely" }
             </div>
         </div>
     )

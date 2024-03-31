@@ -3,38 +3,49 @@ import { useState } from 'react'
 
 const Score = ({ scores }) => {
     const [score, setScore] = useState(0)
+    const [complete, setComplete] = useState(false)
 
     function getScore() {
         let adhdScore = 0
         let scoresArray = Object.values(scores)
+        let unfinishedQuestions = 6
+        setComplete(false)
 
-        scoresArray.forEach(score => {
-            if (score === "rarely") {
-                adhdScore = adhdScore + 1
-            }
+        scoresArray.forEach(arrScore => {
+            if (arrScore != "") {
+                if (arrScore === "rarely") {
+                    adhdScore += 1
+                }
+    
+                if (arrScore === "sometimes") {
+                    adhdScore += 2
+                }
+    
+                if (arrScore === "often") {
+                    adhdScore += 3
+                }
+    
+                if (arrScore === "very-often") {
+                    adhdScore += 4
+                }
 
-            if (score === "sometimes") {
-                adhdScore = adhdScore + 2
-            }
-
-            if (score === "often") {
-                adhdScore = adhdScore + 3
-            }
-
-            if (score === "very-often") {
-                adhdScore = adhdScore + 4
-            }
+                unfinishedQuestions--
+            } 
         })
 
-        setScore(adhdScore)
+        if (unfinishedQuestions === 0) {
+            setScore(adhdScore)
+            setComplete(true)
+        }
     }
 
     return (
         <div id="score">
             <button className="score-btn" onClick={getScore}>SCORE</button>
             <div className="text">
-                {score >= 14 ? `Score of ${score} suggests ADHD is possible` 
-                : `Score of ${score} suggests ADHD is unlikely`}
+                { !complete ? `Please answer all 6 questions`
+                : score >= 14 ? `Score of ${score} suggests ADHD is possible` 
+                : `Score of ${score} suggests ADHD is unlikely` }
             </div>
         </div>
     )

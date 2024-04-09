@@ -1,8 +1,12 @@
 import React from 'react'
 
+import Instructions from './Instructions'
+
 const Sasi = () => {
     return (
-        <>SASI</>
+        <>
+            <Instructions />
+        </>
     )
 }
 

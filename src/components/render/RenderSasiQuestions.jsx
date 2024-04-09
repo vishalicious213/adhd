@@ -4,7 +4,7 @@ const RenderSasiQuestions = ({ num, question }) => {
     console.log(num, question)
 
     return (
-        <div key={num}>
+        <div>
             <div>{question}</div>
         </div>
     )

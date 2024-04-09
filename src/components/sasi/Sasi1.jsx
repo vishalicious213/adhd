@@ -4,38 +4,21 @@ import RenderSasiQuestions from '../render/RenderSasiQuestions'
 import { sasi1Questions } from '../../data/sasi1'
 
 const Sasi1 = () => {
-    function test() {
-        console.log(sasi1Questions.length)
-        for (let i = 0; i < sasi1Questions.length; i++) {
-            // console.log(sasi1Questions[i])
-            if (i < 3) {
-                const inattention = sasi1Questions.filter(function(q){
-                    return q.id > 2 && q.id <= 5
-                })
+    function RenderQuestions() {
+        const inattention = sasi1Questions.filter(function(q){
+            return q.id > 2 && q.id <= 5
+        })
 
-                console.log(inattention)
-
-                return (
-                    <>
-                        <h2>Inattention</h2>
-                        {/* <RenderSasiQuestions questions={inattention} /> */}
-                        {inattention.map(q => <RenderSasiQuestions 
-                            num={q.id}
-                            question={q.text}
-                        />)}
-                        {/* {inattention.map(q => <div key={q.id}>{q.text}</div>)} */}
-                    </>
-                )
-            }
-            
-            // sasi1Questions.map(q => {
-            //     <div key={q.id}>{q.text}</div>
-            // })
-
-            // return (
-            //     <div>{sasi1Questions[i].text}</div>
-            // )
-        }
+        return (
+            <>
+                <h2>Inattention</h2>
+                {inattention.map(q => <RenderSasiQuestions 
+                    key={q.id}
+                    num={q.id}
+                    question={q.text}
+                />)}
+            </>
+        )
     }
 
 
@@ -56,9 +39,7 @@ const Sasi1 = () => {
                 <p className="text italics no-top-margin">When you encounter an item about an issue you can't recall or about which you have no knowledge, use a question mark (?) to respond.</p>
             </div>
 
-            {test()}
-
-            {/* {sasi1Questions.map(q => <div key={q.id}>{q.text}</div>)} */}
+            {RenderQuestions()}
         </>
     )
 }

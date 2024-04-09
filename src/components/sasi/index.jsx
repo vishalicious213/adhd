@@ -2,10 +2,10 @@ import React from 'react'
 
 import Instructions from './Instructions'
 
-const Sasi = () => {
+const Sasi = ({ onclick }) => {
     return (
         <>
-            <Instructions />
+            <Instructions onclick={onclick} />
         </>
     )
 }

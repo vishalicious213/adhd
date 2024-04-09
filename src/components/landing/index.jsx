@@ -3,6 +3,7 @@ import { useState } from 'react'
 import Asrs1 from '../asrs1'
 import Asrs5 from '../asrs5'
 import Sasi from '../sasi'
+import Sasi1 from '../sasi/Sasi1'
 import RenderSection from './RenderSection'
 import { sectionsAdhdArray } from '../../data/sectionsAdhd'
 
@@ -40,7 +41,8 @@ const Index = () => {
                 selected === "adhd" ? <RenderSectionArray sectionArr={sectionsAdhdArray} /> :
                 selected === "asrs1" ? <Asrs1 /> :
                 selected === "asrs5" ? <Asrs5 /> :
-                selected === "sasi" ? <Sasi /> :
+                selected === "sasi" ? <Sasi onclick={handleClick} /> :
+                selected === "sasi1" ? <Sasi1 /> :
                 ""
                 }
             </div>

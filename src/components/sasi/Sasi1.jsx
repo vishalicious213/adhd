@@ -18,8 +18,12 @@ const Sasi1 = () => {
                 return (
                     <>
                         <h2>Inattention</h2>
-                        <RenderSasiQuestions />
-                        {inattention.map(q => <div key={q.id}>{q.text}</div>)}
+                        {/* <RenderSasiQuestions questions={inattention} /> */}
+                        {inattention.map(q => <RenderSasiQuestions 
+                            num={q.id}
+                            question={q.text}
+                        />)}
+                        {/* {inattention.map(q => <div key={q.id}>{q.text}</div>)} */}
                     </>
                 )
             }

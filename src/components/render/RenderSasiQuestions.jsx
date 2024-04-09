@@ -1,8 +1,12 @@
 import React from 'react'
 
-const RenderSasiQuestions = () => {
+const RenderSasiQuestions = ({ num, question }) => {
+    console.log(num, question)
+
     return (
-        <div>RenderSasiQuestions</div>
+        <div key={num}>
+            <div>{question}</div>
+        </div>
     )
 }
 

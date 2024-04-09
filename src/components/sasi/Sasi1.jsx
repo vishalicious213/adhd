@@ -18,19 +18,25 @@ const Sasi1 = () => {
         })
     }
 
-    function RenderQuestions() {
+    function renderQuestions(questions) {
+        return (
+            questions.map(q => <RenderSasiQuestions 
+                key={q.id}
+                num={q.id}
+                question={q.text}
+                value={part1}
+                handleChange={handleChange}
+            />)
+        )
+    }
+
+    function RenderAllQuestions() {
         const inattention = sasi1Questions.filter(function(q){return q.id >= 1 && q.id <= 6})
 
         return (
             <form>
                 <h2>Inattention</h2>
-                {inattention.map(q => <RenderSasiQuestions 
-                    key={q.id}
-                    num={q.id}
-                    question={q.text}
-                    value={part1}
-                    handleChange={handleChange}
-                />)}
+                {renderQuestions(inattention)}
             </form>
         )
     }
@@ -52,7 +58,7 @@ const Sasi1 = () => {
                 <p className="text italics no-top-margin">When you encounter an item about an issue you can't recall or about which you have no knowledge, use a question mark (?) to respond.</p>
             </div>
 
-            {RenderQuestions()}
+            {RenderAllQuestions()}
         </>
     )
 }

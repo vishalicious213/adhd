@@ -3,15 +3,15 @@ import React from 'react'
 const RenderSasiQuestions = ({ num, question, value, handleChange }) => {
     console.log(num, question)
     console.log(value)
+    let item = `inattention${num}`
+    console.log(value[item])
 
     return (
         <div className="question-container">
-            {/* <div className="text">{num}</div>
-            <div className="text question">{question}</div> */}
             
             <select 
                 id={`inattention${num}`}
-                value={`${value}.inattention${num}`}
+                value={value[`inattention${num}`]}
                 onChange={handleChange}
                 name={`inattention${num}`} 
             >

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import RenderSasiQuestions from '../render/RenderSasiQuestions'
 import { sasi1Questions } from '../../data/sasi1'
 
 const Sasi1 = () => {
@@ -17,6 +18,7 @@ const Sasi1 = () => {
                 return (
                     <>
                         <h2>Inattention</h2>
+                        <RenderSasiQuestions />
                         {inattention.map(q => <div key={q.id}>{q.text}</div>)}
                     </>
                 )

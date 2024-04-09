@@ -1,6 +1,10 @@
 import React from 'react'
 
 const Instructions = () => {
+    function handleClick(choice) {
+        console.log(choice)
+    }
+
     return (
         <>
             <h1>Women's ADHD Self-Assessment Symptom Inventory (SASI)</h1>
@@ -17,6 +21,11 @@ const Instructions = () => {
             </ol>
             <p className="text italics no-border">When an item does not pertain to you, such as a parenting question for a woman without children, simply leave that item blank.</p>
             <p className="text italics no-border">When you encounter an item about an issue you can’t recall or about which you have no knowledge, use a question mark (?) to respond.</p>
+
+            <nav>
+                <button onClick={() => handleClick("child")}>Part 1: Childhood ADHD Patterns</button>
+                <button onClick={() => handleClick("adult")}>Part 2: Adult ADHD Patterns</button>
+            </nav>
         </>
     )
 }

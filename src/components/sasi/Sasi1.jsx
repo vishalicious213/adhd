@@ -4,23 +4,38 @@ import RenderSasiQuestions from '../render/RenderSasiQuestions'
 import { sasi1Questions } from '../../data/sasi1'
 
 const Sasi1 = () => {
+    const [part1, setPart1] = useState({
+        inattention1: "", inattention2: "", inattention3: "", inattention4: "", inattention5: "", inattention6: ""
+    })
+
+    function handleChange(event) {
+        const { name, value } = event.target
+        setPart1(prevFormData => {
+            return {
+                ...prevFormData,
+                [name]: value,
+            }
+        })
+    }
+
     function RenderQuestions() {
         const inattention = sasi1Questions.filter(function(q){
             return q.id > 2 && q.id <= 5
         })
 
         return (
-            <>
+            <form>
                 <h2>Inattention</h2>
                 {inattention.map(q => <RenderSasiQuestions 
                     key={q.id}
                     num={q.id}
                     question={q.text}
+                    value={part1}
+                    handleChange={handleChange}
                 />)}
-            </>
+            </form>
         )
     }
-
 
     return (
         <>

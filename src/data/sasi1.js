@@ -75,4 +75,26 @@ export const sasi1Questions = [
         id: 19,
         text: "As a teenager, I sometimes drove too fast, or took other risks while driving"
     },
+    {
+        id: 20,
+        text: "In school, I didn't finish seatwork quickly as the rest of the class"
+    },
+    {
+        id: 21,
+        text: "The demands of high school felt overwhelming sometimes"
+    },
+    {
+        id: 22,
+        text: "I had to work much harder and stay up later than others to do well in school"
+    },
+    {
+        id: 23,
+        text: "I studied or did homework late into the night"
+    },
+
 ]
+
+// {
+//     id: 8,
+//     text: ""
+// },

@@ -7,6 +7,10 @@ const RenderSasiQuestions = ({ num, question, value, handleChange }) => {
     if (num > 6) {stateIndex = num - 6}
     if (num >= 1 && num <= 6) {stateType = "inattention"}
     if (num >= 7 && num <= 14) {stateType = "hyper"}
+    if (num >= 15 && num <= 19) {stateType = "impulse"}
+    if (num >= 20 && num <= 23) {stateType = "product"}
+
+    console.log(value)
 
     return (
         <div className="sasi-container">

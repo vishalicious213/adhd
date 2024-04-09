@@ -7,6 +7,8 @@ const Sasi1 = () => {
     const [part1, setPart1] = useState({
         inattention1: "", inattention2: "", inattention3: "", inattention4: "", inattention5: "", inattention6: "",
         hyper1: "", hyper2: "", hyper3: "", hyper4: "", hyper5: "", hyper6: "", hyper7: "", hyper8: "", 
+        impulse1: "", impulse2: "", impulse3: "", impulse4: "", impulse5: "",
+        product1: "", product2: "", product3: "", product4: "",
     })
 
     function handleChange(event) {
@@ -35,6 +37,7 @@ const Sasi1 = () => {
         const inattention = sasi1Questions.filter(function(q){return q.id >= 1 && q.id <= 6})
         const hyperactivity = sasi1Questions.filter(function(q){return q.id >= 7 && q.id <= 14})
         const impulsivity = sasi1Questions.filter(function(q){return q.id >= 15 && q.id <= 19})
+        const productivity = sasi1Questions.filter(function(q){return q.id >= 20 && q.id <= 23})
 
         return (
             <form>
@@ -44,6 +47,8 @@ const Sasi1 = () => {
                 {renderQuestions(hyperactivity)}
                 <h2>Impulsivity</h2>
                 {renderQuestions(impulsivity)}
+                <h2>Productivity</h2>
+                {renderQuestions(productivity)}
             </form>
         )
     }

@@ -19,9 +19,7 @@ const Sasi1 = () => {
     }
 
     function RenderQuestions() {
-        const inattention = sasi1Questions.filter(function(q){
-            return q.id > 2 && q.id <= 5
-        })
+        const inattention = sasi1Questions.filter(function(q){return q.id >= 1 && q.id <= 6})
 
         return (
             <form>

@@ -34,6 +34,7 @@ const Sasi1 = () => {
     function RenderAllQuestions() {
         const inattention = sasi1Questions.filter(function(q){return q.id >= 1 && q.id <= 6})
         const hyperactivity = sasi1Questions.filter(function(q){return q.id >= 7 && q.id <= 14})
+        const impulsivity = sasi1Questions.filter(function(q){return q.id >= 15 && q.id <= 19})
 
         return (
             <form>
@@ -41,6 +42,8 @@ const Sasi1 = () => {
                 {renderQuestions(inattention)}
                 <h2>Hyperactivity</h2>
                 {renderQuestions(hyperactivity)}
+                <h2>Impulsivity</h2>
+                {renderQuestions(impulsivity)}
             </form>
         )
     }

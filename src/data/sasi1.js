@@ -55,4 +55,24 @@ export const sasi1Questions = [
         id: 14,
         text: "When sitting, I tended to 'tip' my chair or jiggle my legs."
     },
+    {
+        id: 15,
+        text: "I interrupted others, even though I tried not to"
+    },
+    {
+        id: 16,
+        text: "Sometimes, when I was upset, I’d blurt out things that I didn’t mean"
+    },
+    {
+        id: 17,
+        text: "I acted silly or “crazy” with my friends"
+    },
+    {
+        id: 18,
+        text: "I acted on the spur of the moment, never thinking of the trouble I’d get into"
+    },
+    {
+        id: 19,
+        text: "As a teenager, I sometimes drove too fast, or took other risks while driving"
+    },
 ]

@@ -5,7 +5,8 @@ import { sasi1Questions } from '../../data/sasi1'
 
 const Sasi1 = () => {
     const [part1, setPart1] = useState({
-        inattention1: "", inattention2: "", inattention3: "", inattention4: "", inattention5: "", inattention6: ""
+        inattention1: "", inattention2: "", inattention3: "", inattention4: "", inattention5: "", inattention6: "",
+        hyper1: "", hyper2: "", hyper3: "", hyper4: "", hyper5: "", hyper6: "", hyper7: "", hyper8: "", 
     })
 
     function handleChange(event) {
@@ -32,11 +33,14 @@ const Sasi1 = () => {
 
     function RenderAllQuestions() {
         const inattention = sasi1Questions.filter(function(q){return q.id >= 1 && q.id <= 6})
+        const hyperactivity = sasi1Questions.filter(function(q){return q.id >= 7 && q.id <= 14})
 
         return (
             <form>
                 <h2>Inattention</h2>
                 {renderQuestions(inattention)}
+                <h2>Hyperactivity</h2>
+                {renderQuestions(hyperactivity)}
             </form>
         )
     }

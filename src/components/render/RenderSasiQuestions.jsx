@@ -1,18 +1,20 @@
 import React from 'react'
 
 const RenderSasiQuestions = ({ num, question, value, handleChange }) => {
-    // console.log(num, question)
-    // console.log(value)
-    // let item = `inattention${num}`
-    // console.log(value[item])
+    let stateIndex = num
+    let stateType = ""
+
+    if (num > 6) {stateIndex = num - 6}
+    if (num >= 1 && num <= 6) {stateType = "inattention"}
+    if (num >= 7 && num <= 14) {stateType = "hyper"}
 
     return (
         <div className="sasi-container">
             <select 
-                id={`inattention${num}`}
-                value={value[`inattention${num}`]}
+                id={`${stateType}${stateIndex}`}
+                value={value[`${stateType}${stateIndex}`]}
                 onChange={handleChange}
-                name={`inattention${num}`} 
+                name={`${stateType}${stateIndex}`} 
             >
                 <option value=""></option>
                 <option value="0">0</option>
@@ -21,7 +23,7 @@ const RenderSasiQuestions = ({ num, question, value, handleChange }) => {
                 <option value="3">3</option>
                 <option value="?">?</option>
             </select>
-            <label className="text" htmlFor={`inattention${num}`}>{question}</label>
+            <label className="text" htmlFor={`${stateType}${stateIndex}`}>{question}</label>
         </div>
     )
 }

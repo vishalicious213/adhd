@@ -22,5 +22,37 @@ export const sasi1Questions = [
     {
         id: 6,
         text: "I got teased for being 'spacey'"
-    }
+    },
+    {
+        id: 7,
+        text: "I got in trouble for talking in class"
+    },
+    {
+        id: 8,
+        text: "I was a tomboy"
+    },
+    {
+        id: 9,
+        text: "It was hard for me to sit still in class"
+    },
+    {
+        id: 10,
+        text: "I felt best when I was moving around – playing sports or dancing"
+    },
+    {
+        id: 11,
+        text: "It was hard to fall asleep at bedtime because thoughts were bouncing around in my brain."
+    },
+    {
+        id: 12,
+        text: "I often doodled or fidgeted when I had to sit still."
+    },
+    {
+        id: 13,
+        text: "My friends called me 'hyper'"
+    },
+    {
+        id: 14,
+        text: "When sitting, I tended to 'tip' my chair or jiggle my legs."
+    },
 ]

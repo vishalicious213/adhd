@@ -5,8 +5,8 @@ export const sasi2Questions = [
         questions: [
             "I tend to overlook details", 
             "Forms are difficult for me to complete correctly without overlooking something", 
-            "It is hard for me to listen for long periods of time – in a lecture, seminar, or training class", 
-            "My mind tends to wander when I’m reading or when listening to something that is not interesting"
+            "It is hard for me to listen for long periods of time - in a lecture, seminar, or training class", 
+            "My mind tends to wander when I'm reading or when listening to something that is not interesting"
         ]
     },
     {
@@ -64,7 +64,7 @@ export const sasi2Questions = [
         name: "Productivity",
         stateName: "productivity",
         questions: [
-            "I just can’t seem to juggle the number of activities and commitments that my friends seem to manage",
+            "I just can't seem to juggle the number of activities and commitments that my friends seem to manage",
             "I have felt overwhelmed by responsibilities at certain times in my life",
             "It seems much harder for me than for others to take care of the tasks of everyday tasks",
             "Keeping up with job demands has been difficult for me"
@@ -94,7 +94,7 @@ export const sasi2Questions = [
         questions: [
             "I have difficulty deciding what to discard and what to keep",
             "I have difficulty making selections in large department or grocery stores",
-            "Prioritizing is difficult for me – everything seems equally important"
+            "Prioritizing is difficult for me - everything seems equally important"
         ]
     },
     {
@@ -182,6 +182,13 @@ export const sasi2Questions = [
     },
     {
         section: "DIFFICULTIES RELATED TO LEARNING DISABILITIES",
+        type: "check",
+        stateName: "learning",
+        questions: [
+            "I was diagnosed with learning disabilities in school"
+        ]
+    },
+    {
         name: "Reading difficulties",
         stateName: "reading",
         questions: [
@@ -276,6 +283,18 @@ export const sasi2Questions = [
     },
     {
         section: "PSYCHOLOGICAL ISSUES",
+        type: "check",
+        stateName: "diagnoses",
+        // I have been diagnosed and treated for:
+        questions: [
+            "Depression",
+            "Anxiety / panic disorder",
+            "Biploar disorder",
+            "Post-traumatic stress disorder",
+            "Obsessive-compulsive disorder"
+        ]
+    },
+    {
         name: "Low self-esteem",
         stateName: "esteem",
         questions: [

@@ -3,9 +3,9 @@ import React from 'react'
 const RenderSasiQuestions = ({data, onchange, state}) => {
     return (
         data.map(category => 
-            <div key={category.name}>
+            <div key={category.stateName}>
                 {category.section && <h2 className="sasi-section">{category.section}</h2>}
-                <h3 className="sasi-category">{category.name}</h3>
+                {category.name && <h3 className="sasi-category">{category.name}</h3>}
                 <div className="sasi-container">
                     {
                         category.questions.map((q, index) => {

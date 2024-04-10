@@ -354,50 +354,42 @@ export const sasi2Questions = [
         ]
     },
     {
-        section: "PROBLEMATIC BEHAVIORS",
-        name: "Impatience / low frustration, tolerance / anger",
-        stateName: "impatience",
+        section: "OTHER DIFFICULTIES",
+        name: "Hormonal issues",
+        stateName: "hormonal",
         questions: [
-            "I was impatient and easily frustrated",
-            "Although I controlled myself at school, I had screaming arguments at home with my family",
-            "I quit a task if I encountered difficulty",
-            "I lost my temper when frustrated"
+            "I have severe PMS symptoms, including moodiness, irritability, and low frustration tolerance",
+            "My PMS symptoms have become over the years",
+            "My ADHD symptoms decreased during pregnancy",
+            "Right before my period, my ADHD symptoms become worse",
+            "I did well in elementary school, but started having difficulty in middle or high school"
         ]
     },
     {
-        name: "Risk-taking behavior",
-        stateName: "risk",
+        name: "Sleep problems",
+        stateName: "sleep",
         questions: [
-            "I took risks when driving an automobile",
-            "I started smoking at a younger age than many of my friends",
-            "I was sexually active earlier than other girls",
-            "I drank and experimented with drugs in high school or earlier",
-            "abused alcohol or other substances in high school or earlier"
+            "I am a “night owl” and rarely go to sleep at a “reasonable” hour",
+            "I have difficulty falling asleep because my mind is racing",
+            "If I could sleep on 'my' schedule, I'd sleep from 3 AM to 11 AM"
         ]
     },
     {
-        name: "Oppositional / defiant behavior",
-        stateName: "defiance",
+        name: "Fibromyalgia",
+        stateName: "fibromyalgia",
         questions: [
-            "I got into trouble as a teenager",
-            "I rebelled against my parents",
-            "My parents didn't like the kids that I hung out with in high school",
-            "I skipped classes in high school",
-            "I fought with my parents over rules and curfew",
-            "My parents didn't approve of my boyfriend in high school",
-            "I was very argumentative",
-            "I couldn't take “no” for an answer"
+            "I have been diagnosed with fibromyalgia",
+            "I have a history of chronic muscle and/or joint pain"
         ]
     },
     {
-        name: "Problems with disordered eating",
+        name: "Problem eating patterns",
         stateName: "eating",
         questions: [
-            "I ate compulsively as a child or teen",
-            "I developed a pattern of bulimia",
-            "I became overweight after puberty",
-            "I repeatedly dieted without success",
-            "I binged on certain foods until I felt stuffed, even sick"
+            "I often eat to calm myself",
+            "I tend to overeat",
+            "I have had an eating disorder at some time in my life",
+            "I have abused laxatives or purged to lose weight"
         ]
     }
 ]

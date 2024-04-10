@@ -10,7 +10,7 @@ const RenderSasiQuestions = ({ num, question, value, handleChange }) => {
     if (num >= 15 && num <= 19) {stateType = "impulse"}
     if (num >= 20 && num <= 23) {stateType = "product"}
 
-    console.log(value)
+    console.log(stateType, stateIndex, value)
 
     return (
         <div className="sasi-container">

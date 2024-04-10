@@ -133,4 +133,22 @@ export const sasi1Questions = [
             "I didn't read for pleasure"
         ]
     },
+    {
+        name: "Writing problems",
+        stateName: "writing",
+        questions: [
+            "Writing assignments were difficult for me",
+            "I had lots of ideas, but couldn't organize them well when writing",
+            "I could explain what I knew verbally, but just couldn't get it down on paper"
+        ]
+    },
+    {
+        name: "Memory problems",
+        stateName: "memory",
+        questions: [
+            "I had trouble remembering the directions for assignments",
+            "Even when I studied, I couldn't recall the information on a test",
+            "I was forgetful and absentminded"
+        ]
+    },
 ]

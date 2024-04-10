@@ -176,28 +176,32 @@ export const sasi2Questions = [
             "I overcrowd my schedule and overcommit myself",
             "I run late because I try to squeeze in 'one last thing'",
             "I dawdle and lose track of time",
-            "I tend to underestimate how much time an activity will take"
+            "I tend to underestimate how much time an activity will take",
+            "My lateness is a source of irritation to others"
         ]
     },
     {
-        section: "LEARNING ISSUES",
-        name: "Reading problems",
+        section: "DIFFICULTIES RELATED TO LEARNING DISABILITIES",
+        name: "Reading difficulties",
         stateName: "reading",
         questions: [
-            "I was a slow reader",
-            "When reading, my mind wandered",
-            "Typically, after reading a textbook, I could not answer the questions at the end of the chapter",
-            "I needed to reread information to be sure that I understand it",
-            "I didn't read for pleasure"
+            "I rarely read for pleasure",
+            "While reading, I can concentrate only if the material is very interesting to me",
+            "have difficulty recalling information that I have read",
+            "I read slowly",
+            "I must reread text in order to fully comprehend it"
         ]
     },
     {
-        name: "Writing problems",
+        name: "Writing difficulties",
         stateName: "writing",
         questions: [
-            "Writing assignments were difficult for me",
-            "I had lots of ideas, but couldn't organize them well when writing",
-            "I could explain what I knew verbally, but just couldn't get it down on paper"
+            "Writing papers is difficult for me",
+            "I have difficulty organizing my thoughts in writing, even when I am very familiar with the subject",
+            "I am much more comfortable explaining something verbally than in writing",
+            "Difficulty with writing has caused problems for me at work",
+            "Spelling is difficult for me",
+            "Punctuation and grammar are difficult for me"
         ]
     },
     {

@@ -56,7 +56,7 @@ export const sasi1Questions = [
         ]
     },
     {
-        name: "Problems with follow-through/perseverance",
+        name: "Problems with follow-through / perseverance",
         stateName: "perseverance",
         questions: [
             "It was hard for me to complete long-term school projects",
@@ -84,7 +84,7 @@ export const sasi1Questions = [
         ]
     },
     {
-        name: "Low motivation/underachievement",
+        name: "Low motivation / underachievement",
         stateName: "underachievement",
         questions: [
             "I didn't do as well in school as I felt I should have",
@@ -113,7 +113,7 @@ export const sasi1Questions = [
         ]
     },
     {
-        name: "Problems with fine/gross motor control",
+        name: "Problems with fine / gross motor control",
         stateName: "motor",
         questions: [
             "My handwriting was messy",
@@ -151,4 +151,38 @@ export const sasi1Questions = [
             "I was forgetful and absentminded"
         ]
     },
+    {
+        section: "SOCIAL / INTERPERSONAL ISSUES",
+        name: "Shyness, social withdrawal",
+        stateName: "shyness",
+        questions: [
+            "I felt shy and self-conscious around my classmates",
+            "Even when I had something to say, I rarely raised my hand to volunteer in class",
+            "I had only a few friends during school years",
+            "I didn’t date or rarely dated in high school"
+        ]
+    },
+    {
+        name: "Interpersonal / verbal problems",
+        stateName: "interpersonal",
+        questions: [
+            "Other girls called me 'mean' or 'bossy'",
+            "I felt different from other girls",
+            "Other girls didn't like me, but I didn't understand why",
+            "It was hard for me to keep up with the conversation of a group of girls",
+            "I fought and argued with my friends",
+            "In conversation, I'd say something dumb or couldn't think of anything to say",
+            "I was very sensitive to teasing"
+        ]
+    },
 ]
+
+// {
+//     name: "",
+//     stateName: "",
+//     questions: [
+//         "",
+//         "",
+//         ""
+//     ]
+// },

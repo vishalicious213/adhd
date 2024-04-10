@@ -149,6 +149,37 @@ export const sasi2Questions = [
         ]
     },
     {
+        name: "Low motivation / problems with self-discipline",
+        stateName: "discipline",
+        questions: [
+            "I tend to do what I like before what I 'ought'",
+            "I rarely stick with a goal or project that takes effort",
+            "Many things seem like 'too much trouble' to me"
+        ]
+    },
+    {
+        name: "Organizational difficulties",
+        stateName: "organization",
+        questions: [
+            "My home is cluttered and messy",
+            "I keep things organized at work, but my personal life is a shambles",
+            "I try to get organized, but I never seem to accomplish my goal",
+            "I have difficulty organizing my thoughts when writing",
+            "I can't seem to organize my paperwork - either at home or at work"
+        ]
+    },
+    {
+        name: "Poor time management",
+        stateName: "time",
+        questions: [
+            "I tend to run late and end up feeling frantic",
+            "I overcrowd my schedule and overcommit myself",
+            "I run late because I try to squeeze in 'one last thing'",
+            "I dawdle and lose track of time",
+            "I tend to underestimate how much time an activity will take"
+        ]
+    },
+    {
         section: "LEARNING ISSUES",
         name: "Reading problems",
         stateName: "reading",

@@ -248,6 +248,33 @@ export const sasi2Questions = [
         ]
     },
     {
+        name: "Life maintenance activities",
+        stateName: "maintenance",
+        questions: [
+            "I don't keep up with housekeeping tasks in a regular, consistent manner",
+            "My home/office are filled with disorganized piles of papers",
+            "My wardrobe is disorganized and in disarray",
+            "I typically neglect making routine medical/dental appointments",
+            "I neglect to take care of routine automobile maintenance",
+            "Laundry is done at the last possible moment",
+            "I wait until my car is nearly out of gas before filling the tank",
+            "My life is filled with numerous, avoidable crises"
+        ]
+    },
+    {
+        name: "Financial management",
+        stateName: "finance",
+        questions: [
+            "I have difficulty managing my money",
+            "I have large credit card debt",
+            "I have difficulty balancing my checkbook",
+            "I tend to file my tax forms late",
+            "My financial record-keeping is chaotic",
+            "Some years, I have not filed my income tax return",
+            "I have a poor credit rating"
+        ]
+    },
+    {
         section: "PSYCHOLOGICAL ISSUES",
         name: "Moodiness/anxiety",
         stateName: "mood",

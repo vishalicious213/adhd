@@ -391,5 +391,34 @@ export const sasi2Questions = [
             "I have had an eating disorder at some time in my life",
             "I have abused laxatives or purged to lose weight"
         ]
+    },
+    {
+        name: "Substance abuse / addiction",
+        stateName: "addiction",
+        questions: [
+            "I have a history of substance abuse",
+            "I have abused alcohol",
+            "I smoke cigarettes and have been unable to quit"
+        ]
+    },
+    {
+        name: "Patterns of 'self-medication'",
+        stateName: "selfmedication",
+        questions: [
+            "I keep myself going throughout the day with coffee, tea, and colas",
+            "I have used cigarettes to help increase my concentration",
+            "I have regularly used marijuana, alcohol and/or food to calm myself"
+        ]
+    },
+    {
+        name: "Abuse / trauma",
+        stateName: "trauma",
+        questions: [
+            "I was repeatedly humiliated or psychologically abused in the classroom as a girl",
+            "I have been in an abusive relationship as an adult",
+            "I have been physically, sexually, or emotionally abused.",
+            "Events that are not particularly traumatic for others trigger intense and repetitive anxiety reactions in me",
+            "I have nightmares, flashbacks, and/or extreme anxiety as a result of traumatic event(s) in my past"
+        ]
     }
 ]

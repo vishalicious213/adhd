@@ -175,6 +175,39 @@ export const sasi1Questions = [
             "I was very sensitive to teasing"
         ]
     },
+    {
+        section: "PSYCHOLOGICAL ISSUES",
+        name: "Moodiness/anxiety",
+        stateName: "mood",
+        questions: [
+            "I felt worried and anxious",
+            "I felt moody and depressed for no reason",
+            "I dreaded being called on by the teacher",
+            "I didn't like going to school",
+            "I became very anxious before tests",
+            "I was irritable as a teenager",
+            "I cried easily"
+        ]
+    },
+    {
+        name: "Feeling criticized, misunderstood",
+        stateName: "misunderstood",
+        questions: [
+            "I wish my parents had understood how hard high school was for me",
+            "It felt as if my parents criticized me a lot",
+            "My mother and I were in conflict during my high school years",
+            "I was repeatedly humiliated or criticized by teachers in the school setting"
+        ]
+    },
+    {
+        name: "Low self-esteem",
+        stateName: "esteem",
+        questions: [
+            "I feel a sense of shame or regret, as I look back on things I did in high school",
+            "I wasn't really good at anything",
+            "I didn't feel good about myself during my school years"
+        ]
+    },
 ]
 
 // {

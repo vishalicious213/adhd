@@ -119,6 +119,36 @@ export const sasi2Questions = [
         ]
     },
     {
+        name: "Need for stimulation",
+        stateName: "stimulation",
+        questions: [
+            "I am easily bored",
+            "I enjoy new projects and dislike doing routine activities",
+            "I have a wide range of interests and activities",
+            "I enjoy making changes in my life",
+            "I thrive on stimulation"
+        ]
+    },
+    {
+        name: "Problems with under-arousal",
+        stateName: "underarousal",
+        questions: [
+            "I am not fully awake and alert until several hours after I rise in the morning",
+            "Getting up in the morning is usually difficult for me",
+            "I use sugar and/or caffeine to keep myself going during the day",
+            "If my life circumstances allowed it, I would take a daily afternoon nap",
+            "On weekends, I sleep late or nap to catch up on my sleep"
+        ]
+    },
+    {
+        name: "Procrastination",
+        stateName: "procrastination",
+        questions: [
+            "I procrastinate and resist doing tasks that are difficult or unappealing",
+            "I put things off until the last minute"
+        ]
+    },
+    {
         section: "LEARNING ISSUES",
         name: "Reading problems",
         stateName: "reading",

@@ -276,35 +276,36 @@ export const sasi2Questions = [
     },
     {
         section: "PSYCHOLOGICAL ISSUES",
-        name: "Moodiness/anxiety",
-        stateName: "mood",
-        questions: [
-            "I felt worried and anxious",
-            "I felt moody and depressed for no reason",
-            "I dreaded being called on by the teacher",
-            "I didn't like going to school",
-            "I became very anxious before tests",
-            "I was irritable as a teenager",
-            "I cried easily"
-        ]
-    },
-    {
-        name: "Feeling criticized, misunderstood",
-        stateName: "misunderstood",
-        questions: [
-            "I wish my parents had understood how hard high school was for me",
-            "It felt as if my parents criticized me a lot",
-            "My mother and I were in conflict during my high school years",
-            "I was repeatedly humiliated or criticized by teachers in the school setting"
-        ]
-    },
-    {
         name: "Low self-esteem",
         stateName: "esteem",
         questions: [
-            "I feel a sense of shame or regret, as I look back on things I did in high school",
-            "I wasn't really good at anything",
-            "I didn't feel good about myself during my school years"
+            "I tend to hide many aspects of my life, fearing that I'll be judged negatively",
+            "People think too highly of me, and I fear that I'll be 'found out.'",
+            "I have often felt “stupid” because I couldn't seem to accomplish things that others could"
+        ]
+    },
+    {
+        name: "Moodiness/anxiety",
+        stateName: "moodiness",
+        questions: [
+            "I have felt demoralized by my failures",
+            "I have felt depressed for 'no reason'",
+            "I am anxious and worry a lot",
+            "I have fears and phobias",
+            "I suffer from panic attacks",
+            "I tend to be irritable and overreact to frustration",
+            "My moods vary from day to day"
+        ]
+    },
+    {
+        name: "Obsessive/compulsive tendencies",
+        stateName: "obsessive",
+        questions: [
+            "I have strong perfectionist tendencies",
+            "Even in unimportant tasks, I feel compelled to do a perfect, micro-detailed job.",
+            "My perfectionism keeps me from completing tasks in a timely manner",
+            "In my efforts to do a good job, I seem to make things more complicated than they need to be",
+            "There are periods when I've become obsessed by a particular thought or concern"
         ]
     },
     {

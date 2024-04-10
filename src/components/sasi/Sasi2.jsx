@@ -1,10 +1,10 @@
 import React from 'react'
 import { useState } from 'react'
 import RenderSasiQuestions from '../render/RenderSasiQuestions'
-import { sasi1Questions } from '../../data/sasi1'
+import { sasi2Questions } from '../../data/sasi2'
 
 const Sasi2 = () => {
-    const [part1, setPart1] = useState({})
+    const [part2, setPart1] = useState({})
 
     function handleChange(event) {
         const { name, value } = event.target
@@ -14,16 +14,16 @@ const Sasi2 = () => {
                 [name]: value,
             }
         })
-        console.log(part1)
+        console.log(part2)
     }
 
     function RenderAllQuestions() {
         return (
             <form>
                 <RenderSasiQuestions 
-                    data={sasi1Questions} 
+                    data={sasi2Questions} 
                     onchange={handleChange} 
-                    state={part1} 
+                    state={part2} 
                 />
             </form>
         )

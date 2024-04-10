@@ -3,47 +3,37 @@ export const sasi2Questions = [
         name: "Inattention",
         stateName: "inattention",
         questions: [
-            "I daydreamed a lot in school", 
-            "My mind wandered, even when I tried to listen to the teacher", 
-            "In class, I didn't hear the teacher's instructions", 
-            "I made careless mistakes on tests", 
-            "I often lost or misplaced things", 
-            "I got teased for being 'spacey'"
+            "I tend to overlook details", 
+            "Forms are difficult for me to complete correctly without overlooking something", 
+            "It is hard for me to listen for long periods of time – in a lecture, seminar, or training class", 
+            "My mind tends to wander when I’m reading or when listening to something that is not interesting"
         ]
     },
     {
-        name: "Hyperactivity",
-        stateName: "hyperactivity",
+        name: "Distractability",
+        stateName: "distract",
         questions: [
-            "I got in trouble for talking in class",
-            "I was a tomboy",
-            "It was hard for me to sit still in class",
-            "I felt best when I was moving around - playing sports or dancing",
-            "It was hard to fall asleep at bedtime because thoughts were bouncing around in my brain.",
-            "I often doodled or fidgeted when I had to sit still.",
-            "My friends called me 'hyper'",
-            "When sitting, I tended to 'tip' my chair or jiggle my legs."
+            "I am easily sidetracked, and wander from one task to the next as something catches my attention",
+            "I jump from topic to topic in conversation, forgetting what I started to say",
+            "I have difficulty concentrating when there is noise or conversation near me",
+            "It is very difficult for me to get back on track after an interruption"
         ]
     },
     {
-        name: "Impulsivity",
-        stateName: "impulsivity",
+        name: "Tendency to hyperfocus",
+        stateName: "hyperfocus",
         questions: [
-            "I interrupted others, even though I tried not to",
-            "Sometimes, when I was upset, I'd blurt out things that I didn't mean",
-            "I acted silly or “crazy” with my friends",
-            "I acted on the spur of the moment, never thinking of the trouble I'd get into",
-            "As a teenager, I sometimes drove too fast, or took other risks while driving"
+            "I tend to 'hyperfocus' for long periods of time on certain activities",
+            "When engaging in certain activities, I completely lose track of time",
+            "When I'm really concentrating, I don't hear what people say to me"
         ]
     },
     {
-        name: "Productivity",
-        stateName: "productivity",
+        name: "Difficulty making transitions",
+        stateName: "transitions",
         questions: [
-            "In school, I didn't finish seatwork quickly as the rest of the class",
-            "The demands of high school felt overwhelming sometimes",
-            "I had to work much harder and stay up later than others to do well in school",
-            "I studied or did homework late into the night"
+            "It is difficult for me to stop an activity when it is time to do something else",
+            "I can’t tear myself away from an activity when I’m really engrossed"
         ]
     },
     {

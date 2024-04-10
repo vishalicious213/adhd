@@ -20,40 +20,11 @@ const Sasi1 = () => {
     function RenderAllQuestions() {
         return (
             <form>
-                <RenderSasiQuestions data={sasi1Questions} onchange={handleChange} state={part1} />
-                {/* {
-                    sasi1Questions.map(category => 
-                        <div key={category.name}>
-                            <h2>{category.name}</h2>
-                            <div className="sasi-container">
-                                {
-                                    category.questions.map((q, index) => {
-                                        let item = `${category.name}${index}`
-
-                                        return (
-                                            <div key={index}>
-                                                <select 
-                                                    id={item}
-                                                    value={part1[item]}
-                                                    onChange={handleChange}
-                                                    name={item} 
-                                                >
-                                                    <option value=""></option>
-                                                    <option value="0">0</option>
-                                                    <option value="1">1</option>
-                                                    <option value="2">2</option>
-                                                    <option value="3">3</option>
-                                                    <option value="?">?</option>
-                                                </select>
-                                                <label className="text" htmlFor={item}>{q}</label>
-                                            </div>
-                                        )
-                                    })
-                                }
-                            </div>
-                        </div>
-                    )
-                } */}
+                <RenderSasiQuestions 
+                    data={sasi1Questions} 
+                    onchange={handleChange} 
+                    state={part1} 
+                />
             </form>
         )
     }

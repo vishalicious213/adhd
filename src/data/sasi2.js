@@ -285,7 +285,7 @@ export const sasi2Questions = [
         ]
     },
     {
-        name: "Moodiness/anxiety",
+        name: "Moodiness / anxiety",
         stateName: "moodiness",
         questions: [
             "I have felt demoralized by my failures",
@@ -298,7 +298,7 @@ export const sasi2Questions = [
         ]
     },
     {
-        name: "Obsessive/compulsive tendencies",
+        name: "Obsessive / compulsive tendencies",
         stateName: "obsessive",
         questions: [
             "I have strong perfectionist tendencies",
@@ -306,6 +306,21 @@ export const sasi2Questions = [
             "My perfectionism keeps me from completing tasks in a timely manner",
             "In my efforts to do a good job, I seem to make things more complicated than they need to be",
             "There are periods when I've become obsessed by a particular thought or concern"
+        ]
+    },
+    {
+        name: "Social / interpersonal problems",
+        stateName: "interpersonal",
+        questions: [
+            "My lateness and disorganization have been major points of conflict in important relationships",
+            "I am separated and/or divorced",
+            "I have been married more than once",
+            "I can't seem to maintain friendships over the long term",
+            "I tend to keep to myself",
+            "I withdraw from other women for fear they will judge me",
+            "I have always felt 'different' from others",
+            "Sometimes, I misread people",
+            "I am not a good listener and interrupt or think about other things while others are talking"
         ]
     },
     {

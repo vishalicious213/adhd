@@ -201,7 +201,7 @@ button:hover {
 /* SASI */
 
 .sasi-container {
-    display: flex;
+    display: grid;
     gap: .5rem;
     margin-bottom: .5rem;
 }

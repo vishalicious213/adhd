@@ -28,10 +28,26 @@ const Sasi1 = () => {
                     sasi1Questions.map(category => 
                         <div key={category.name}>
                             <h2>{category.name}</h2>
-                            <div>
+                            <div className="sasi-container">
                                 {
-                                    category.questions.map(q => 
-                                    <div key={q}>{q}</div>)
+                                    category.questions.map((q, index) => 
+                                    <div key={index}>
+                                        <select 
+                                            id={`${category.name.toLowerCase}${index}`}
+                                            value={part1[`${category.name.toLowerCase}${index}`]}
+                                            onChange={handleChange}
+                                            name={`${category.name.toLowerCase}${index}`} 
+                                        >
+                                            <option value=""></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="?">?</option>
+                                        </select>
+                                        <label className="text" htmlFor={`${category.name.toLowerCase}${index}`}>{q}</label>
+                                    </div>
+                                    )
                                 }
                             </div>
                         </div>

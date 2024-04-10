@@ -4,7 +4,8 @@ const RenderSasiQuestions = ({data, onchange, state}) => {
     return (
         data.map(category => 
             <div key={category.name}>
-                <h2>{category.name}</h2>
+                <h2>{category.section}</h2>
+                <h3>{category.name}</h3>
                 <div className="sasi-container">
                     {
                         category.questions.map((q, index) => {

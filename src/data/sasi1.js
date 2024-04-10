@@ -118,7 +118,19 @@ export const sasi1Questions = [
         questions: [
             "My handwriting was messy",
             "I was physically awkward and did poorly in sports",
-            "I tended to bump into things – corners of tables, door frames, etc"
+            "I tended to bump into things - corners of tables, door frames, etc"
+        ]
+    },
+    {
+        section: "LEARNING ISSUES",
+        name: "Reading problems",
+        stateName: "reading",
+        questions: [
+            "I was a slow reader",
+            "When reading, my mind wandered",
+            "Typically, after reading a textbook, I could not answer the questions at the end of the chapter",
+            "I needed to reread information to be sure that I understand it",
+            "I didn't read for pleasure"
         ]
     },
 ]

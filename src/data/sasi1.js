@@ -83,4 +83,42 @@ export const sasi1Questions = [
             "The only way I could really study for a test was to stay up very late the night before"
         ]
     },
+    {
+        name: "Low motivation/underachievement",
+        stateName: "underachievement",
+        questions: [
+            "I didn't do as well in school as I felt I should have",
+            "I got by on my intelligence, and didn't really try hard in school",
+            "My parents and teachers told me I could do much better if I tried",
+            "I started each grading period with good intentions, but could never sustain them"
+        ]
+    },
+    {
+        name: "Organizational difficulties",
+        stateName: "organization",
+        questions: [
+            "My room looked like a 'disaster' area",
+            "My backpack/book bag/desk was messy",
+            "I had trouble being organized",
+            "had trouble keeping track of assignments, long-term projects, and due dates"
+        ]
+    },
+    {
+        name: "Poor time management",
+        stateName: "time",
+        questions: [
+            "I arrived late for scheduled activities",
+            "I often lost track of time",
+            "I stayed up late, then had trouble getting up in the morning"
+        ]
+    },
+    {
+        name: "Problems with fine/gross motor control",
+        stateName: "motor",
+        questions: [
+            "My handwriting was messy",
+            "I was physically awkward and did poorly in sports",
+            "I tended to bump into things – corners of tables, door frames, etc"
+        ]
+    },
 ]

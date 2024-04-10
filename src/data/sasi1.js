@@ -208,14 +208,51 @@ export const sasi1Questions = [
             "I didn't feel good about myself during my school years"
         ]
     },
+    {
+        section: "PROBLEMATIC BEHAVIORS",
+        name: "Impatience / low frustration, tolerance / anger",
+        stateName: "impatience",
+        questions: [
+            "I was impatient and easily frustrated",
+            "Although I controlled myself at school, I had screaming arguments at home with my family",
+            "I quit a task if I encountered difficulty",
+            "I lost my temper when frustrated"
+        ]
+    },
+    {
+        name: "Risk-taking behavior",
+        stateName: "risk",
+        questions: [
+            "I took risks when driving an automobile",
+            "I started smoking at a younger age than many of my friends",
+            "I was sexually active earlier than other girls",
+            "I drank and experimented with drugs in high school or earlier",
+            "abused alcohol or other substances in high school or earlier"
+        ]
+    },
+    {
+        name: "Oppositional / defiant behavior",
+        stateName: "defiance",
+        questions: [
+            "I got into trouble as a teenager",
+            "I rebelled against my parents",
+            "My parents didn't like the kids that I hung out with in high school",
+            "I skipped classes in high school",
+            "I fought with my parents over rules and curfew",
+            "My parents didn't approve of my boyfriend in high school",
+            "I was very argumentative",
+            "I couldn't take “no” for an answer"
+        ]
+    },
+    {
+        name: "Problems with disordered eating",
+        stateName: "",
+        questions: [
+            "I ate compulsively as a child or teen",
+            "I developed a pattern of bulimia",
+            "I became overweight after puberty",
+            "I repeatedly dieted without success",
+            "I binged on certain foods until I felt stuffed, even sick"
+        ]
+    }
 ]
-
-// {
-//     name: "",
-//     stateName: "",
-//     questions: [
-//         "",
-//         "",
-//         ""
-//     ]
-// },

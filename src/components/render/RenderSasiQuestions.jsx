@@ -13,20 +13,24 @@ const RenderSasiQuestions = ({data, onchange, state}) => {
 
                             return (
                                 <div key={index} className="sasi-question">
-                                    <select 
-                                        id={item}
-                                        value={state[item]}
-                                        onChange={onchange}
-                                        name={item} 
-                                    >
-                                        <option value=""></option>
-                                        <option value="0">0</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="?">?</option>
-                                    </select>
-                                    <label className="text" htmlFor={item}>{q}</label>
+                                    {category.type && <div>CHECK</div>}
+
+                                    {!category.type && <>
+                                        <select 
+                                            id={item}
+                                            value={state[item]}
+                                            onChange={onchange}
+                                            name={item} 
+                                        >
+                                            <option value=""></option>
+                                            <option value="0">0</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="?">?</option>
+                                        </select>
+                                        <label className="text" htmlFor={item}>{q}</label>
+                                    </>}
                                 </div>
                             )
                         })

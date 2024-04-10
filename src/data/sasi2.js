@@ -208,9 +208,24 @@ export const sasi2Questions = [
         name: "Memory problems",
         stateName: "memory",
         questions: [
-            "I had trouble remembering the directions for assignments",
-            "Even when I studied, I couldn't recall the information on a test",
-            "I was forgetful and absentminded"
+            "I need to speak the moment I think of something in order not to forget my thought",
+            "I misplace personal belongings",
+            "I have difficulty recalling the names of common objects or others",
+            "I am absentminded",
+            "I have to write things down to remember them",
+            "I forget to do thing that I intend to do",
+            "I have difficulty remembering multi-step directions or multi-item lists",
+            "My recall is variable and unpredictable"
+        ]
+    },
+    {
+        name: "Problems with motor control",
+        stateName: "motor",
+        questions: [
+            "I have poor handwriting",
+            "The legibility of my handwriting is variable",
+            "I tend to bump into or trip over things",
+            "I have poor motor coordination"
         ]
     },
     {

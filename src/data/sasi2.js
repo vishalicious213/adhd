@@ -89,31 +89,33 @@ export const sasi2Questions = [
         ]
     },
     {
-        name: "Organizational difficulties",
-        stateName: "organization",
+        name: "Problems making decisions",
+        stateName: "decisions",
         questions: [
-            "My room looked like a 'disaster' area",
-            "My backpack/book bag/desk was messy",
-            "I had trouble being organized",
-            "had trouble keeping track of assignments, long-term projects, and due dates"
+            "I have difficulty deciding what to discard and what to keep",
+            "I have difficulty making selections in large department or grocery stores",
+            "Prioritizing is difficult for me – everything seems equally important"
         ]
     },
     {
-        name: "Poor time management",
-        stateName: "time",
+        name: "Difficulties in planning",
+        stateName: "planning",
         questions: [
-            "I arrived late for scheduled activities",
-            "I often lost track of time",
-            "I stayed up late, then had trouble getting up in the morning"
+            "Meal planning is very difficult for me",
+            "I rarely plan my day and typically react to events as they occur",
+            "When doing a project, I figure it out as I go along",
+            "I have difficulty planning ahead",
+            "I rarely engage in social activities that require advance planning"
         ]
     },
     {
-        name: "Problems with fine / gross motor control",
-        stateName: "motor",
+        name: "Sensitivity to over-stimulation",
+        stateName: "overstimulation",
         questions: [
-            "My handwriting was messy",
-            "I was physically awkward and did poorly in sports",
-            "I tended to bump into things - corners of tables, door frames, etc"
+            "Loud noises irritate me",
+            "I don't like to be in large crowds",
+            "Shopping centers and large “superstores” feel overwhelming to me",
+            "Fluorescent lighting tends to bother me"
         ]
     },
     {

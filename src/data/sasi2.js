@@ -229,27 +229,22 @@ export const sasi2Questions = [
         ]
     },
     {
-        section: "SOCIAL / INTERPERSONAL ISSUES",
-        name: "Shyness, social withdrawal",
-        stateName: "shyness",
+        section: "DIFFICULTIES IN AREAS OF ADULT RESPONSIBILITY",
+        name: "Parenting",
+        stateName: "parenting",
         questions: [
-            "I felt shy and self-conscious around my classmates",
-            "Even when I had something to say, I rarely raised my hand to volunteer in class",
-            "I had only a few friends during school years",
-            "I didn’t date or rarely dated in high school"
+            "My parenting is inconsistent",
+            "I can't develop routines for myself, much less establish them for my child(ren)",
+            "I have difficulty not losing my temper with my child(ren)"
         ]
     },
     {
-        name: "Interpersonal / verbal problems",
-        stateName: "interpersonal",
+        name: "Workplace",
+        stateName: "workplace",
         questions: [
-            "Other girls called me 'mean' or 'bossy'",
-            "I felt different from other girls",
-            "Other girls didn't like me, but I didn't understand why",
-            "It was hard for me to keep up with the conversation of a group of girls",
-            "I fought and argued with my friends",
-            "In conversation, I'd say something dumb or couldn't think of anything to say",
-            "I was very sensitive to teasing"
+            "I have received unsatisfactory performance ratings at work",
+            "I have quit a job in order to avoid being fired",
+            "I have changed jobs many times, never finding the 'right' job"
         ]
     },
     {

@@ -1,7 +1,7 @@
 export const sasi1Questions = [
     {
         name: "Inattention",
-        stateName: "inatt",
+        stateName: "inattention",
         questions: [
             "I daydreamed a lot in school", 
             "My mind wandered, even when I tried to listen to the teacher", 
@@ -13,7 +13,7 @@ export const sasi1Questions = [
     },
     {
         name: "Hyperactivity",
-        stateName: "hyper",
+        stateName: "hyperactivity",
         questions: [
             "I got in trouble for talking in class",
             "I was a tomboy",
@@ -27,7 +27,7 @@ export const sasi1Questions = [
     },
     {
         name: "Impulsivity",
-        stateName: "impulse",
+        stateName: "impulsivity",
         questions: [
             "I interrupted others, even though I tried not to",
             "Sometimes, when I was upset, I'd blurt out things that I didn't mean",
@@ -38,12 +38,49 @@ export const sasi1Questions = [
     },
     {
         name: "Productivity",
-        stateName: "prod",
+        stateName: "productivity",
         questions: [
             "In school, I didn't finish seatwork quickly as the rest of the class",
             "The demands of high school felt overwhelming sometimes",
             "I had to work much harder and stay up later than others to do well in school",
             "I studied or did homework late into the night"
+        ]
+    },
+    {
+        name: "Problems with initiation",
+        stateName: "initiation",
+        questions: [
+            "I had trouble getting started on my homework",
+            "It was hard for me to begin working on a project unless someone was there to keep me on track",
+            "I worked better with others than when I worked alone"
+        ]
+    },
+    {
+        name: "Problems with follow-through/perseverance",
+        stateName: "perseverance",
+        questions: [
+            "It was hard for me to complete long-term school projects",
+            "I dabbled in many hobbies or activities, but never really persevered in my efforts",
+            "Although I took different types of lessons as a child, I rarely or never practiced"
+        ]
+    },
+    {
+        name: "Problems with underarousal",
+        stateName: "underarousal",
+        questions: [
+            "I felt sleepy when sitting in class, but felt energetic as soon as I stood up and moved",
+            "It was difficult to get up in the morning",
+            "I wasn't alert until late in the morning",
+            "I didn't seem to have as much energy as most of my friends"
+        ]
+    },
+    {
+        name: "Procrastination problems",
+        stateName: "procrastination",
+        questions: [
+            "I was smart, but got by doing everything at the last minute",
+            "I handed in my homework late, if I did it at all",
+            "The only way I could really study for a test was to stay up very late the night before"
         ]
     },
 ]

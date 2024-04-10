@@ -5,10 +5,10 @@ import { sasi1Questions } from '../../data/sasi1'
 
 const Sasi1 = () => {
     const [part1, setPart1] = useState({
-        inattention1: "", inattention2: "", inattention3: "", inattention4: "", inattention5: "", inattention6: "",
-        hyper1: "", hyper2: "", hyper3: "", hyper4: "", hyper5: "", hyper6: "", hyper7: "", hyper8: "", 
-        impulse1: "", impulse2: "", impulse3: "", impulse4: "", impulse5: "",
-        product1: "", product2: "", product3: "", product4: "",
+        // inattention1: "", inattention2: "", inattention3: "", inattention4: "", inattention5: "", inattention6: "",
+        // hyper1: "", hyper2: "", hyper3: "", hyper4: "", hyper5: "", hyper6: "", hyper7: "", hyper8: "", 
+        // impulse1: "", impulse2: "", impulse3: "", impulse4: "", impulse5: "",
+        // product1: "", product2: "", product3: "", product4: "",
     })
 
     function handleChange(event) {
@@ -19,6 +19,7 @@ const Sasi1 = () => {
                 [name]: value,
             }
         })
+        console.log(part1)
     }
 
     function RenderAllQuestions() {
@@ -30,24 +31,28 @@ const Sasi1 = () => {
                             <h2>{category.name}</h2>
                             <div className="sasi-container">
                                 {
-                                    category.questions.map((q, index) => 
-                                    <div key={index}>
-                                        <select 
-                                            id={`${category.name.toLowerCase}${index}`}
-                                            value={part1[`${category.name.toLowerCase}${index}`]}
-                                            onChange={handleChange}
-                                            name={`${category.name.toLowerCase}${index}`} 
-                                        >
-                                            <option value=""></option>
-                                            <option value="0">0</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="?">?</option>
-                                        </select>
-                                        <label className="text" htmlFor={`${category.name.toLowerCase}${index}`}>{q}</label>
-                                    </div>
-                                    )
+                                    category.questions.map((q, index) => {
+                                        let item = `${category.name}${index}`
+
+                                        return (
+                                            <div key={index}>
+                                                <select 
+                                                    id={item}
+                                                    value={part1[item]}
+                                                    onChange={handleChange}
+                                                    name={item} 
+                                                >
+                                                    <option value=""></option>
+                                                    <option value="0">0</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="?">?</option>
+                                                </select>
+                                                <label className="text" htmlFor={item}>{q}</label>
+                                            </div>
+                                        )
+                                    })
                                 }
                             </div>
                         </div>

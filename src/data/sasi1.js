@@ -246,7 +246,7 @@ export const sasi1Questions = [
     },
     {
         name: "Problems with disordered eating",
-        stateName: "",
+        stateName: "eating",
         questions: [
             "I ate compulsively as a child or teen",
             "I developed a pattern of bulimia",

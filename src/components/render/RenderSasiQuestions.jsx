@@ -8,7 +8,7 @@ const RenderSasiQuestions = ({data, onchange, state}) => {
                 <div className="sasi-container">
                     {
                         category.questions.map((q, index) => {
-                            let item = `${category.name}${index}`
+                            let item = `${category.stateName}${index}`
 
                             return (
                                 <div key={index}>

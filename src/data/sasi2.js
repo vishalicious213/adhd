@@ -285,7 +285,7 @@ export const sasi2Questions = [
         section: "PSYCHOLOGICAL ISSUES",
         type: "check",
         stateName: "diagnoses",
-        // I have been diagnosed and treated for:
+        prompt: "I have been diagnosed and treated for:",
         questions: [
             "Depression",
             "Anxiety / panic disorder",

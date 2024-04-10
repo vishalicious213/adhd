@@ -302,7 +302,7 @@ export const sasi2Questions = [
         stateName: "obsessive",
         questions: [
             "I have strong perfectionist tendencies",
-            "Even in unimportant tasks, I feel compelled to do a perfect, micro-detailed job.",
+            "Even in unimportant tasks, I feel compelled to do a perfect, micro-detailed job",
             "My perfectionism keeps me from completing tasks in a timely manner",
             "In my efforts to do a good job, I seem to make things more complicated than they need to be",
             "There are periods when I've become obsessed by a particular thought or concern"
@@ -321,6 +321,36 @@ export const sasi2Questions = [
             "I have always felt 'different' from others",
             "Sometimes, I misread people",
             "I am not a good listener and interrupt or think about other things while others are talking"
+        ]
+    },
+    {
+        name: "Low frustration tolerance",
+        stateName: "frustration",
+        questions: [
+            "I hate to wait",
+            "I become very frustrated and angry in traffic",
+            "I lose my temper if my children are noisy or argumentative",
+            "I quit tasks out of frustration"
+        ]
+    },
+    {
+        name: "Feelings of underachievement",
+        stateName: "underachievement",
+        questions: [
+            "I should have done better in school",
+            "I have not achieved up to my potential in my career",
+            "I haven't reached the life goals I set for myself",
+            "I feel disappointed in my achievements"
+        ]
+    },
+    {
+        name: "Feeling criticized / misunderstood",
+        stateName: "misunderstood",
+        questions: [
+            "I am very sensitive to criticism",
+            "I feel that I am viewed negatively",
+            "The people close to me don't understand my struggles to manage my life",
+            "I suffered 'classroom traumas and humiliations,' which still haunt me and affect my life"
         ]
     },
     {

@@ -159,7 +159,7 @@ export const sasi1Questions = [
             "I felt shy and self-conscious around my classmates",
             "Even when I had something to say, I rarely raised my hand to volunteer in class",
             "I had only a few friends during school years",
-            "I didn’t date or rarely dated in high school"
+            "I didn't date or rarely dated in high school"
         ]
     },
     {

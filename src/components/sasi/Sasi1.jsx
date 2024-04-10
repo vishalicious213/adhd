@@ -4,12 +4,7 @@ import RenderSasiQuestions from '../render/RenderSasiQuestions'
 import { sasi1Questions } from '../../data/sasi1'
 
 const Sasi1 = () => {
-    const [part1, setPart1] = useState({
-        // inattention1: "", inattention2: "", inattention3: "", inattention4: "", inattention5: "", inattention6: "",
-        // hyper1: "", hyper2: "", hyper3: "", hyper4: "", hyper5: "", hyper6: "", hyper7: "", hyper8: "", 
-        // impulse1: "", impulse2: "", impulse3: "", impulse4: "", impulse5: "",
-        // product1: "", product2: "", product3: "", product4: "",
-    })
+    const [part1, setPart1] = useState({})
 
     function handleChange(event) {
         const { name, value } = event.target
@@ -25,7 +20,8 @@ const Sasi1 = () => {
     function RenderAllQuestions() {
         return (
             <form>
-                {
+                <RenderSasiQuestions data={sasi1Questions} onchange={handleChange} state={part1} />
+                {/* {
                     sasi1Questions.map(category => 
                         <div key={category.name}>
                             <h2>{category.name}</h2>
@@ -57,7 +53,7 @@ const Sasi1 = () => {
                             </div>
                         </div>
                     )
-                }
+                } */}
             </form>
         )
     }

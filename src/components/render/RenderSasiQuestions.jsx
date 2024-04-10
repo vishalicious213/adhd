@@ -1,35 +1,38 @@
 import React from 'react'
 
-const RenderSasiQuestions = (sasi1Questions) => {
-    console.log(sasi1Questions)
-    // let stateIndex = num
-    // let stateType = ""
-
-    // if (num > 6) {stateIndex = num - 6}
-    // if (num >= 1 && num <= 6) {stateType = "inattention"}
-    // if (num >= 7 && num <= 14) {stateType = "hyper"}
-    // if (num >= 15 && num <= 19) {stateType = "impulse"}
-    // if (num >= 20 && num <= 23) {stateType = "product"}
-
-    // console.log(stateType, stateIndex, value)
-
+const RenderSasiQuestions = ({data, onchange, state}) => {
     return (
-        <div className="sasi-container">
-            {/* <select 
-                id={`${stateType}${stateIndex}`}
-                value={value[`${stateType}${stateIndex}`]}
-                onChange={handleChange}
-                name={`${stateType}${stateIndex}`} 
-            >
-                <option value=""></option>
-                <option value="0">0</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="?">?</option>
-            </select>
-            <label className="text" htmlFor={`${stateType}${stateIndex}`}>{question}</label> */}
-        </div>
+        data.map(category => 
+            <div key={category.name}>
+                <h2>{category.name}</h2>
+                <div className="sasi-container">
+                    {
+                        category.questions.map((q, index) => {
+                            let item = `${category.name}${index}`
+
+                            return (
+                                <div key={index}>
+                                    <select 
+                                        id={item}
+                                        value={state[item]}
+                                        onChange={onchange}
+                                        name={item} 
+                                    >
+                                        <option value=""></option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="?">?</option>
+                                    </select>
+                                    <label className="text" htmlFor={item}>{q}</label>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
+            </div>
+        )
     )
 }
 

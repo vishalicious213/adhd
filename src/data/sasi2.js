@@ -33,54 +33,59 @@ export const sasi2Questions = [
         stateName: "transitions",
         questions: [
             "It is difficult for me to stop an activity when it is time to do something else",
-            "I can’t tear myself away from an activity when I’m really engrossed"
+            "I can't tear myself away from an activity when I'm really engrossed"
+        ]
+    },
+    {
+        name: "Hyperactivity",
+        stateName: "hyperactivity",
+        questions: [
+            "I tend to fidget or doodle",
+            "I talk so fast that others can't get a word in",
+            "I hate to sit for long periods, and find an excuse to move around",
+            "I seem to need less sleep than other women",
+            "I have a high energy level compared to many women",
+            "My activity level makes the people around me uncomfortable"
+        ]
+    },
+    {
+        name: "Impulsivity",
+        stateName: "impulsivity",
+        questions: [
+            "I buy on impulse",
+            "I interrupt others in conversation, even when I try not to",
+            "I have impulsively jumped from one job to another",
+            "I have impulsively quit a job without considering the consequences",
+            "I tend to 'blurt out' whatever I'm thinking; though I may later regret it",
+            "I have made major life decisions with little planning or forethought"
+        ]
+    },
+    {
+        name: "Productivity",
+        stateName: "productivity",
+        questions: [
+            "I just can’t seem to juggle the number of activities and commitments that my friends seem to manage",
+            "I have felt overwhelmed by responsibilities at certain times in my life",
+            "It seems much harder for me than for others to take care of the tasks of everyday tasks",
+            "Keeping up with job demands has been difficult for me"
         ]
     },
     {
         name: "Problems with initiation",
         stateName: "initiation",
         questions: [
-            "I had trouble getting started on my homework",
-            "It was hard for me to begin working on a project unless someone was there to keep me on track",
-            "I worked better with others than when I worked alone"
+            "Despite my best intentions, it is often hard for me to get started on a project",
+            "Getting started is much easier when I work with someone else"
         ]
     },
     {
-        name: "Problems with follow-through / perseverance",
+        name: "Problems with follow-through / task completion / perseverance",
         stateName: "perseverance",
         questions: [
-            "It was hard for me to complete long-term school projects",
-            "I dabbled in many hobbies or activities, but never really persevered in my efforts",
-            "Although I took different types of lessons as a child, I rarely or never practiced"
-        ]
-    },
-    {
-        name: "Problems with underarousal",
-        stateName: "underarousal",
-        questions: [
-            "I felt sleepy when sitting in class, but felt energetic as soon as I stood up and moved",
-            "It was difficult to get up in the morning",
-            "I wasn't alert until late in the morning",
-            "I didn't seem to have as much energy as most of my friends"
-        ]
-    },
-    {
-        name: "Procrastination problems",
-        stateName: "procrastination",
-        questions: [
-            "I was smart, but got by doing everything at the last minute",
-            "I handed in my homework late, if I did it at all",
-            "The only way I could really study for a test was to stay up very late the night before"
-        ]
-    },
-    {
-        name: "Low motivation / underachievement",
-        stateName: "underachievement",
-        questions: [
-            "I didn't do as well in school as I felt I should have",
-            "I got by on my intelligence, and didn't really try hard in school",
-            "My parents and teachers told me I could do much better if I tried",
-            "I started each grading period with good intentions, but could never sustain them"
+            "I tend not to finish doing laundry - it's always 'in progress'",
+            "I have many unfinished projects that I intend to 'get around to'",
+            "I pick up and drop hobbies or interests",
+            "I don't meet the long-term goals I set for myself"
         ]
     },
     {

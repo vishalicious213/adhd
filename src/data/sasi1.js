@@ -19,10 +19,10 @@ export const sasi1Questions = [
             "I was a tomboy",
             "It was hard for me to sit still in class",
             "I felt best when I was moving around - playing sports or dancing",
-            "It was hard to fall asleep at bedtime because thoughts were bouncing around in my brain.",
-            "I often doodled or fidgeted when I had to sit still.",
+            "It was hard to fall asleep at bedtime because thoughts were bouncing around in my brain",
+            "I often doodled or fidgeted when I had to sit still",
             "My friends called me 'hyper'",
-            "When sitting, I tended to 'tip' my chair or jiggle my legs."
+            "When sitting, I tended to 'tip' my chair or jiggle my legs"
         ]
     },
     {

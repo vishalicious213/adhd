@@ -299,7 +299,7 @@ export const sasi2Questions = [
         stateName: "esteem",
         questions: [
             "I tend to hide many aspects of my life, fearing that I'll be judged negatively",
-            "People think too highly of me, and I fear that I'll be 'found out.'",
+            "People think too highly of me, and I fear that I'll be 'found out'",
             "I have often felt “stupid” because I couldn't seem to accomplish things that others could"
         ]
     },
@@ -435,7 +435,7 @@ export const sasi2Questions = [
         questions: [
             "I was repeatedly humiliated or psychologically abused in the classroom as a girl",
             "I have been in an abusive relationship as an adult",
-            "I have been physically, sexually, or emotionally abused.",
+            "I have been physically, sexually, or emotionally abused",
             "Events that are not particularly traumatic for others trigger intense and repetitive anxiety reactions in me",
             "I have nightmares, flashbacks, and/or extreme anxiety as a result of traumatic event(s) in my past"
         ]

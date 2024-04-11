@@ -7,7 +7,11 @@ const RenderSasiQuestions = ({data, onchange, state}) => {
             {category.type && 
                 <>
                     {category.section && <h2 className="sasi-section">{category.section}</h2>}
-                    <RenderSasiCheckbox questions={category.questions} />
+                    <RenderSasiCheckbox 
+                        questions={category.questions} 
+                        onchange={onchange}
+                        state={state}
+                    />
                 </>
             }
 

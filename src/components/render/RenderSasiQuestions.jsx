@@ -33,6 +33,7 @@ const RenderSasiQuestions = ({data, onchange, state}) => {
                                             value={state[item]}
                                             onChange={onchange}
                                             name={item} 
+                                            className="sasi-select"
                                         >
                                             <option value=""></option>
                                             <option value="0">0</option>

@@ -223,11 +223,20 @@ button:hover {
     background-color: var(--lightborder);
     padding: .25rem .5rem;
     border-radius: .25rem;
-    /* margin-top: 1.5rem; */
+}
+
+.sasi-question {
+    display: grid;
+    grid-template-columns: 2rem auto;
+    gap: .5rem;
 }
 
 .sasi-question:last-child {
     margin-bottom: .5rem;
+}
+
+.sasi-select {
+    align-self: start;
 }
 
 /* MEDIA QUERIES */

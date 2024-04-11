@@ -1,7 +1,7 @@
 import React from 'react'
 import RenderSasiCheckbox from './RenderSasiCheckbox'
 
-const RenderSasiQuestions = ({data, onchange, oncheck, state}) => {
+const RenderSasiQuestions = ({data, onchange, state}) => {
     return (
         data.map(category => (<div key={category.stateName}>
             {category.type && 
@@ -10,7 +10,7 @@ const RenderSasiQuestions = ({data, onchange, oncheck, state}) => {
                     {category.prompt && <p className="text no-border">{category.prompt}</p>}
                     <RenderSasiCheckbox 
                         questions={category.questions} 
-                        onchange={oncheck}
+                        onchange={onchange}
                         state={state}
                         stateName={category.stateName}
                     />

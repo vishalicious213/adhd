@@ -7,22 +7,13 @@ const Sasi2 = () => {
     const [part2, setPart2] = useState({})
 
     function handleChange(event) {
-        const { name, value } = event.target
+        const { name, value, type, checked } = event.target
         setPart2(prevFormData => {
             return {
                 ...prevFormData,
-                [name]: value,
+                [name]: type === "checkbox" ? checked : value,
             }
         })
-        console.log(part2)
-    }
-
-    function handleCheck(event) {
-        const { name, checked } = event.target
-        setPart2(prevFormData => ({
-            ...prevFormData,
-            [name]: checked,
-        }))
     }
 
     function RenderAllQuestions() {
@@ -31,7 +22,6 @@ const Sasi2 = () => {
                 <RenderSasiQuestions 
                     data={sasi2Questions} 
                     onchange={handleChange} 
-                    oncheck={handleCheck}
                     state={part2} 
                 />
             </form>

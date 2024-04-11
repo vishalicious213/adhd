@@ -178,7 +178,8 @@ button:hover {
 }
 
 .tool:hover {
-    background: var(--main-light);
+    border: 1px solid var(--btn-hover);
+    background: linear-gradient(var(--background-gradient), var(--main));
 }
 
 .tool button {

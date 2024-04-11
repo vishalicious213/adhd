@@ -3,20 +3,25 @@ import RenderSasiCheckbox from './RenderSasiCheckbox'
 
 const RenderSasiQuestions = ({data, onchange, state}) => {
     return (
-        data.map(category => 
-            <div key={category.stateName}>
-                {category.section && <h2 className="sasi-section">{category.section}</h2>}
-                {category.name && <h3 className="sasi-category">{category.name}</h3>}
-                <div className="sasi-container">
-                    {
-                        category.questions.map((q, index) => {
-                            let item = `${category.stateName}${index}`
+        data.map(category => (<div key={category.stateName}>
+            {category.type && 
+                <>
+                    {category.section && <h2 className="sasi-section">{category.section}</h2>}
+                    <RenderSasiCheckbox questions={category.questions} />
+                </>
+            }
 
-                            return (
-                                <div key={index} className="sasi-question">
-                                    {category.type && <RenderSasiCheckbox questions={category.questions} />}
+            {!category.type &&
+                <div key={category.stateName}>
+                    {category.section && <h2 className="sasi-section">{category.section}</h2>}
+                    {category.name && <h3 className="sasi-category">{category.name}</h3>}
+                    <div className="sasi-container">
+                        {
+                            category.questions.map((q, index) => {
+                                let item = `${category.stateName}${index}`
 
-                                    {!category.type && <>
+                                return (
+                                    <div key={index} className="sasi-question">
                                         <select 
                                             id={item}
                                             value={state[item]}
@@ -31,15 +36,54 @@ const RenderSasiQuestions = ({data, onchange, state}) => {
                                             <option value="?">?</option>
                                         </select>
                                         <label className="text" htmlFor={item}>{q}</label>
-                                    </>}
-                                </div>
-                            )
-                        })
-                    }
+                                    </div>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
-            </div>
-        )
+            }
+        </div>))
     )
 }
 
 export default RenderSasiQuestions
+
+// return (
+//     data.map(category => 
+//         <div key={category.stateName}>
+//             {category.section && <h2 className="sasi-section">{category.section}</h2>}
+//             {category.name && <h3 className="sasi-category">{category.name}</h3>}
+//             <div className="sasi-container">
+//                 {
+//                     category.questions.map((q, index) => {
+//                         let item = `${category.stateName}${index}`
+
+//                         return (
+//                             <div key={index} className="sasi-question">
+//                                 {category.type && <RenderSasiCheckbox questions={category.questions} />}
+
+//                                 {!category.type && <>
+//                                     <select 
+//                                         id={item}
+//                                         value={state[item]}
+//                                         onChange={onchange}
+//                                         name={item} 
+//                                     >
+//                                         <option value=""></option>
+//                                         <option value="0">0</option>
+//                                         <option value="1">1</option>
+//                                         <option value="2">2</option>
+//                                         <option value="3">3</option>
+//                                         <option value="?">?</option>
+//                                     </select>
+//                                     <label className="text" htmlFor={item}>{q}</label>
+//                                 </>}
+//                             </div>
+//                         )
+//                     })
+//                 }
+//             </div>
+//         </div>
+//     )
+// )

@@ -1,11 +1,13 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
+import { NavContext } from '../landing'
 import RenderSasiQuestions from '../render/RenderSasiQuestions'
 import SasiFooter from './SasiFooter'
 import { sasi1Questions } from '../../data/sasi1'
 
 const Sasi1 = () => {
     const [part1, setPart1] = useState({})
+    const { handleClick } = useContext(NavContext)
 
     function handleChange(event) {
         const { name, value } = event.target
@@ -49,7 +51,7 @@ const Sasi1 = () => {
 
             {RenderAllQuestions()}
 
-            <SasiFooter />
+            <SasiFooter onclick={handleClick} />
         </>
     )
 }

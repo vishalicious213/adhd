@@ -5,7 +5,7 @@ import Instructions from './Instructions'
 import SasiFooter from './SasiFooter'
 
 const Sasi = ({ onclick }) => {
-    const { selected, handleClick } = useContext(NavContext)
+    const { handleClick } = useContext(NavContext)
     return (
         <>
             <Instructions onclick={onclick} />

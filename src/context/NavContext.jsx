@@ -1,13 +1,19 @@
-import { createContext } from "react"
+import { createContext, useState } from "react"
 
 const NavContext = createContext()
 
-export default function NavContext() {
+export default function NavContextWrapper() {
+    const [selected, setSelected] = useState("home")
+
+    function handleRenderClick(choice) {
+        setSelected(choice)
+    }
+
     return (
-        <NavContext.Provider value="">
+        <NavContext.Provider value={{ selected, handleRenderClick }}>
 
         </NavContext.Provider>
     )
 }
 
-export { NavContext }
+export { NavContextWrapper }

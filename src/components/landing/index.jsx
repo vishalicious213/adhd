@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, createContext } from 'react'
 import Asrs1 from '../asrs1'
 import Asrs5 from '../asrs5'
 import Sasi from '../sasi'
@@ -7,6 +7,8 @@ import Sasi1 from '../sasi/Sasi1'
 import Sasi2 from '../sasi/Sasi2'
 import RenderSection from './RenderSection'
 import { sectionsAdhdArray } from '../../data/sectionsAdhd'
+
+const NavContext = createContext()
 
 const Index = () => {
     const [selected, setSelected] = useState("home")
@@ -31,7 +33,7 @@ const Index = () => {
     }
 
     return (
-        <div>
+        <NavContext.Provider value={{ selected, handleClick }}>
             <nav>
                 <button onClick={() => handleClick("home")}>HOME</button>
                 <button onClick={() => handleClick("adhd")}>ADHD</button>
@@ -48,8 +50,9 @@ const Index = () => {
                 ""
                 }
             </div>
-        </div>
+        </NavContext.Provider>
     )
 }
 
 export default Index
+export { NavContext }

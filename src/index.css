@@ -7,12 +7,16 @@
     --lightborder: rgba(240, 248, 255, .25);
     --btn-back: #969CB8;
     --btn-hover: #EAEBF0;
+    --background-gradient: #493472;
 }
 
 body {
-    background: var(--main);
+    background: linear-gradient(var(--main), var(--background-gradient));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--text);
     padding: 1rem .5rem;
+    height: 100vh;
 }
 
 h1 {

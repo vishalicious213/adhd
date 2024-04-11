@@ -15,6 +15,7 @@ const Index = () => {
 
     function handleClick(choice) {
         setSelected(choice)
+        window.scrollTo(0, 0)
     }
 
     function RenderSectionArray({ sectionArr }) {

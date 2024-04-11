@@ -5,12 +5,8 @@ const RenderSasiCheckbox = ({ questions }) => {
     console.log(typeof questions)
     return (
         <section id="checkbox-questions">
-            {
-                questions.map(q =><div key={q}>{q}</div>)
-            }
-
-            {/* {questions.map(q => (
-                <div key={q.id}>
+            {questions.map((q, index) => (
+                <div key={index}>
                     <label className="text checkbox-label">
                         <input 
                             id={q.id}
@@ -18,11 +14,11 @@ const RenderSasiCheckbox = ({ questions }) => {
                             className="asrs5checkbox"
                         />
                         <div>
-                            {q.text}
+                            {q}
                         </div>
                     </label>
                 </div>
-            ))} */}
+            ))}
         </section>
     )
 }

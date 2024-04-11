@@ -1,4 +1,5 @@
 import React from 'react'
+import RenderSasiCheckbox from './RenderSasiCheckbox'
 
 const RenderSasiQuestions = ({data, onchange, state}) => {
     return (
@@ -13,7 +14,7 @@ const RenderSasiQuestions = ({data, onchange, state}) => {
 
                             return (
                                 <div key={index} className="sasi-question">
-                                    {category.type && <div>CHECK</div>}
+                                    {category.type && <RenderSasiCheckbox questions={category.questions} />}
 
                                     {!category.type && <>
                                         <select 

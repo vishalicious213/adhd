@@ -4,11 +4,11 @@ import RenderSasiQuestions from '../render/RenderSasiQuestions'
 import { sasi2Questions } from '../../data/sasi2'
 
 const Sasi2 = () => {
-    const [part2, setPart1] = useState({})
+    const [part2, setPart2] = useState({})
 
     function handleChange(event) {
         const { name, value } = event.target
-        setPart1(prevFormData => {
+        setPart2(prevFormData => {
             return {
                 ...prevFormData,
                 [name]: value,
@@ -17,12 +17,21 @@ const Sasi2 = () => {
         console.log(part2)
     }
 
+    function handleCheck(event) {
+        const { name, checked } = event.target
+        setPart2(prevFormData => ({
+            ...prevFormData,
+            [name]: checked,
+        }))
+    }
+
     function RenderAllQuestions() {
         return (
             <form>
                 <RenderSasiQuestions 
                     data={sasi2Questions} 
                     onchange={handleChange} 
+                    oncheck={handleCheck}
                     state={part2} 
                 />
             </form>

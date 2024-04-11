@@ -12,6 +12,7 @@ const RenderSasiQuestions = ({data, onchange, state}) => {
                         questions={category.questions} 
                         onchange={onchange}
                         state={state}
+                        stateName={category.stateName}
                     />
                 </>
             }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import RenderSasiQuestions from '../render/RenderSasiQuestions'
+import SasiFooter from './SasiFooter'
 import { sasi1Questions } from '../../data/sasi1'
 
 const Sasi1 = () => {
@@ -47,6 +48,8 @@ const Sasi1 = () => {
             </div>
 
             {RenderAllQuestions()}
+
+            <SasiFooter />
         </>
     )
 }

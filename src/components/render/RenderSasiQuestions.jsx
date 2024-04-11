@@ -6,7 +6,8 @@ const RenderSasiQuestions = ({data, onchange, state}) => {
         data.map(category => (<div key={category.stateName}>
             {category.type && 
                 <>
-                    {category.section && <h2 className="sasi-section">{category.section}</h2>}
+                    <h2 className="sasi-section">{category.section}</h2>
+                    {category.prompt && <p className="text no-border">{category.prompt}</p>}
                     <RenderSasiCheckbox 
                         questions={category.questions} 
                         onchange={onchange}

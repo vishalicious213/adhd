@@ -14,9 +14,7 @@ const RenderSasiCheckbox = ({ questions, onchange, state }) => {
                             type="checkbox" 
                             className="asrs5checkbox"
                         />
-                        <div>
-                            {q}
-                        </div>
+                        <div>{q}</div>
                     </label>
                 </div>
             ))}

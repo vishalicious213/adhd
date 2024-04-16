@@ -9,7 +9,7 @@ import Score from './Score'
 const Asrs5Context = createContext()
 
 const Asrs5 = () => {
-    const [formData, setFormData] = useState({
+    const [asrs5Data, setAsrs5Data] = useState({
         answer1: "",
         answer2: "",
         answer3: "",
@@ -22,8 +22,8 @@ const Asrs5 = () => {
 
     return (
         <Asrs5Context.Provider value={{
-            formData, 
-            setFormData,
+            asrs5Data, 
+            setAsrs5Data,
             score,
             setScore,
             complete,
@@ -31,8 +31,8 @@ const Asrs5 = () => {
         }}>
             <Instructions />
             <Form />
-            <SaveAndDelete name="asrs5" data={formData} reset={setFormData} />
-            <Score scores={formData} />
+            <SaveAndDelete name="asrs5" data={asrs5Data} reset={setAsrs5Data} />
+            <Score scores={asrs5Data} />
         </Asrs5Context.Provider>
     )
 }

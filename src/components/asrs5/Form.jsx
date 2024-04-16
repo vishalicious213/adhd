@@ -7,13 +7,13 @@ import loadLocalData from '../../utilities/loadLocalData'
 import { questionsArray, additionalQuestions } from '../../data/asrs5'
 
 const Form = () => {
-    const { formData, setFormData } = useContext(Asrs5Context)
+    const { asrs5Data, setAsrs5Data } = useContext(Asrs5Context)
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const savedData = await loadLocalData("asrs5")
-                setFormData(savedData)
+                setAsrs5Data(savedData)
             } catch (error) {
                 console.error("No saved data found for ASRS5 tool")
             }
@@ -24,7 +24,7 @@ const Form = () => {
 
     function handleChange(event) {
         const { name, value } = event.target
-        setFormData(prevFormData => {
+        setAsrs5Data(prevFormData => {
             return {
                 ...prevFormData,
                 [name]: value,
@@ -38,7 +38,7 @@ const Form = () => {
                 question={q.text} 
                 num={q.id} 
                 key={q.id} 
-                checked={Object.values(formData)[q.id - 1]}
+                checked={Object.values(asrs5Data)[q.id - 1]}
                 handleChange={handleChange}
             />)}
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
 import RenderCheckboxQuestions from '../render/RenderCheckboxQuestions'
 import Score from './Score'
@@ -16,6 +16,19 @@ const Form = () => {
         answer5: "",
         answer6: "",
     })
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const savedData = await loadLocalData("asrs5")
+                setFormData(savedData)
+            } catch (error) {
+                console.error("No saved data found for ASRS5 tool")
+            }
+        }
+
+        fetchData()
+    }, [])
 
     function handleChange(event) {
         const { name, value } = event.target

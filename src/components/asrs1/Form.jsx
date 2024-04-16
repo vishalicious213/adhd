@@ -32,11 +32,10 @@ const Form = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const savedData = await JSON.parse(localStorage.getItem("asrs1"))
-                console.log(savedData)
+                const savedData = await loadLocalData("asrs1")
                 setFormData(savedData)
             } catch (error) {
-                console.error("Error loading data from localStorage")
+                console.error("No saved data found for ASRS1 tool")
             }
         }
 

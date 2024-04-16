@@ -3,6 +3,7 @@ import { useState, createContext } from "react"
 
 import Instructions from "./Instructions"
 import Form from "./Form"
+import LocalData from '../../utilities/saveLocalData'
 import Score from './Score'
 
 const Asrs5Context = createContext()
@@ -30,6 +31,7 @@ const Asrs5 = () => {
         }}>
             <Instructions />
             <Form />
+            <LocalData name="asrs5" data={formData} reset={setFormData} />
             <Score scores={formData} />
         </Asrs5Context.Provider>
     )

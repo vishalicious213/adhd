@@ -3,7 +3,6 @@ import { useContext, useEffect } from 'react'
 import { Asrs5Context } from '.'
 import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
 import RenderCheckboxQuestions from '../render/RenderCheckboxQuestions'
-import LocalData from '../../utilities/saveLocalData'
 import loadLocalData from '../../utilities/loadLocalData'
 import { questionsArray, additionalQuestions } from '../../data/asrs5'
 
@@ -45,8 +44,6 @@ const Form = () => {
 
             <h3>Additional screening questions highly suggestive of ADHD:</h3>
             <RenderCheckboxQuestions questions={additionalQuestions} />
-
-            <LocalData name="asrs5" data={formData} reset={setFormData} />
         </>
     )
 }

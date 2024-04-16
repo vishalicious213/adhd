@@ -7,7 +7,8 @@ const LocalData = ({ name, data }) => {
     }
     
     function load(name) {
-        console.log("LOAD FROM LOCALSTORAGE", name)
+        let savedData = JSON.parse(localStorage.getItem(name))
+        console.log("LOAD FROM LOCALSTORAGE", savedData)
     }
 
     return (

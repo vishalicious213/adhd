@@ -1,9 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useContext, useEffect } from 'react'
+import { Asrs5Context } from '.'
 
 const Score = ({ scores }) => {
-    const [score, setScore] = useState(0)
-    const [complete, setComplete] = useState(false)
+    const { score, setScore, complete, setComplete } = useContext(Asrs5Context)
 
     // if form data is saved calculate score with it on page load
     useEffect(() => {

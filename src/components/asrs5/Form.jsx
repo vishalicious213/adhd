@@ -1,5 +1,6 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useContext, useEffect } from 'react'
+import { Asrs5Context } from '.'
 import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
 import RenderCheckboxQuestions from '../render/RenderCheckboxQuestions'
 import Score from './Score'
@@ -8,14 +9,7 @@ import loadLocalData from '../../utilities/loadLocalData'
 import { questionsArray, additionalQuestions } from '../../data/asrs5'
 
 const Form = () => {
-    const [formData, setFormData] = useState({
-        answer1: "",
-        answer2: "",
-        answer3: "",
-        answer4: "",
-        answer5: "",
-        answer6: "",
-    })
+    const { formData, setFormData } = useContext(Asrs5Context)
 
     useEffect(() => {
         const fetchData = async () => {

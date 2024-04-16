@@ -143,8 +143,10 @@ label {
 }
 
 #score {
-    display: flex;
-    gap: 2rem;
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    margin: 1rem auto;
 }
 
 button {

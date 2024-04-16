@@ -3,7 +3,7 @@ import { useContext, useEffect } from 'react'
 import { Asrs5Context } from '.'
 
 const Score = ({ scores }) => {
-    const { score, setScore, complete, setComplete } = useContext(Asrs5Context)
+    const { asrs5Score, setAsrs5Score, asrs5Complete, setAsrs5Complete } = useContext(Asrs5Context)
 
     // if form data is saved calculate score with it on page load
     useEffect(() => {
@@ -17,7 +17,7 @@ const Score = ({ scores }) => {
         let adhdScore = 0
         let scoresArray = Object.values(scores)
         let unfinishedQuestions = 6
-        setComplete(false)
+        setAsrs5Complete(false)
 
         scoresArray.forEach(arrScore => {
             if (arrScore != "") {
@@ -42,8 +42,8 @@ const Score = ({ scores }) => {
         })
 
         if (unfinishedQuestions === 0) {
-            setScore(adhdScore)
-            setComplete(true)
+            setAsrs5Score(adhdScore)
+            setAsrs5Complete(true)
         }
     }
 
@@ -51,9 +51,9 @@ const Score = ({ scores }) => {
         <div id="score">
             <button className="score-btn" onClick={getScore}>SCORE</button>
             <div className="text">
-                { !complete ? `Please answer all 6 questions`
-                : score >= 14 ? `Score of ${score} suggests ADHD is possible` 
-                : `Score of ${score} suggests ADHD is unlikely` }
+                { !asrs5Complete ? `Please answer all 6 questions`
+                : asrs5Score >= 14 ? `Score of ${asrs5Score} suggests ADHD is possible` 
+                : `Score of ${asrs5Score} suggests ADHD is unlikely` }
             </div>
         </div>
     )

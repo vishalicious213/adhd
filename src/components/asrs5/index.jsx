@@ -17,17 +17,17 @@ const Asrs5 = () => {
         answer5: "",
         answer6: "",
     })
-    const [score, setScore] = useState(0)
-    const [complete, setComplete] = useState(false)
+    const [asrs5Score, setAsrs5Score] = useState(0)
+    const [asrs5Complete, setAsrs5Complete] = useState(false)
 
     return (
         <Asrs5Context.Provider value={{
             asrs5Data, 
             setAsrs5Data,
-            score,
-            setScore,
-            complete,
-            setComplete
+            asrs5Score,
+            setAsrs5Score,
+            asrs5Complete,
+            setAsrs5Complete
         }}>
             <Instructions />
             <Form />

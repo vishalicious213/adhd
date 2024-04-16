@@ -3,7 +3,8 @@ import { useState } from 'react'
 import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
 import Score from './Score'
 import { questionsArray } from '../../data/asrs1'
-import { save } from '../../utilities/getLocalData'
+// import { save } from '../../utilities/getLocalData'
+import LocalData from '../../utilities/getLocalData'
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -35,8 +36,6 @@ const Form = () => {
                 [name]: value,
             }
         })
-
-        save("asrs1", formData)
     }
 
     return (
@@ -50,6 +49,7 @@ const Form = () => {
             />)}
 
             <Score scores={formData} />
+            <LocalData name="asrs1" data={formData} />
         </>
     )
 }

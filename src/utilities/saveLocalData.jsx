@@ -5,14 +5,6 @@ const LocalData = ({ name, data }) => {
         console.log("SAVE TO LOCALSTORAGE", name, data)
         localStorage.setItem(name, JSON.stringify(data))
     }
-    
-    // function load(name) {
-    //     let savedData = JSON.parse(localStorage.getItem(name))
-    //     console.log("LOAD FROM LOCALSTORAGE", savedData)
-    //     console.log("real data", localStorage.getItem(name))
-    //     console.log("fake data", localStorage.getItem("name"))
-    //     if (localStorage.getItem(name)) {console.log("there's data")}
-    // }
 
     function remove(name) {
         console.log("DELETING FROM LOCALSTORAGE")
@@ -23,7 +15,6 @@ const LocalData = ({ name, data }) => {
     return (
         <div id="save-delete">
             <button className="score-btn" onClick={() => save(name, data)}>SAVE ANSWERS</button>
-            {/* <button className="score-btn" onClick={() => load(name)}>LOAD</button> */}
             <button className="score-btn" onClick={() => remove(name)}>DELETE ANSWERS</button>
         </div>
     )

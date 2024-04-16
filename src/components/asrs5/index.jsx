@@ -3,6 +3,7 @@ import { useState, createContext } from "react"
 
 import Instructions from "./Instructions"
 import Form from "./Form"
+import Score from './Score'
 
 const Asrs5Context = createContext()
 
@@ -29,6 +30,7 @@ const Asrs5 = () => {
         }}>
             <Instructions />
             <Form />
+            <Score scores={formData} />
         </Asrs5Context.Provider>
     )
 }

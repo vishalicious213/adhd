@@ -16,6 +16,7 @@ body {
     background-attachment: fixed;
     color: var(--text);
     padding: 1rem .5rem;
+    margin-bottom: 5rem;
 }
 
 h1 {
@@ -144,7 +145,6 @@ label {
 #score {
     display: flex;
     gap: 2rem;
-    margin-bottom: 5rem;
 }
 
 button {

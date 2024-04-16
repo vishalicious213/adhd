@@ -1,10 +1,11 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
 import Score from './Score'
 import { questionsArray } from '../../data/asrs1'
 // import { save } from '../../utilities/getLocalData'
 import LocalData from '../../utilities/saveLocalData'
+import loadLocalData from '../../utilities/loadLocalData'
 
 const Form = () => {
     const [formData, setFormData] = useState({
@@ -27,6 +28,20 @@ const Form = () => {
         answer17: "",
         answer18: "",
     })
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const savedData = await JSON.parse(localStorage.getItem("asrs1"))
+                console.log(savedData)
+                setFormData(savedData)
+            } catch (error) {
+                console.error("Error loading data from localStorage")
+            }
+        }
+
+        fetchData()
+    }, [])
 
     function handleChange(event) {
         const { name, value } = event.target

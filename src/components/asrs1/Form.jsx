@@ -2,7 +2,7 @@ import React from 'react'
 import { useState, useEffect } from 'react'
 import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
 import Score from './Score'
-import LocalData from '../../utilities/saveLocalData'
+import SaveAndDelete from '../../utilities/saveLocalData'
 import loadLocalData from '../../utilities/loadLocalData'
 import { questionsArray } from '../../data/asrs1'
 
@@ -61,7 +61,7 @@ const Form = () => {
                 handleChange={handleChange}
             />)}
 
-            <LocalData name="asrs1" data={formData} reset={setFormData} />
+            <SaveAndDelete name="asrs1" data={formData} reset={setFormData} />
             <Score scores={formData} />
         </>
     )

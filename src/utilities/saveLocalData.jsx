@@ -14,17 +14,17 @@ const LocalData = ({ name, data }) => {
     //     if (localStorage.getItem(name)) {console.log("there's data")}
     // }
 
-    // function remove(name) {
-    //     console.log("DELETING FROM LOCALSTORAGE")
-    //     localStorage.removeItem(name)
-    //     console.log(localStorage.getItem(name))
-    // }
+    function remove(name) {
+        console.log("DELETING FROM LOCALSTORAGE")
+        localStorage.removeItem(name)
+        console.log(localStorage.getItem(name))
+    }
 
     return (
-        <div id="score">
-            <button className="score-btn" onClick={() => save(name, data)}>SAVE TO DEVICE</button>
+        <div id="save-delete">
+            <button className="score-btn" onClick={() => save(name, data)}>SAVE ANSWERS</button>
             {/* <button className="score-btn" onClick={() => load(name)}>LOAD</button> */}
-            {/* <button className="score-btn" onClick={() => remove(name)}>DELETE</button> */}
+            <button className="score-btn" onClick={() => remove(name)}>DELETE ANSWERS</button>
         </div>
     )
 }

@@ -39,7 +39,7 @@ const Score = ({ scores }) => {
 
     return (
         <div id="score">
-            <button className="score-btn" onClick={getScore}>SCORE</button>
+            <button className="score-btn" onClick={getScore}>GET SCORE</button>
             <div className="text">
                 { !complete ? `Please answer all 6 questions` 
                 : score < 4 ? "ADHD unlikely" 

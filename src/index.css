@@ -146,6 +146,13 @@ label {
     display: grid;
     gap: 1rem;
     text-align: center;
+    margin: 1.5rem auto 1rem;
+}
+
+#save-delete {
+    display: grid;
+    gap: .5rem;
+    text-align: center;
     margin: 1rem auto;
 }
 

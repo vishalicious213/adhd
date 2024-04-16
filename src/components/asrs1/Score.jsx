@@ -1,9 +1,17 @@
 import React from 'react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 const Score = ({ scores }) => {
     const [score, setScore] = useState(0)
     const [complete, setComplete] = useState(false)
+
+    // if form data is saved calculate score with it on page load
+    useEffect(() => {
+        if (localStorage.getItem("asrs1")) {
+            scores = JSON.parse(localStorage.getItem("asrs1"))
+            getScore()
+        }
+    }, [])
 
     function getScore() {
         let adhdScore = 0

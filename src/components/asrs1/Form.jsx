@@ -61,7 +61,7 @@ const Form = () => {
                 handleChange={handleChange}
             />)}
 
-            <LocalData name="asrs1" data={formData} />
+            <LocalData name="asrs1" data={formData} reset={setFormData} />
             <Score scores={formData} />
         </>
     )

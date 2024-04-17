@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useContext } from 'react'
 import { NavContext } from '../landing'
 import RenderSasiQuestions from '../render/RenderSasiQuestions'
+import SaveAndDelete from '../../utilities/saveLocalData'
 import SasiFooter from './SasiFooter'
 import { sasi1Questions } from '../../data/sasi1'
 
@@ -51,6 +52,7 @@ const Sasi1 = () => {
 
             {RenderAllQuestions()}
 
+            <SaveAndDelete name="sasi1" data={part1} reset={setPart1} />
             <SasiFooter onclick={handleClick} />
         </>
     )

@@ -26,6 +26,16 @@ const SaveAndDelete = ({ name, data, reset }) => {
             reset(resetAsrs5State)
             setAsrs5Complete(false)
         }
+
+        if (name === "sasi1") {
+            console.log("before", data)
+            reset({})
+            console.log("after", data)
+        }
+
+        if (name === "sasi2") {
+            reset({})
+        }
     }
 
     return (

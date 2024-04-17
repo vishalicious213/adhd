@@ -6,7 +6,7 @@ const resetAsrs1State = { answer1: "", answer2: "", answer3: "", answer4: "", an
 const resetAsrs5State = { answer1: "", answer2: "", answer3: "", answer4: "", answer5: "", answer6: "" }
 
 const SaveAndDelete = ({ name, data, reset }) => {
-    const { setAsrs5Complete } = useContext(Asrs5Context)
+    const { setAsrs5Complete } = useContext(Asrs5Context) || { setAsrs5Complete: () => {} }
 
     function save(name, data) {
         // console.log("SAVE TO LOCALSTORAGE", name, data)

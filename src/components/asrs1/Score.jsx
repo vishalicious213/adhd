@@ -1,9 +1,9 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useContext, useEffect } from 'react'
+import { Asrs1Context } from '.'
 
 const Score = ({ scores }) => {
-    const [score, setScore] = useState(0)
-    const [complete, setComplete] = useState(false)
+    const {asrs1Score, setAsrs1Score, asrs1Complete, setAsrs1Complete} = useContext(Asrs1Context)
 
     // if form data is saved calculate score with it on page load
     useEffect(() => {
@@ -17,7 +17,7 @@ const Score = ({ scores }) => {
         let adhdScore = 0
         let scoresArray = Object.values(scores)
         let unfinishedQuestions = 6
-        setComplete(false)
+        setAsrs1Complete(false)
 
         // loop through answers and increment score appropriately
         for (let i = 0; i < 6; i++) {
@@ -40,8 +40,8 @@ const Score = ({ scores }) => {
         })
 
         if (unfinishedQuestions === 0) {
-            setScore(adhdScore)
-            setComplete(true)
+            setAsrs1Score(adhdScore)
+            setAsrs1Complete(true)
         }
     }
 
@@ -49,9 +49,9 @@ const Score = ({ scores }) => {
         <div id="score">
             <button className="score-btn" onClick={getScore}>GET SCORE</button>
             <div className="text">
-                { !complete ? `Please answer all 6 questions` 
-                : score < 4 ? "ADHD unlikely" 
-                : score < 6 ? "ADHD possible" 
+                { !asrs1Complete ? `Please answer all 6 questions` 
+                : asrs1Score < 4 ? "ADHD unlikely" 
+                : asrs1Score < 6 ? "ADHD possible" 
                 : "ADHD likely" }
             </div>
         </div>

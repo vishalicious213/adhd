@@ -27,11 +27,17 @@ const Asrs1 = () => {
         answer17: "",
         answer18: "",
     })
+    const [asrs1Score, setAsrs1Score] = useState(0) 
+    const [asrs1Complete, setAsrs1Complete] = useState(false)
 
     return (
         <Asrs1Context.Provider value={{
             asrs1Data,
-            setAsrs1Data
+            setAsrs1Data,
+            asrs1Score, 
+            setAsrs1Score,
+            asrs1Complete, 
+            setAsrs1Complete
         }}>
             <Instructions />
             <Form />

@@ -1,14 +1,28 @@
 import React from 'react'
-import { useState, useContext } from 'react'
+import { useState, useContext, useEffect } from 'react'
 import { NavContext } from '../landing'
 import RenderSasiQuestions from '../render/RenderSasiQuestions'
 import SaveAndDelete from '../../utilities/saveLocalData'
 import SasiFooter from './SasiFooter'
+import loadLocalData from '../../utilities/loadLocalData'
 import { sasi2Questions } from '../../data/sasi2'
 
 const Sasi2 = () => {
     const [part2, setPart2] = useState({})
     const { handleClick } = useContext(NavContext)
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const savedData = await loadLocalData("sasi2")
+                setPart2(savedData)
+            } catch (error) {
+                console.error("No saved data found for SASI2 tool")
+            }
+        }
+
+        fetchData()
+    }, [])
 
     function handleChange(event) {
         const { name, value, type, checked } = event.target

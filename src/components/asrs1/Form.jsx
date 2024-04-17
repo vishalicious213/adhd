@@ -2,7 +2,6 @@ import React from 'react'
 import { useContext, useEffect } from 'react'
 import { Asrs1Context } from '.'
 import ADHDScaleQuestions from '../render/AdhdScaleQuestions'
-import SaveAndDelete from '../../utilities/saveLocalData'
 import loadLocalData from '../../utilities/loadLocalData'
 import { questionsArray } from '../../data/asrs1'
 
@@ -41,8 +40,6 @@ const Form = () => {
                 checked={Object.values(asrs1Data)[q.id - 1]}
                 handleChange={handleChange}
             />)}
-
-            <SaveAndDelete name="asrs1" data={asrs1Data} reset={setAsrs1Data} />
         </>
     )
 }

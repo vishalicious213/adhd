@@ -40,7 +40,7 @@ const Index = () => {
                 <button onClick={() => handleClick("adhd")}>ADHD</button>
             </nav>
 
-            <div>{
+            <div id="main">{
                 selected === "home" ? "" :
                 selected === "adhd" ? <RenderSectionArray sectionArr={sectionsAdhdArray} /> :
                 selected === "asrs1" ? <Asrs1 /> :

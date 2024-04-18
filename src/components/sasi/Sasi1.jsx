@@ -32,7 +32,6 @@ const Sasi1 = () => {
                 [name]: value,
             }
         })
-        console.log(part1)
     }
 
     function RenderAllQuestions() {

@@ -379,32 +379,6 @@ label {
     .tools {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
-    /* .asrs1-bottom {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: 
-            "asrs1-score" "asrs1-buttons";
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .asrs1-score {
-        grid-area: asrs1-score;
-    } */
-
-    /* .asrs5-bottom {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        gap: 1rem;
-    }
-
-    .button-container button {
-        width: 100%;
-        max-width: 15rem;
-        margin: 0 auto;
-    } */
 }
 
 @media screen and (min-width: 1000px) {

@@ -128,8 +128,8 @@ nav {
     text-align: end;
     background-color: var(--main-light);
     border: 1px solid var(--offwhite);
-    border-top-left-radius: .5rem;
-    border-bottom-left-radius: .5rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
     padding: .5rem .5rem 1.5rem;
     box-sizing: border-box;
 }
@@ -151,6 +151,14 @@ nav {
     cursor: pointer;
     background: var(--btn-back);
     color: var(--main);
+}
+
+.show-nav {
+    display: block;
+}
+
+.hide-nav {
+    display: none;
 }
 
 menu {

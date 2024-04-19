@@ -12,6 +12,7 @@ const NavContext = createContext()
 
 const Index = () => {
     const [selected, setSelected] = useState("home")
+    const [showNav, setShowNav] = useState(false)
 
     function handleClick(choice) {
         setSelected(choice)
@@ -19,7 +20,8 @@ const Index = () => {
     }
 
     function handleNavClick() {
-        console.log("clicked")
+        setShowNav(!showNav)
+        console.log(showNav)
     }
 
     function RenderSectionArray({ sectionArr }) {
@@ -44,7 +46,7 @@ const Index = () => {
                     {/* <button onClick={() => handleClick("home")}>HOME</button> */}
                     {/* <button onClick={() => handleClick("adhd")}>ADHD</button> */}
                     <div className="trigram" onClick={handleNavClick}>☰</div>
-                    <div className="nav-menu">
+                    <div className={`nav-menu ${showNav ? "show-nav" : "hide-nav"}`}>
                         <div className="nav-item" onClick={() => handleClick("home")}>HOME</div>
                         <div className="nav-item" onClick={() => handleClick("adhd")}>ADHD</div>
                     </div>

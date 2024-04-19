@@ -102,11 +102,16 @@ nav {
     top: 0;
     width: 100%;
     max-width: 1250px;
-    display: flex;
-    gap: 1rem;
     background-color: var(--main);
     border-bottom: 1px solid var(--lightborder);
     padding: 2rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    padding-right: 1rem;
 }
 
 menu {

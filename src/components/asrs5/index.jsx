@@ -33,16 +33,16 @@ const Asrs5 = () => {
         }}>
             <Instructions />
             <Form />
-            <div className="asrs5-bottom">
+            {/* <div className="asrs5-bottom">
                 <div>
-                    <h3>Additional screening questions highly suggestive of ADHD:</h3>
-                    <RenderCheckboxQuestions questions={additionalQuestions} />
                 </div>
                 <div className="button-container">
+                </div>
+            </div> */}
+                    <h3>Additional screening questions highly suggestive of ADHD:</h3>
+                    <RenderCheckboxQuestions questions={additionalQuestions} />
                     <SaveAndDelete name="asrs5" data={asrs5Data} reset={setAsrs5Data} />
                     <Score scores={asrs5Data} />
-                </div>
-            </div>
         </Asrs5Context.Provider>
     )
 }

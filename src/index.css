@@ -57,13 +57,17 @@ button {
     border-radius: .25rem;
     border: none;
     font-weight: 600;
+    outline: 1px solid var(--lightborder);
     background: var(--btn-back);
+    /* background: linear-gradient(to right, var(--main), var(--btn-back), var(--main)); */
     color: var(--main);
 }
 
 button:hover {
     outline: 1px solid var(--offwhite);
     background: var(--btn-hover);
+    /* outline: none; */
+    /* background: linear-gradient(to right, var(--btn-back), var(--btn-hover), var(--btn-back)); */
     cursor: pointer;
 }
 
@@ -376,7 +380,7 @@ label {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .asrs1-bottom {
+    /* .asrs1-bottom {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
@@ -387,9 +391,9 @@ label {
 
     .asrs1-score {
         grid-area: asrs1-score;
-    }
+    } */
 
-    .asrs5-bottom {
+    /* .asrs5-bottom {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
@@ -400,7 +404,7 @@ label {
         width: 100%;
         max-width: 15rem;
         margin: 0 auto;
-    }
+    } */
 }
 
 @media screen and (min-width: 1000px) {

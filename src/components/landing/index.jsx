@@ -45,7 +45,6 @@ const Index = () => {
                 selected === "adhd" ? <RenderSectionArray sectionArr={sectionsAdhdArray} /> :
                 selected === "asrs1" ? <Asrs1 /> :
                 selected === "asrs5" ? <Asrs5 /> :
-                // selected === "sasi" ? <Sasi onclick={handleClick} /> :
                 selected === "sasi" ? <Sasi /> :
                 selected === "sasi1" ? <Sasi1 /> :
                 selected === "sasi2" ? <Sasi2 /> :

@@ -18,6 +18,10 @@ const Index = () => {
         window.scrollTo(0, 0)
     }
 
+    function handleNavClick() {
+        console.log("clicked")
+    }
+
     function RenderSectionArray({ sectionArr }) {
         let data = sectionArr[0]
 
@@ -39,7 +43,7 @@ const Index = () => {
                 <div className="nav-container">
                     {/* <button onClick={() => handleClick("home")}>HOME</button> */}
                     {/* <button onClick={() => handleClick("adhd")}>ADHD</button> */}
-                    <div className="trigram">☰</div>
+                    <div className="trigram" onClick={handleNavClick}>☰</div>
                 </div>
             </nav>
 

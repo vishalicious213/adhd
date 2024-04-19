@@ -43,8 +43,14 @@ const Asrs1 = () => {
         }}>
             <Instructions />
             <Form />
-            <SaveAndDelete name="asrs1" data={asrs1Data} reset={setAsrs1Data} />
-            <Score scores={asrs1Data} />
+            <div className="asrs1-bottom">
+                <div className="button-container asrs1-buttons">
+                    <SaveAndDelete name="asrs1" data={asrs1Data} reset={setAsrs1Data} />
+                </div>
+                <div className="button-container asrs1-score">
+                    <Score scores={asrs1Data} />
+                </div>
+            </div>
         </Asrs1Context.Provider>
     )
 }

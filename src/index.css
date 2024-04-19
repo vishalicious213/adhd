@@ -300,6 +300,19 @@ button:hover {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
+    .asrs1-bottom {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "asrs1-score" "asrs1-buttons";
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .asrs1-score {
+        grid-area: asrs1-score;
+    }
+
     .asrs5-bottom {
         display: grid;
         grid-template-columns: 1fr 1fr;

@@ -39,8 +39,8 @@ const SaveAndDelete = ({ name, data, reset }) => {
 
     return (
         <div id="save-delete">
-            <button className="save-btn" onClick={() => save(name, data)}>🖫</button>
-            <button className="save-btn" onClick={() => remove(name, reset)}>🗑</button>
+            <button className="save-btn" title="Save answers" onClick={() => save(name, data)}>🖫</button>
+            <button className="save-btn" title="Delete answers" onClick={() => remove(name, reset)}>🗑</button>
         </div>
     )
 }

@@ -3,8 +3,10 @@ import { useState, createContext } from "react"
 
 import Instructions from "./Instructions"
 import Form from "./Form"
+import RenderCheckboxQuestions from '../render/RenderCheckboxQuestions'
 import SaveAndDelete from '../../utilities/saveLocalData'
 import Score from './Score'
+import { questionsArray, additionalQuestions } from '../../data/asrs5'
 
 const Asrs5Context = createContext()
 
@@ -31,6 +33,8 @@ const Asrs5 = () => {
         }}>
             <Instructions />
             <Form />
+            <h3>Additional screening questions highly suggestive of ADHD:</h3>
+            <RenderCheckboxQuestions questions={additionalQuestions} />
             <SaveAndDelete name="asrs5" data={asrs5Data} reset={setAsrs5Data} />
             <Score scores={asrs5Data} />
         </Asrs5Context.Provider>

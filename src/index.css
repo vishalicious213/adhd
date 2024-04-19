@@ -109,6 +109,11 @@ nav {
     padding: 2rem 0;
 }
 
+menu {
+    display: flex;
+    gap: 1rem;
+}
+
 .question-container {
     display: flex;
     gap: 1rem;

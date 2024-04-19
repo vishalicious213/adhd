@@ -44,6 +44,10 @@ const Index = () => {
                     {/* <button onClick={() => handleClick("home")}>HOME</button> */}
                     {/* <button onClick={() => handleClick("adhd")}>ADHD</button> */}
                     <div className="trigram" onClick={handleNavClick}>☰</div>
+                    <div className="nav-menu">
+                        <div onClick={() => handleClick("home")}>HOME</div>
+                        <div onClick={() => handleClick("adhd")}>ADHD</div>
+                    </div>
                 </div>
             </nav>
 

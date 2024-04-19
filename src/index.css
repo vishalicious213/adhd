@@ -167,7 +167,10 @@ label {
 }
 
 #save-delete {
-    display: grid;
+    position: fixed;
+    top: 1rem;
+    /* left: 1rem; */
+    display: flex;
     gap: .5rem;
     text-align: center;
     margin: 1rem auto;

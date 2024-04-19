@@ -123,13 +123,34 @@ nav {
 
 .nav-menu {
     position: absolute;
-    top: 2rem;
+    top: 2.25rem;
     width: 95%;
     text-align: end;
     background-color: var(--main-light);
     border: 1px solid var(--offwhite);
-    padding: .5rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+    padding: .5rem .5rem 1.5rem;
     box-sizing: border-box;
+}
+
+.nav-item {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+    margin-bottom: .25rem;
+    padding: .25rem .5rem;
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background: var(--btn-back);
+    color: var(--main);
 }
 
 menu {

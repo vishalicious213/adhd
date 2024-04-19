@@ -40,7 +40,7 @@ const Index = () => {
     }
 
     return (
-        <NavContext.Provider value={{ selected, handleClick }}>
+        <NavContext.Provider value={{ selected, handleClick, setShowNav }}>
             <nav>
                 <div className="nav-container">
                     {/* <button onClick={() => handleClick("home")}>HOME</button> */}

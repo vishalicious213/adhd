@@ -41,7 +41,7 @@ const Index = () => {
     }
 
     return (
-        <NavContext.Provider value={{ selected, handleClick, setShowNav }}>
+        <NavContext.Provider value={{ selected, handleClick }}>
             <nav>
                 <div className="nav-container">
                     <div className="trigram" onClick={handleNavClick}>☰</div>

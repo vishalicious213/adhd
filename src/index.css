@@ -91,11 +91,7 @@ p {
     color: var(--text);
 }
 
-/* MAIN */
-
-#main {
-    margin-top: 5rem;
-}
+/* NAV */
 
 nav {
     position: fixed;
@@ -104,7 +100,7 @@ nav {
     max-width: 1250px;
     background-color: var(--main);
     border-bottom: 1px solid var(--lightborder);
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 .nav-container {
@@ -112,11 +108,27 @@ nav {
     justify-content: flex-end;
     gap: .5rem;
     padding-right: 1rem;
+    font-size: 1.5rem;
+}
+
+.trigram {
+    color: var(--btn-back);
+}
+
+.trigram:hover {
+    cursor: pointer;
+    color: var(--btn-hover);
 }
 
 menu {
     display: flex;
     gap: 1rem;
+}
+
+/* MAIN */
+
+#main {
+    margin-top: 5rem;
 }
 
 .question-container {
@@ -173,12 +185,12 @@ label {
 
 #save-delete {
     position: fixed;
-    top: 1rem;
-    /* left: 1rem; */
+    top: .5rem;
+    left: .5rem;
     display: flex;
     gap: .5rem;
     text-align: center;
-    margin: 1rem auto;
+    margin: .9rem auto;
 }
 
 button {

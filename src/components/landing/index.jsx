@@ -37,8 +37,9 @@ const Index = () => {
         <NavContext.Provider value={{ selected, handleClick }}>
             <nav>
                 <div className="nav-container">
-                    <button onClick={() => handleClick("home")}>HOME</button>
-                    <button onClick={() => handleClick("adhd")}>ADHD</button>
+                    {/* <button onClick={() => handleClick("home")}>HOME</button> */}
+                    {/* <button onClick={() => handleClick("adhd")}>ADHD</button> */}
+                    <div className="trigram">☰</div>
                 </div>
             </nav>
 

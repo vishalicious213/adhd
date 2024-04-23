@@ -129,7 +129,7 @@ export const questionsArray = [
     },
     {
         id: 33,
-        text: "When I talk on the phone, I’m not sure when it’s my turn to speak"
+        text: "When I talk on the phone, I'm not sure when it's my turn to speak"
     },
     {
         id: 34,
@@ -159,46 +159,44 @@ export const questionsArray = [
         id: 40,
         text: "When I was young, I used to enjoy playing games involving pretending with other children"
     },
+    {
+        id: 41,
+        text: "I like to collect information about categories of things (e.g., types of cars, birds, trains, plants)"
+    },
+    {
+        id: 42,
+        text: "I find it difficult to imagine what it would be like to be someone else"
+    },
+    {
+        id: 43,
+        text: "I like to carefully plan any activities I participate in"
+    },
+    {
+        id: 44,
+        text: "I enjoy social occasions"
+    },
+    {
+        id: 45,
+        text: "I find it difficult to work out people's intentions"
+    },
+    {
+        id: 46,
+        text: "New situations make me anxious"
+    },
+    {
+        id: 47,
+        text: "I enjoy meeting new people"
+    },
+    {
+        id: 48,
+        text: "I am a good diplomat"
+    },
+    {
+        id: 49,
+        text: "I am not very good at remembering people's date of birth"
+    },
+    {
+        id: 50,
+        text: "I find it very easy to play games with children that involve pretending"
+    }
 ]
-
-
-// {
-//     id: 21,
-//     text: ""
-// },
-// {
-//     id: 22,
-//     text: ""
-// },
-// {
-//     id: 23,
-//     text: ""
-// },
-// {
-//     id: 24,
-//     text: ""
-// },
-// {
-//     id: 25,
-//     text: ""
-// },
-// {
-//     id: 26,
-//     text: ""
-// },
-// {
-//     id: 27,
-//     text: ""
-// },
-// {
-//     id: 28,
-//     text: ""
-// },
-// {
-//     id: 29,
-//     text: ""
-// },
-// {
-//     id: 30,
-//     text: ""
-// },

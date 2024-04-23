@@ -14,63 +14,50 @@ const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
                 <div className="answer">
                     <input 
                         type="radio"
-                        id={`never${num}`}
+                        id={`def-agree${num}`}
                         name={`answer${num}`} // same name for all; associates with same property in state
-                        value="never" // the value that will be saved to state
-                        checked={checked === "never"} // make it a controlled input
+                        value="def-agree" // the value that will be saved to state
+                        checked={checked === "def-agree"} // make it a controlled input
                         onChange={handleChange} // used to connect to event handler
                     />
-                    <label htmlFor={`never${num}`}>Never</label>
+                    <label htmlFor={`def-agree${num}`}>Definitely agree</label>
                 </div>
 
                 <div className="answer">
                     <input 
                         type="radio"
-                        id={`rarely${num}`}
+                        id={`slight-agree${num}`}
                         name={`answer${num}`}
-                        value="rarely"
-                        checked={checked === "rarely"}
+                        value="slight-agree"
+                        checked={checked === "slight-agree"}
                         onChange={handleChange}
                     />
-                    <label htmlFor={`rarely${num}`}>Rarely</label>
+                    <label htmlFor={`slight-agree${num}`}>Slightly agree</label>
                 </div>
 
                 <div className="answer">
                     <input 
                         type="radio"
-                        id={`sometimes${num}`}
+                        id={`slight-disagree${num}`}
                         name={`answer${num}`}
-                        value="sometimes"
-                        checked={checked === "sometimes"}
+                        value="slight-disagree"
+                        checked={checked === "slight-disagree"}
                         onChange={handleChange}
                     />
-                    <label htmlFor={`sometimes${num}`}>Sometimes</label>
+                    <label htmlFor={`slight-disagree${num}`}>Slightly disagree</label>
                 </div>
 
                 <div className="answer">
                     <input 
                         type="radio"
-                        id={`often${num}`}
+                        id={`def-disagree${num}`}
                         name={`answer${num}`}
-                        value="often"
-                        checked={checked === "often"}
+                        value="def-disagree"
+                        checked={checked === "def-disagree"}
                         onChange={handleChange}
                     />
-                    <label htmlFor={`often${num}`}>Often</label>
+                    <label htmlFor={`def-disagree${num}`}>Definitely disagree</label>
                 </div>
-
-                <div className="answer">
-                    <input 
-                        type="radio"
-                        id={`very-often${num}`}
-                        name={`answer${num}`}
-                        value="very-often"
-                        checked={checked === "very-often"}
-                        onChange={handleChange}
-                    />
-                    <label htmlFor={`very-often${num}`}>Very Often</label>
-                </div>
-
             </fieldset>
         </>
     )

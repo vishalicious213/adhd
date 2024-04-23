@@ -34,9 +34,9 @@ const Form = () => {
     return (
         <>
             {questionsArray.map(q => <ADHDScaleQuestions 
+                key={q.id} 
                 question={q.text} 
                 num={q.id} 
-                key={q.id} 
                 checked={Object.values(asrs1Data)[q.id - 1]}
                 handleChange={handleChange}
             />)}

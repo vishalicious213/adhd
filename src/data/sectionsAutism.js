@@ -4,10 +4,10 @@ export const sectionsAutismArray = [
         def: "Autism spectrum disorder (ASD), or autism, is a developmental disability caused by differences in the brain. People with ASD often have problems with social communication and interaction, and restricted or repetitive behaviors or interests. People with ASD may also have different ways of learning, moving, or paying attention. It is important to note that some people without ASD might also have some of these symptoms. But for people with ASD, these characteristics can make life very challenging.",
         tools: [
             {
-                button: "ASRS v1.1", 
-                choice: "asrs1", 
-                title: "Adult ADHD Self-Report Scale (ASRS-v1.1) Symptom Checklist",
-                desc: "The ASRS v1.1 is an instrument consisting of 18 DSM-IV-TR criteria. Six of the eighteen questions were found to be the most predictive of symptoms consistent with ADHD. The remaining twelve provide additional cues and can serve as further probes into possible symptoms."
+                button: "AQ", 
+                choice: "aq", 
+                title: "Autism Spectrum Quotient (AQ)",
+                desc: "The Autism Spectrum Quotient (AQ) is a self-administered questionnaire used to measure autistic traits in adults (age 16+). It examines the test-taker's social interaction, communication patterns, imagination, attention to detail, and tolerance for change. An IQ of at least low average (IQ 80+) is required to take the test adequately."
             }, 
             // {
             //     button: "ASRS v5", 

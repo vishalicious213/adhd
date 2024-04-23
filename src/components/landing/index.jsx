@@ -5,6 +5,7 @@ import Asrs5 from '../asrs5'
 import Sasi from '../sasi'
 import Sasi1 from '../sasi/Sasi1'
 import Sasi2 from '../sasi/Sasi2'
+import AQ from '../aq'
 import RenderSection from './RenderSection'
 import { sectionsAdhdArray } from '../../data/sectionsAdhd'
 import { sectionsAutismArray } from '../../data/sectionsAutism'
@@ -62,6 +63,7 @@ const Index = () => {
                 selected === "sasi1" ? <Sasi1 /> :
                 selected === "sasi2" ? <Sasi2 /> :
                 selected === "autism" ? <RenderSectionArray sectionArr={sectionsAutismArray} /> :
+                selected === "aq" ? <AQ /> :
                 ""
                 }
             </div>

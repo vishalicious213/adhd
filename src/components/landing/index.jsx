@@ -49,6 +49,7 @@ const Index = () => {
                     <div className={`nav-menu ${showNav ? "show-nav" : "hide-nav"}`}>
                         <div className="nav-item" onClick={() => handleClick("home")}>HOME</div>
                         <div className="nav-item" onClick={() => handleClick("adhd")}>ADHD</div>
+                        <div className="nav-item" onClick={() => handleClick("autism")}>AUTISM</div>
                     </div>
                 </div>
             </nav>

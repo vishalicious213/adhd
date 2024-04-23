@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, createContext } from "react"
 
-// import Instructions from "./Instructions"
+import Instructions from "./Instructions"
 // import Form from "./Form"
 // import SaveAndDelete from '../../utilities/saveLocalData'
 // import Score from './Score'
@@ -18,8 +18,7 @@ const AQ = () => {
             aqData,
             setAqData
         }}>
-            <h1>AQ</h1>
-            {/* <Instructions /> */}
+            <Instructions />
             {/* <Form /> */}
             {/* <SaveAndDelete name="asrs1" data={asrs1Data} reset={setAsrs1Data} /> */}
             {/* <Score scores={asrs1Data} /> */}

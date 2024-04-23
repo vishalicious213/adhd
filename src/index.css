@@ -238,8 +238,15 @@ label {
 #score {
     display: grid;
     gap: 1rem;
-    text-align: center;
+    /* text-align: center; */
     margin: 1.5rem auto 1rem;
+    /* border: 1px solid silver;
+    padding: 1rem; */
+}
+
+.score-btn {
+    width: 10rem;
+    /* justify-self: center; */
 }
 
 #save-delete {

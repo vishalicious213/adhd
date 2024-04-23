@@ -79,4 +79,86 @@ export const questionsArray = [
         id: 20,
         text: "When I'm reading a story, I find it difficult to work out the characters' intentions"
     },
+    {
+        id: 21,
+        text: "I don't particularly enjoy reading fiction"
+    },
+    {
+        id: 22,
+        text: "I find it hard to make new friends"
+    },
+    {
+        id: 23,
+        text: "I notice patterns in things all the time"
+    },
+    {
+        id: 24,
+        text: "I would rather go to the theater than to a museum"
+    },
+    {
+        id: 25,
+        text: "It does not upset me if my daily routine is disturbed"
+    },
+    {
+        id: 26,
+        text: "I frequently find that I don't know how to keep a conversation going"
+    },
+    {
+        id: 27,
+        text: "I find it easy to “read between the lines” when someone is talking to me"
+    },
+    {
+        id: 28,
+        text: "I usually concentrate more on the whole picture, rather than on the small details"
+    },
+    {
+        id: 29,
+        text: "I am not very good at remembering phone numbers"
+    },
+    {
+        id: 30,
+        text: "I don't usually notice small changes in a situation or a person's appearance"
+    },
 ]
+
+
+// {
+//     id: 21,
+//     text: ""
+// },
+// {
+//     id: 22,
+//     text: ""
+// },
+// {
+//     id: 23,
+//     text: ""
+// },
+// {
+//     id: 24,
+//     text: ""
+// },
+// {
+//     id: 25,
+//     text: ""
+// },
+// {
+//     id: 26,
+//     text: ""
+// },
+// {
+//     id: 27,
+//     text: ""
+// },
+// {
+//     id: 28,
+//     text: ""
+// },
+// {
+//     id: 29,
+//     text: ""
+// },
+// {
+//     id: 30,
+//     text: ""
+// },

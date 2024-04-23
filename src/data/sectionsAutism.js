@@ -1,4 +1,4 @@
-export const sectionsAdhdArray = [
+export const sectionsAutismArray = [
     {
         name: "Autism",
         def: "Autism spectrum disorder (ASD), or autism, is a developmental disability caused by differences in the brain. People with ASD often have problems with social communication and interaction, and restricted or repetitive behaviors or interests. People with ASD may also have different ways of learning, moving, or paying attention. It is important to note that some people without ASD might also have some of these symptoms. But for people with ASD, these characteristics can make life very challenging.",

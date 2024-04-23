@@ -7,6 +7,7 @@ import Sasi1 from '../sasi/Sasi1'
 import Sasi2 from '../sasi/Sasi2'
 import RenderSection from './RenderSection'
 import { sectionsAdhdArray } from '../../data/sectionsAdhd'
+import { sectionsAutismArray } from '../../data/sectionsAutism'
 
 const NavContext = createContext()
 
@@ -60,6 +61,7 @@ const Index = () => {
                 selected === "sasi" ? <Sasi /> :
                 selected === "sasi1" ? <Sasi1 /> :
                 selected === "sasi2" ? <Sasi2 /> :
+                selected === "autism" ? <RenderSectionArray sectionArr={sectionsAutismArray} /> :
                 ""
                 }
             </div>

@@ -61,7 +61,7 @@ export const questionsArray = [
     },
     {
         id: 16,
-        text: "When you’re in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?"
+        text: "When you're in a conversation, how often do you find yourself finishing the sentences of the people you are talking to, before they can finish them themselves?"
     },
     {
         id: 17,

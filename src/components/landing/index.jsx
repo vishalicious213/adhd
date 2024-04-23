@@ -23,7 +23,6 @@ const Index = () => {
 
     function handleNavClick() {
         setShowNav(!showNav)
-        console.log(showNav)
     }
 
     function RenderSectionArray({ sectionArr }) {

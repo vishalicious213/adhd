@@ -119,6 +119,46 @@ export const questionsArray = [
         id: 30,
         text: "I don't usually notice small changes in a situation or a person's appearance"
     },
+    {
+        id: 31,
+        text: "I know how to tell if someone listening to me is getting bored"
+    },
+    {
+        id: 32,
+        text: "I find it easy to do more than one thing at once"
+    },
+    {
+        id: 33,
+        text: "When I talk on the phone, I’m not sure when it’s my turn to speak"
+    },
+    {
+        id: 34,
+        text: "I enjoy doing things spontaneously"
+    },
+    {
+        id: 35,
+        text: "I am often the last to understand the point of a joke"
+    },
+    {
+        id: 36,
+        text: "I find it easy to work out what someone is thinking or feeling just by looking at their face"
+    },
+    {
+        id: 37,
+        text: "If there is an interruption, I can switch back to what I was doing very quickly"
+    },
+    {
+        id: 38,
+        text: "I am good at social chitchat"
+    },
+    {
+        id: 39,
+        text: "People often tell me that I keep going on and on about the same thing"
+    },
+    {
+        id: 40,
+        text: "When I was young, I used to enjoy playing games involving pretending with other children"
+    },
 ]
 
 

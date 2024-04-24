@@ -293,9 +293,8 @@ label {
 }
 
 .aq-answer {
-    margin-bottom: .25rem;
     border-radius: .5rem;
-    padding: .5rem 0;
+    padding: .75rem 0;
     font-weight: 300;
     display: flex;
     align-items: center;

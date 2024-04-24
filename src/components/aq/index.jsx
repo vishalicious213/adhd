@@ -3,7 +3,7 @@ import { useState, createContext } from "react"
 
 import Instructions from "./Instructions"
 import Form from "./Form"
-// import SaveAndDelete from '../../utilities/saveLocalData'
+import SaveAndDelete from '../../utilities/saveLocalData'
 import Score from './Score'
 
 const AQContext = createContext()
@@ -24,7 +24,7 @@ const AQ = () => {
         }}>
             <Instructions />
             <Form />
-            {/* <SaveAndDelete name="asrs1" data={asrs1Data} reset={setAsrs1Data} /> */}
+            <SaveAndDelete name="aq" data={aqData} reset={setAqData} />
             <Score scores={aqData} />
         </AQContext.Provider>
     )

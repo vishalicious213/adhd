@@ -10,13 +10,17 @@ const AQContext = createContext()
 
 const AQ = () => {
     const [aqData, setAqData] = useState({})
-    // const [aqScore, setAqScore] = useState(0) 
-    // const [aqComplete, setAqComplete] = useState(false)
+    const [aqScore, setAqScore] = useState(0) 
+    const [aqComplete, setAqComplete] = useState(false)
 
     return (
         <AQContext.Provider value={{
             aqData,
-            setAqData
+            setAqData,
+            aqScore, 
+            setAqScore,
+            aqComplete, 
+            setAqComplete
         }}>
             <Instructions />
             <Form />

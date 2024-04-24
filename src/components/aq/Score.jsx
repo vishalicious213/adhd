@@ -1,7 +1,10 @@
 import React from 'react'
+import { useContext } from 'react'
+import { AQContext } from '.'
 
 const Score = ({ scores }) => {
-    let aqScore = 0
+    const { aqScore, setAqScore, aqComplete, setAqComplete } = useContext(AQContext)
+    let workingScore = 0
 
     console.log(scores)
     // console.log(scores.answer50)
@@ -22,18 +25,18 @@ const Score = ({ scores }) => {
         if (agree.includes(i + 1)) {
             if (scores[item] === "def-agree" || scores[item] === "slight-agree") {
                 console.log(item,scores[item])
-                aqScore = aqScore + 1
+                workingScore = workingScore + 1
             }
         }
 
         if (disagree.includes(i + 1)) {
             if (scores[item] === "def-disagree" || scores[item] === "slight-disagree") {
                 console.log(item,scores[item])
-                aqScore = aqScore + 1
+                workingScore = workingScore + 1
             }
         }
 
-        console.log(aqScore)
+        console.log("working score", workingScore)
     }
 
     return (

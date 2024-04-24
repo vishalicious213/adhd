@@ -14,7 +14,7 @@ const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
 
             {/* <fieldset className="text"> */}
                 <div className="aq-answer-wrapper text">
-                    <div className="aq-answer aq-agree-color">
+                    <div className={`aq-answer ${aqData[checked] === "def-agree" ? "aq-agree-color-bright" : ""}`}>
                         <input 
                             type="radio"
                             id={`def-agree${num}`}
@@ -26,7 +26,7 @@ const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
                         <label htmlFor={`def-agree${num}`}>Definitely agree</label>
                     </div>
 
-                    <div className="aq-answer aq-agree-color">
+                    <div className={`aq-answer ${aqData[checked] === "slight-agree" ? "aq-agree-color" : ""}`}>
                         <input 
                             type="radio"
                             id={`slight-agree${num}`}
@@ -38,7 +38,7 @@ const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
                         <label htmlFor={`slight-agree${num}`}>Slightly agree</label>
                     </div>
 
-                    <div className="aq-answer aq-disagree-color">
+                    <div className={`aq-answer ${aqData[checked] === "slight-disagree" ? "aq-disagree-color" : ""}`}>
                         <input 
                             type="radio"
                             id={`slight-disagree${num}`}
@@ -50,7 +50,7 @@ const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
                         <label htmlFor={`slight-disagree${num}`}>Slightly disagree</label>
                     </div>
 
-                    <div className="aq-answer aq-disagree-color">
+                    <div className={`aq-answer ${aqData[checked] === "def-disagree" ? "aq-disagree-color-bright" : ""}`}>
                         <input 
                             type="radio"
                             id={`def-disagree${num}`}

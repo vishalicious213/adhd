@@ -289,7 +289,7 @@ label {
 .aq-answer-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: .5rem;
+    gap: .25rem;
 }
 
 .aq-answer {
@@ -314,11 +314,11 @@ label {
     background-color: rgba(114, 45, 52, .4);
 }
 
-.aq-agree-color:hover {
+.aq-agree-color-bright {
     background-color: rgba(45, 114, 101, 1);
 }
 
-.aq-disagree-color:hover {
+.aq-disagree-color-bright {
     background-color: rgba(114, 45, 52, 1);
 }
 

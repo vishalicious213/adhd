@@ -213,13 +213,15 @@ menu {
 }
 
 .answer {
+    /* outline: 1px solid orange; */
     margin-bottom: .25rem;
     border-radius: .25rem;
     padding: .25rem 0;
     font-weight: 300;
-    max-width: 9rem;
+    /* max-width: 9rem; */
     display: flex;
     align-items: center;
+    width: auto;
 }
 
 .answer:hover {
@@ -229,8 +231,21 @@ menu {
 }
 
 fieldset {
+    outline: 1px solid red;
     margin-bottom: 1.5rem;
     border: none;
+}
+
+.answer-wrapper {
+    /* width: 90vw; */
+    /* outline: 1px solid orange; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+
+.agree-color {
+    /* background-color: green; */
 }
 
 legend {

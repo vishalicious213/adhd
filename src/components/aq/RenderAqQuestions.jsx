@@ -8,7 +8,7 @@ const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
     return (
         <>
             <div className="question-container">
-                <div className="question-num">{num}</div>
+                <h3 className="question-num">{num}</h3>
                 <div className="text question">{question}</div>
             </div>
 

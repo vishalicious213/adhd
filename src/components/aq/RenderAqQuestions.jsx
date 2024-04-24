@@ -13,8 +13,8 @@ const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
             </div>
 
             {/* <fieldset className="text"> */}
-                <div className="answer-wrapper text">
-                    <div className="answer agree-color">
+                <div className="aq-answer-wrapper text">
+                    <div className="aq-answer aq-agree-color">
                         <input 
                             type="radio"
                             id={`def-agree${num}`}
@@ -26,7 +26,7 @@ const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
                         <label htmlFor={`def-agree${num}`}>Definitely agree</label>
                     </div>
 
-                    <div className="answer agree-color">
+                    <div className="aq-answer aq-agree-color">
                         <input 
                             type="radio"
                             id={`slight-agree${num}`}
@@ -38,7 +38,7 @@ const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
                         <label htmlFor={`slight-agree${num}`}>Slightly agree</label>
                     </div>
 
-                    <div className="answer disagree-color">
+                    <div className="aq-answer aq-disagree-color">
                         <input 
                             type="radio"
                             id={`slight-disagree${num}`}
@@ -50,7 +50,7 @@ const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
                         <label htmlFor={`slight-disagree${num}`}>Slightly disagree</label>
                     </div>
 
-                    <div className="answer disagree-color">
+                    <div className="aq-answer aq-disagree-color">
                         <input 
                             type="radio"
                             id={`def-disagree${num}`}

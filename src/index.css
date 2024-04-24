@@ -294,7 +294,7 @@ label {
 
 .aq-answer {
     margin-bottom: .25rem;
-    border-radius: .25rem;
+    border-radius: .5rem;
     padding: .5rem 0;
     font-weight: 300;
     display: flex;
@@ -303,7 +303,8 @@ label {
 }
 
 .aq-answer:hover {
-    font-weight: 500;
+    /* font-weight: 500; */
+    outline: 1px solid var(--btn-back);
 }
 
 .aq-agree-color {

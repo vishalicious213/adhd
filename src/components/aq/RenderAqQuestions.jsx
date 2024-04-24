@@ -3,7 +3,6 @@ import { useContext } from 'react'
 import { AQContext } from '.'
 
 const RenderAqQuestions = ({ question, num, checked, handleChange }) => {
-    // console.log("Render", num, checked, question)
     const { aqData } = useContext(AQContext)
 
     return (

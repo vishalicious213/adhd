@@ -213,20 +213,19 @@ menu {
 }
 
 .answer {
-    /* outline: 1px solid orange; */
     margin-bottom: .25rem;
     border-radius: .25rem;
     padding: .25rem 0;
     font-weight: 300;
-    /* max-width: 9rem; */
+    max-width: 9rem;
     display: flex;
     align-items: center;
     width: auto;
 }
 
 .answer:hover {
-    /* background: var(--offwhite);
-    color: var(--main); */
+    background: var(--offwhite);
+    color: var(--main);
     font-weight: 500;
 }
 
@@ -288,28 +287,22 @@ label {
 /* AQ */
 
 .aq-answer-wrapper {
-    /* width: 90vw; */
-    /* outline: 1px solid orange; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: .5rem;
 }
 
 .aq-answer {
-    /* outline: 1px solid orange; */
     margin-bottom: .25rem;
     border-radius: .25rem;
-    padding: .25rem 0;
+    padding: .5rem 0;
     font-weight: 300;
-    /* max-width: 9rem; */
     display: flex;
     align-items: center;
     width: auto;
 }
 
 .aq-answer:hover {
-    /* background: var(--offwhite);
-    color: var(--main); */
     font-weight: 500;
 }
 
@@ -433,6 +426,12 @@ label {
 
     .answer {
         outline: 1px solid var(--lightborder);
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .aq-answer-wrapper {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 

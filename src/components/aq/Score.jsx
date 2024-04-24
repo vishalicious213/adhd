@@ -13,16 +13,22 @@ const Score = ({ scores }) => {
     console.log(scores)
     console.log(answers)
     console.log(answers.length)
-    if (answers.length === 50 && !answers.includes("")) {
-        console.log("COMPLETE")
-    } else {
-        console.log(unfinishedQuestions - answers.length, "QUESTIONS LEFT")
-    }
-
-    // function checkComplete() {
+    // if (answers.length === 50 && !answers.includes("")) {
+    // } else {
+    //     console.log(unfinishedQuestions - answers.length, "QUESTIONS LEFT")
     // }
+    
+    // function checkComplete() {
+        // }
+        
+        function getScore() {
+            setAqComplete(false)
+            
+            if (answers.length === 50 && !answers.includes("")) {
+                setAqComplete(true)
+                console.log("COMPLETE")
+        }
 
-    function getScore() {
         for (let i = 0; i < 50; i++) {
             let item = `answer${i + 1}`
             // console.log(item)
@@ -57,7 +63,12 @@ const Score = ({ scores }) => {
     return (
         <div>
             <div>Autism Score</div>
-
+            <button>GET SCORE</button>
+            <div>
+                { !aqComplete ? `Please answer remaining ${unfinishedQuestions} questions`
+                : `Score is ${workingScore}`
+                }
+            </div>
         </div>
     )
 }

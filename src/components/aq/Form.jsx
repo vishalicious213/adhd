@@ -8,18 +8,35 @@ const Form = () => {
     const { aqData, setAqData } = useContext(AQContext)
 
     function handleChange(event) {
-        console.log(event)
+        const { name, value } = event.target
+        setAqData(prevFormData => {
+            return {
+                ...prevFormData,
+                [name]: value,
+            }
+        })
+        console.log(name, value)
+        console.log(aqData)
     }
 
     return (
         <>
-            {questionsArray.map(q => <RenderAqQuestions 
-                key={q.id}
-                question={q.text}
-                num={q.id}
-                checked={Object.values(aqData)[q.id - 1]}
-                handleChange={handleChange}
-            />)}
+            {questionsArray.map(q => {
+                // console.log(q.id, q.text)
+
+                return (
+                    <RenderAqQuestions 
+                        key={q.id}
+                        question={q.text}
+                        num={q.id}
+                        checked={`answer${q.id}`}
+                        // checked={Object.values(aqData)[q.id - 1]}
+                        handleChange={handleChange}
+                    />)}
+
+                )
+            }
+            
         </>
     )
 }

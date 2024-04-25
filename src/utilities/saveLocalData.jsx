@@ -5,7 +5,6 @@ import { Asrs5Context } from '../components/asrs5'
 
 const resetAsrs1State = { answer1: "", answer2: "", answer3: "", answer4: "", answer5: "", answer6: "", answer7: "", answer8: "", answer9: "", answer10: "", answer11: "", answer12: "", answer13: "", answer14: "", answer15: "", answer16: "", answer17: "", answer18: "" }
 const resetAsrs5State = { answer1: "", answer2: "", answer3: "", answer4: "", answer5: "", answer6: "" }
-const sasiResetState = {}
 
 const SaveAndDelete = ({ name, data, reset }) => {
     const { setAsrs5Complete } = useContext(Asrs5Context) || { setAsrs5Complete: () => {} }
@@ -34,6 +33,10 @@ const SaveAndDelete = ({ name, data, reset }) => {
                 newData[key] = ""
             }
             reset(newData)
+        }
+
+        if (name === "aq") {
+            reset({})
         }
     }
 

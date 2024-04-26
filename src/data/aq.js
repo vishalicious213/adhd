@@ -30,7 +30,8 @@ export const questionsArray = [
     },
     {
         id: 7,
-        text: "Other people frequently tell me that what I've said is impolite, even though I think it is polite"
+        text: "Other people frequently tell me that what I've said is impolite, even though I think it is polite",
+        subscale: "communication"
     },
     {
         id: 8,
@@ -77,11 +78,13 @@ export const questionsArray = [
     },
     {
         id: 17,
-        text: "I enjoy social chitchat"
+        text: "I enjoy social chitchat",
+        subscale: "communication"
     },
     {
         id: 18,
-        text: "When I talk, it isn't always easy for others to get a word in edgewise"
+        text: "When I talk, it isn't always easy for others to get a word in edgewise",
+        subscale: "communication"
     },
     {
         id: 19,
@@ -117,11 +120,13 @@ export const questionsArray = [
     },
     {
         id: 26,
-        text: "I frequently find that I don't know how to keep a conversation going"
+        text: "I frequently find that I don't know how to keep a conversation going",
+        subscale: "communication"
     },
     {
         id: 27,
-        text: "I find it easy to “read between the lines” when someone is talking to me"
+        text: "I find it easy to “read between the lines” when someone is talking to me",
+        subscale: "communication"
     },
     {
         id: 28,
@@ -140,7 +145,8 @@ export const questionsArray = [
     },
     {
         id: 31,
-        text: "I know how to tell if someone listening to me is getting bored"
+        text: "I know how to tell if someone listening to me is getting bored",
+        subscale: "communication"
     },
     {
         id: 32,
@@ -149,7 +155,8 @@ export const questionsArray = [
     },
     {
         id: 33,
-        text: "When I talk on the phone, I'm not sure when it's my turn to speak"
+        text: "When I talk on the phone, I'm not sure when it's my turn to speak",
+        subscale: "communication"
     },
     {
         id: 34,
@@ -158,7 +165,8 @@ export const questionsArray = [
     },
     {
         id: 35,
-        text: "I am often the last to understand the point of a joke"
+        text: "I am often the last to understand the point of a joke",
+        subscale: "communication"
     },
     {
         id: 36,
@@ -172,11 +180,13 @@ export const questionsArray = [
     },
     {
         id: 38,
-        text: "I am good at social chitchat"
+        text: "I am good at social chitchat",
+        subscale: "communication"
     },
     {
         id: 39,
-        text: "People often tell me that I keep going on and on about the same thing"
+        text: "People often tell me that I keep going on and on about the same thing",
+        subscale: "communication"
     },
     {
         id: 40,

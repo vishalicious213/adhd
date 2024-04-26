@@ -13,11 +13,11 @@ const Score = ({ scores }) => {
     let attentionToDetailScore = 0
     let communicationScore = 0
     let imaginationScore = 0
-    const socialSkillArr = [1,11,13,15,22,36,44,45, 47,48]
-    const attentionSwitchingArr = [2,4,10,16,25,32,34, 37,43,46]
-    const attentionToDetailArr = [5,6,9,12,19,23,28, 29,30,49]
-    const communicationArr = [7,17,18,26,27,31,33, 35,38,39]
-    const imaginationArr = [3,8,14,20,21,24,40,41,42,50]
+    const socialSkillArr = [1, 11, 13, 15, 22, 36, 44, 45, 47, 48]
+    const attentionSwitchingArr = [2, 4, 10, 16, 25, 32, 34, 37, 43, 46]
+    const attentionToDetailArr = [5, 6, 9, 12, 19, 23, 28, 29, 30, 49]
+    const communicationArr = [7, 17, 18, 26, 27, 31, 33, 35, 38, 39]
+    const imaginationArr = [3, 8, 14, 20, 21, 24, 40, 41, 42, 50]
     let answers = Object.values(scores)
 
     function getScore() {
@@ -43,9 +43,25 @@ const Score = ({ scores }) => {
                     workingScore = workingScore + 1
                 }
             }
+
+            // tally imagination subscore
+            if (imaginationArr.includes(i + 1)) {
+                if ([20, 21, 41, 42].includes(i + 1) 
+                    && (scores[item] === "def-agree" 
+                    || scores[item] === "slight-agree")) {
+                        console.log("agree++", scores[item], i + 1)
+                        imaginationScore++
+                } else if ([3, 8, 14, 24, 40, 50].includes(i + 1) 
+                    && (scores[item] === "def-disagree" 
+                    || scores[item] === "slight-disagree")) {
+                        console.log("disagree++", scores[item], i +1)
+                        imaginationScore++
+                }
+            }
         }
 
         setAqScore(workingScore)
+        console.log("imagination", imaginationScore)
     }
 
     return (

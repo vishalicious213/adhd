@@ -12,6 +12,7 @@ export const questionsArray = [
     {
         id: 3,
         text: "If I try to imagine something, I find it very easy to create a picture in my mind",
+        subscale: "imagination"
     },
     {
         id: 4,
@@ -35,7 +36,8 @@ export const questionsArray = [
     },
     {
         id: 8,
-        text: "When I'm reading a story, I can easily imagine what the characters might look like"
+        text: "When I'm reading a story, I can easily imagine what the characters might look like",
+        subscale: "imagination"
     },
     {
         id: 9,
@@ -64,7 +66,8 @@ export const questionsArray = [
     },
     {
         id: 14,
-        text: "I find making up stories easy"
+        text: "I find making up stories easy",
+        subscale: "imagination"
     },
     {
         id: 15,
@@ -93,11 +96,13 @@ export const questionsArray = [
     },
     {
         id: 20,
-        text: "When I'm reading a story, I find it difficult to work out the characters' intentions"
+        text: "When I'm reading a story, I find it difficult to work out the characters' intentions",
+        subscale: "imagination"
     },
     {
         id: 21,
-        text: "I don't particularly enjoy reading fiction"
+        text: "I don't particularly enjoy reading fiction",
+        subscale: "imagination"
     },
     {
         id: 22,
@@ -111,7 +116,8 @@ export const questionsArray = [
     },
     {
         id: 24,
-        text: "I would rather go to the theater than to a museum"
+        text: "I would rather go to the theater than to a museum",
+        subscale: "imagination"
     },
     {
         id: 25,
@@ -190,15 +196,18 @@ export const questionsArray = [
     },
     {
         id: 40,
-        text: "When I was young, I used to enjoy playing games involving pretending with other children"
+        text: "When I was young, I used to enjoy playing games involving pretending with other children",
+        subscale: "imagination"
     },
     {
         id: 41,
-        text: "I like to collect information about categories of things (e.g., types of cars, birds, trains, plants)"
+        text: "I like to collect information about categories of things (e.g., types of cars, birds, trains, plants)",
+        subscale: "imagination"
     },
     {
         id: 42,
-        text: "I find it difficult to imagine what it would be like to be someone else"
+        text: "I find it difficult to imagine what it would be like to be someone else",
+        subscale: "imagination"
     },
     {
         id: 43,
@@ -237,6 +246,7 @@ export const questionsArray = [
     },
     {
         id: 50,
-        text: "I find it very easy to play games with children that involve pretending"
+        text: "I find it very easy to play games with children that involve pretending",
+        subscale: "imagination"
     }
 ]

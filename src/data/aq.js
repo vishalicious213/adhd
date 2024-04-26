@@ -2,10 +2,12 @@ export const questionsArray = [
     {
         id: 1,
         text: "I prefer to do things with others rather than on my own",
+        subscale: "social"
     },
     {
         id: 2,
         text: "I prefer to do things the same way over and over again",
+        subscale: "attention-switching"
     },
     {
         id: 3,
@@ -14,6 +16,7 @@ export const questionsArray = [
     {
         id: 4,
         text: "I frequently get so strongly absorbed in one thing that I lose sight of other things",
+        subscale: "attention-switching"
     },
     {
         id: 5,
@@ -37,11 +40,13 @@ export const questionsArray = [
     },
     {
         id: 10,
-        text: "In a social group, I can easily keep track of several different people's conversations"
+        text: "In a social group, I can easily keep track of several different people's conversations",
+        subscale: "attention-switching"
     },
     {
         id: 11,
-        text: "I find social situations easy"
+        text: "I find social situations easy",
+        subscale: "social"
     },
     {
         id: 12,
@@ -49,7 +54,8 @@ export const questionsArray = [
     },
     {
         id: 13,
-        text: "I would rather go to a library than to a party"
+        text: "I would rather go to a library than to a party",
+        subscale: "social"
     },
     {
         id: 14,
@@ -57,11 +63,13 @@ export const questionsArray = [
     },
     {
         id: 15,
-        text: "I find myself drawn more strongly to people than to things"
+        text: "I find myself drawn more strongly to people than to things",
+        subscale: "social"
     },
     {
         id: 16,
-        text: "I tend to have very strong interests, which I get upset about if I can't pursue"
+        text: "I tend to have very strong interests, which I get upset about if I can't pursue",
+        subscale: "attention-switching"
     },
     {
         id: 17,
@@ -85,7 +93,8 @@ export const questionsArray = [
     },
     {
         id: 22,
-        text: "I find it hard to make new friends"
+        text: "I find it hard to make new friends",
+        subscale: "social"
     },
     {
         id: 23,
@@ -97,7 +106,8 @@ export const questionsArray = [
     },
     {
         id: 25,
-        text: "It does not upset me if my daily routine is disturbed"
+        text: "It does not upset me if my daily routine is disturbed",
+        subscale: "attention-switching"
     },
     {
         id: 26,
@@ -125,7 +135,8 @@ export const questionsArray = [
     },
     {
         id: 32,
-        text: "I find it easy to do more than one thing at once"
+        text: "I find it easy to do more than one thing at once",
+        subscale: "attention-switching"
     },
     {
         id: 33,
@@ -133,7 +144,8 @@ export const questionsArray = [
     },
     {
         id: 34,
-        text: "I enjoy doing things spontaneously"
+        text: "I enjoy doing things spontaneously",
+        subscale: "attention-switching"
     },
     {
         id: 35,
@@ -141,11 +153,13 @@ export const questionsArray = [
     },
     {
         id: 36,
-        text: "I find it easy to work out what someone is thinking or feeling just by looking at their face"
+        text: "I find it easy to work out what someone is thinking or feeling just by looking at their face",
+        subscale: "social"
     },
     {
         id: 37,
-        text: "If there is an interruption, I can switch back to what I was doing very quickly"
+        text: "If there is an interruption, I can switch back to what I was doing very quickly",
+        subscale: "attention-switching"
     },
     {
         id: 38,
@@ -169,27 +183,33 @@ export const questionsArray = [
     },
     {
         id: 43,
-        text: "I like to carefully plan any activities I participate in"
+        text: "I like to carefully plan any activities I participate in",
+        subscale: "attention-switching"
     },
     {
         id: 44,
-        text: "I enjoy social occasions"
+        text: "I enjoy social occasions",
+        subscale: "social"
     },
     {
         id: 45,
-        text: "I find it difficult to work out people's intentions"
+        text: "I find it difficult to work out people's intentions",
+        subscale: "social"
     },
     {
         id: 46,
-        text: "New situations make me anxious"
+        text: "New situations make me anxious",
+        subscale: "attention-switching"
     },
     {
         id: 47,
-        text: "I enjoy meeting new people"
+        text: "I enjoy meeting new people",
+        subscale: "social"
     },
     {
         id: 48,
-        text: "I am a good diplomat"
+        text: "I am a good diplomat",
+        subscale: "social"
     },
     {
         id: 49,

@@ -44,23 +44,43 @@ const Score = ({ scores }) => {
                 }
             }
 
+            // tally social-skill subscore
+            if (socialSkillArr.includes(i + 1)) {
+                //agree
+                if ([13, 22, 45].includes(i + 1) 
+                    && (scores[item] === "def-agree" 
+                    || scores[item] === "slight-agree")) {
+                        console.log("social agree++", scores[item], i + 1)
+                        socialSkillScore++
+                // disagree
+                } else if ([1, 11, 15, 36, 44, 47, 48].includes(i + 1) 
+                    && (scores[item] === "def-disagree" 
+                    || scores[item] === "slight-disagree")) {
+                        console.log("social disagree++", scores[item], i +1)
+                        socialSkillScore++
+                }
+            }
+            
             // tally imagination subscore
             if (imaginationArr.includes(i + 1)) {
+                //agree
                 if ([20, 21, 41, 42].includes(i + 1) 
                     && (scores[item] === "def-agree" 
                     || scores[item] === "slight-agree")) {
-                        console.log("agree++", scores[item], i + 1)
+                        console.log("imagine agree++", scores[item], i + 1)
                         imaginationScore++
+                //disagree
                 } else if ([3, 8, 14, 24, 40, 50].includes(i + 1) 
                     && (scores[item] === "def-disagree" 
                     || scores[item] === "slight-disagree")) {
-                        console.log("disagree++", scores[item], i +1)
+                        console.log("imagine disagree++", scores[item], i +1)
                         imaginationScore++
                 }
             }
         }
 
         setAqScore(workingScore)
+        console.log("social-skill", socialSkillScore)
         console.log("imagination", imaginationScore)
     }
 

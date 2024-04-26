@@ -21,10 +21,12 @@ export const questionsArray = [
     {
         id: 5,
         text: "I often notice small sounds when others do not",
+        subscale: "attention-detail"
     },
     {
         id: 6,
-        text: "I usually notice car number plates or similar strings of information"
+        text: "I usually notice car number plates or similar strings of information",
+        subscale: "attention-detail"
     },
     {
         id: 7,
@@ -36,7 +38,8 @@ export const questionsArray = [
     },
     {
         id: 9,
-        text: "I am fascinated by dates"
+        text: "I am fascinated by dates",
+        subscale: "attention-detail"
     },
     {
         id: 10,
@@ -50,7 +53,8 @@ export const questionsArray = [
     },
     {
         id: 12,
-        text: "I tend to notice details that others do not"
+        text: "I tend to notice details that others do not",
+        subscale: "attention-detail"
     },
     {
         id: 13,
@@ -81,7 +85,8 @@ export const questionsArray = [
     },
     {
         id: 19,
-        text: "I am fascinated by numbers"
+        text: "I am fascinated by numbers",
+        subscale: "attention-detail"
     },
     {
         id: 20,
@@ -98,7 +103,8 @@ export const questionsArray = [
     },
     {
         id: 23,
-        text: "I notice patterns in things all the time"
+        text: "I notice patterns in things all the time",
+        subscale: "attention-detail"
     },
     {
         id: 24,
@@ -119,15 +125,18 @@ export const questionsArray = [
     },
     {
         id: 28,
-        text: "I usually concentrate more on the whole picture, rather than on the small details"
+        text: "I usually concentrate more on the whole picture, rather than on the small details",
+        subscale: "attention-detail"
     },
     {
         id: 29,
-        text: "I am not very good at remembering phone numbers"
+        text: "I am not very good at remembering phone numbers",
+        subscale: "attention-detail"
     },
     {
         id: 30,
-        text: "I don't usually notice small changes in a situation or a person's appearance"
+        text: "I don't usually notice small changes in a situation or a person's appearance",
+        subscale: "attention-detail"
     },
     {
         id: 31,
@@ -213,7 +222,8 @@ export const questionsArray = [
     },
     {
         id: 49,
-        text: "I am not very good at remembering people's date of birth"
+        text: "I am not very good at remembering people's date of birth",
+        subscale: "attention-detail"
     },
     {
         id: 50,

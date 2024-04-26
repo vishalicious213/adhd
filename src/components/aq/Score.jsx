@@ -61,6 +61,23 @@ const Score = ({ scores }) => {
                 }
             }
             
+            // tally attention-switching subscore
+            if (attentionSwitchingArr.includes(i + 1)) {
+                //agree
+                if ([2, 4, 16, 43, 46].includes(i + 1) 
+                    && (scores[item] === "def-agree" 
+                    || scores[item] === "slight-agree")) {
+                        console.log("attention-switch agree++", scores[item], i + 1)
+                        attentionSwitchingScore++
+                // disagree
+                } else if ([10, 25, 32, 34, 37].includes(i + 1) 
+                    && (scores[item] === "def-disagree" 
+                    || scores[item] === "slight-disagree")) {
+                        console.log("attention-switch disagree++", scores[item], i +1)
+                        attentionSwitchingScore++
+                }
+            }
+            
             // tally imagination subscore
             if (imaginationArr.includes(i + 1)) {
                 //agree
@@ -81,6 +98,7 @@ const Score = ({ scores }) => {
 
         setAqScore(workingScore)
         console.log("social-skill", socialSkillScore)
+        console.log("attention-switching", attentionSwitchingScore)
         console.log("imagination", imaginationScore)
     }
 

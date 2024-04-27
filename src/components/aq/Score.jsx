@@ -44,6 +44,23 @@ const Score = ({ scores }) => {
                 }
             }
 
+            // tally communication subscore
+            if (communicationArr.includes(i + 1)) {
+                //agree
+                if ([7, 18, 26, 33, 35, 39].includes(i + 1) 
+                    && (scores[item] === "def-agree" 
+                    || scores[item] === "slight-agree")) {
+                        console.log("social agree++", scores[item], i + 1)
+                        communicationScore++
+                // disagree
+                } else if ([17, 27, 31, 38].includes(i + 1) 
+                    && (scores[item] === "def-disagree" 
+                    || scores[item] === "slight-disagree")) {
+                        console.log("social disagree++", scores[item], i +1)
+                        communicationScore++
+                }
+            }
+
             // tally social-skill subscore
             if (socialSkillArr.includes(i + 1)) {
                 //agree
@@ -118,6 +135,7 @@ const Score = ({ scores }) => {
         console.log("attention-switching", attentionSwitchingScore)
         console.log("attention-to-detail", attentionToDetailScore)
         console.log("imagination", imaginationScore)
+        console.log("communication", communicationScore)
     }
 
     return (

@@ -4,7 +4,7 @@ import { AQContext } from '.'
 
 const Score = ({ scores }) => {
     const { aqScore, setAqScore, aqComplete, setAqComplete } = useContext(AQContext)
-    const { subscore, setSubscore} = useState({
+    const [ subscore, setSubscore ] = useState({
         social: 0,
         attentionSwitching: 0,
         attentionToDetail: 0,
@@ -138,11 +138,22 @@ const Score = ({ scores }) => {
         }
 
         setAqScore(workingScore)
+
+        setSubscore(prevState => ({
+            ...prevState,
+            social: socialSkillScore,
+            attentionSwitching: attentionSwitchingScore,
+            attentionToDetail: attentionToDetailScore,
+            communication: communicationScore,
+            imagination: imaginationScore
+        }))
+        
         console.log("social-skill", socialSkillScore)
         console.log("attention-switching", attentionSwitchingScore)
         console.log("attention-to-detail", attentionToDetailScore)
         console.log("imagination", imaginationScore)
         console.log("communication", communicationScore)
+        console.log("subscore", subscore)
     }
 
     return (
@@ -152,11 +163,11 @@ const Score = ({ scores }) => {
                 { !aqComplete ? `Please answer remaining ${unfinishedQuestions} questions`
                 : <div>
                     <div>{`Score is ${aqScore}`}</div>
-                    <div>{`Communication score is ${communicationScore}`}</div>
-                    <div>{`Attention to detail score is ${attentionToDetailScore}`}</div>
-                    <div>{`Attention-switching score is ${attentionSwitchingScore}`}</div>
-                    <div>{`Social skill score is ${socialSkillScore}`}</div>
-                    <div>{`Imagination score is ${imaginationScore}`}</div>
+                    <div>{`Communication score is ${subscore.communication}`}</div>
+                    <div>{`Attention to detail score is ${subscore.attentionToDetail}`}</div>
+                    <div>{`Attention-switching score is ${subscore.attentionSwitching}`}</div>
+                    <div>{`Social skill score is ${subscore.social}`}</div>
+                    <div>{`Imagination score is ${subscore.imagination}`}</div>
                   </div>
                 }
             </div>

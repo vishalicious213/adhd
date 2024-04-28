@@ -150,18 +150,18 @@ const Score = ({ scores }) => {
     return (
         <div id="score">
             <button className='score-btn' onClick={getScore}>GET SCORE</button>
-            <div className='text'>
+            <section className='text aq-score'>
                 { !aqComplete ? `Please answer remaining ${unfinishedQuestions} questions`
                 : <div>
-                    <div>{`Score is ${aqScore}`}</div>
-                    <div>{`Communication score is ${subscore.communication}`}</div>
-                    <div>{`Attention to detail score is ${subscore.attentionToDetail}`}</div>
-                    <div>{`Attention-switching score is ${subscore.attentionSwitching}`}</div>
-                    <div>{`Social skill score is ${subscore.social}`}</div>
-                    <div>{`Imagination score is ${subscore.imagination}`}</div>
+                    <h3>{`Score is ${aqScore}`}</h3>
+                    <div>Communication score is <span className='aq-subscore'>{subscore.communication}</span></div>
+                    <div>Attention to detail score is <span className='aq-subscore'>{subscore.attentionToDetail}</span></div>
+                    <div>Attention-switching score is <span className='aq-subscore'>{subscore.attentionSwitching}</span></div>
+                    <div>Social skill score is <span className='aq-subscore'>{subscore.social}</span></div>
+                    <div>Imagination score is <span className='aq-subscore'>{subscore.imagination}</span></div>
                   </div>
                 }
-            </div>
+            </section>
         </div>
     )
 }

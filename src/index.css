@@ -42,7 +42,7 @@ h3 {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-style: normal;
     font-variation-settings: "slnt" 0;
 }
@@ -329,6 +329,19 @@ label {
 
 .aq-disagree-color-bright {
     background-color: rgba(114, 45, 52, 1);
+}
+
+.aq-score {
+    border: 1px solid var(--lightborder);
+    border-radius: .5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.aq-subscore {
+    font-weight: 400;
+    font-size: 1.1rem;
+    padding-left: .1rem;
 }
 
 /* LANDING */

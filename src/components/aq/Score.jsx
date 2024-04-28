@@ -33,7 +33,6 @@ const Score = ({ scores }) => {
         
         if (answers.length === 50 && !answers.includes("")) {
             setAqComplete(true)
-            console.log("COMPLETE")
         }
 
         for (let i = 0; i < 50; i++) {
@@ -57,13 +56,11 @@ const Score = ({ scores }) => {
                 if ([7, 18, 26, 33, 35, 39].includes(i + 1) 
                     && (scores[item] === "def-agree" 
                     || scores[item] === "slight-agree")) {
-                        console.log("social agree++", scores[item], i + 1)
                         communicationScore++
                 // disagree
                 } else if ([17, 27, 31, 38].includes(i + 1) 
                     && (scores[item] === "def-disagree" 
                     || scores[item] === "slight-disagree")) {
-                        console.log("social disagree++", scores[item], i +1)
                         communicationScore++
                 }
             }
@@ -74,13 +71,11 @@ const Score = ({ scores }) => {
                 if ([13, 22, 45].includes(i + 1) 
                     && (scores[item] === "def-agree" 
                     || scores[item] === "slight-agree")) {
-                        console.log("social agree++", scores[item], i + 1)
                         socialSkillScore++
                 // disagree
                 } else if ([1, 11, 15, 36, 44, 47, 48].includes(i + 1) 
                     && (scores[item] === "def-disagree" 
                     || scores[item] === "slight-disagree")) {
-                        console.log("social disagree++", scores[item], i +1)
                         socialSkillScore++
                 }
             }
@@ -91,13 +86,11 @@ const Score = ({ scores }) => {
                 if ([2, 4, 16, 43, 46].includes(i + 1) 
                     && (scores[item] === "def-agree" 
                     || scores[item] === "slight-agree")) {
-                        console.log("attention-switch agree++", scores[item], i + 1)
                         attentionSwitchingScore++
                 // disagree
                 } else if ([10, 25, 32, 34, 37].includes(i + 1) 
                     && (scores[item] === "def-disagree" 
                     || scores[item] === "slight-disagree")) {
-                        console.log("attention-switch disagree++", scores[item], i +1)
                         attentionSwitchingScore++
                 }
             }
@@ -108,13 +101,11 @@ const Score = ({ scores }) => {
                 if ([5, 6, 9, 12, 19, 23].includes(i + 1) 
                     && (scores[item] === "def-agree" 
                     || scores[item] === "slight-agree")) {
-                        console.log("attention-switch agree++", scores[item], i + 1)
                         attentionToDetailScore++
                 // disagree
                 } else if ([28, 29, 30, 49].includes(i + 1) 
                     && (scores[item] === "def-disagree" 
                     || scores[item] === "slight-disagree")) {
-                        console.log("attention-switch disagree++", scores[item], i +1)
                         attentionToDetailScore++
                 }
             }
@@ -125,13 +116,11 @@ const Score = ({ scores }) => {
                 if ([20, 21, 41, 42].includes(i + 1) 
                     && (scores[item] === "def-agree" 
                     || scores[item] === "slight-agree")) {
-                        console.log("imagine agree++", scores[item], i + 1)
                         imaginationScore++
                 //disagree
                 } else if ([3, 8, 14, 24, 40, 50].includes(i + 1) 
                     && (scores[item] === "def-disagree" 
                     || scores[item] === "slight-disagree")) {
-                        console.log("imagine disagree++", scores[item], i +1)
                         imaginationScore++
                 }
             }
@@ -147,13 +136,6 @@ const Score = ({ scores }) => {
             communication: communicationScore,
             imagination: imaginationScore
         }))
-        
-        console.log("social-skill", socialSkillScore)
-        console.log("attention-switching", attentionSwitchingScore)
-        console.log("attention-to-detail", attentionToDetailScore)
-        console.log("imagination", imaginationScore)
-        console.log("communication", communicationScore)
-        console.log("subscore", subscore)
     }
 
     return (

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import { AQContext } from '.'
 
 const Score = ({ scores }) => {
@@ -26,6 +26,15 @@ const Score = ({ scores }) => {
     const communicationArr = [7, 17, 18, 26, 27, 31, 33, 35, 38, 39]
     const imaginationArr = [3, 8, 14, 20, 21, 24, 40, 41, 42, 50]
     let answers = Object.values(scores)
+
+    // if form data is saved calculate score with it on page load
+    useEffect(() => {
+        if (localStorage.getItem("aq")) {
+            scores = JSON.parse(localStorage.getItem("aq"))
+            answers = Object.values(scores)
+            getScore()
+        }
+    }, [])
 
     function getScore() {
         setAqComplete(false)

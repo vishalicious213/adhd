@@ -270,15 +270,11 @@ label {
 #score {
     display: grid;
     gap: 1rem;
-    /* text-align: center; */
     margin: 1.5rem auto 1rem;
-    /* border: 1px solid silver;
-    padding: 1rem; */
 }
 
 .score-btn {
     width: 10rem;
-    /* justify-self: center; */
 }
 
 #save-delete {
@@ -360,7 +356,7 @@ label {
     top: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     justify-content: center;
     background-color: var(--main);
     border: 2px solid var(--lightborder);

@@ -156,14 +156,36 @@ const Score = ({ scores }) => {
             <section className={`text aq-score ${showScore ? "grid" : "hide"}`}>
                 { !aqComplete ? `Please answer remaining ${unfinishedQuestions} questions`
                 : <div>
-                    <h3>{`Score is ${aqScore}`}</h3>
-                    <div>Communication score is <span className='aq-subscore'>{subscore.communication}</span></div>
-                    <div>Attention to detail score is <span className='aq-subscore'>{subscore.attentionToDetail}</span></div>
-                    <div>Attention-switching score is <span className='aq-subscore'>{subscore.attentionSwitching}</span></div>
-                    <div>Social skill score is <span className='aq-subscore'>{subscore.social}</span></div>
-                    <div>Imagination score is <span className='aq-subscore'>{subscore.imagination}</span></div>
+                    <h2>{`Score is ${aqScore}`}</h2>
+                    <h3 className='section-background'>Subscale scores</h3>
+                    <ul>
+                        <li>Communication score is <span className='aq-subscore'>{subscore.communication}</span></li>
+                        <li>Attention to detail score is <span className='aq-subscore'>{subscore.attentionToDetail}</span></li>
+                        <li>Attention-switching score is <span className='aq-subscore'>{subscore.attentionSwitching}</span></li>
+                        <li>Social skill score is <span className='aq-subscore'>{subscore.social}</span></li>
+                        <li>Imagination score is <span className='aq-subscore'>{subscore.imagination}</span></li>
+
+                    </ul>
                   </div>
                 }
+                <h3 className='section-background'>Scoring information</h3>
+                <ul>
+                    <li>The scoring range is <span className='bold'>0 - 50</span></li>
+                    <ul>
+                        <li>Scores of <span className='bold'>26</span> or higher indicate a chance of autism</li>
+                        <li>Lower scores indicate likeliness of no autism</li>
+                    </ul>
+                    <li><span className='bold'>79.3%</span> of autistic people score <span className='bold'>32</span> or higher</li>
+                    <li>Most non-autistic males score <span className='bold'>17</span> on average</li>
+                    <li>Most non-autistic females score <span className='bold'>15</span> on average</li>
+                </ul>
+                <ul>
+                    <li>The subscale scoring range is <span className='bold'>0 - 10</span></li>
+                    <ul>
+                        <li>Higher scores on each subscale indicate more neurodivergence in each area</li>
+                        <li>For example, high scores on social skills indicates more social skills deficits, and high scores on attention to detail indicates an atypical focus on details</li>
+                    </ul>
+                </ul>
             </section>
         </div>
     )

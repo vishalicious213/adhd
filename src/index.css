@@ -102,6 +102,10 @@ button:hover {
     margin-top: 0;
 }
 
+.bottom-margin-1 {
+    margin-bottom: 1rem;
+}
+
 .link {
     color: var(--text);
 }
@@ -120,6 +124,13 @@ button:hover {
 
 .hide {
     display: none;
+}
+
+.section-background {
+    padding: .25rem 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    background: linear-gradient(to right, var(--lightborder), var(--main));
 }
 
 /* NAV */
@@ -354,7 +365,12 @@ label {
     background-color: var(--main);
     border: 2px solid var(--lightborder);
     border-radius: .5rem;
-    padding: 2rem 0 3rem 0;
+    padding: 2rem 1rem 3rem 1rem;
+    box-sizing: border-box;
+}
+
+.aq-score ul {
+    margin-top: 0;
 }
 
 .aq-subscore {

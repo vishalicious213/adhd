@@ -35,6 +35,7 @@ const Score = ({ scores }) => {
             answers = Object.values(scores)
             getScore()
         }
+        setShowScore(false)
     }, [])
 
     function getScore() {

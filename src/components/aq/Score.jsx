@@ -149,7 +149,7 @@ const Score = ({ scores }) => {
 
     return (
         <div id="score">
-            <button className='score-btn' onClick={getScore}>GET SCORE</button>
+            <button className='save-btn calc-btn' title='Calculate score' onClick={getScore}>%</button>
             <section className='text aq-score'>
                 { !aqComplete ? `Please answer remaining ${unfinishedQuestions} questions`
                 : <div>

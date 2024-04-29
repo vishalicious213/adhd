@@ -351,6 +351,13 @@ label {
     padding-left: .1rem;
 }
 
+.calc-btn {
+    position: fixed;
+    top: 1rem;
+    left: 5.5rem;
+    font-size: 1.25rem;
+}
+
 /* LANDING */
 
 .section {

@@ -40,6 +40,7 @@ const Score = ({ scores }) => {
     function getScore() {
         setAqComplete(false)
         setUnfinishedQuestions(50 - answers.length)
+        setShowScore(!showScore)
         
         if (answers.length === 50 && !answers.includes("")) {
             setAqComplete(true)
@@ -151,7 +152,7 @@ const Score = ({ scores }) => {
     return (
         <div id="score">
             <button className='save-btn calc-btn' title='Calculate score' onClick={getScore}>%</button>
-            <section className='text aq-score hide'>
+            <section className={`text aq-score ${showScore ? "grid" : "hide"}`}>
                 { !aqComplete ? `Please answer remaining ${unfinishedQuestions} questions`
                 : <div>
                     <h3>{`Score is ${aqScore}`}</h3>

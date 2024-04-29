@@ -110,6 +110,18 @@ button:hover {
     color: var(--text);
 }
 
+.block {
+    display: block;
+}
+
+.grid {
+    display: grid;
+}
+
+.hide {
+    display: none;
+}
+
 /* NAV */
 
 nav {
@@ -332,12 +344,13 @@ label {
 }
 
 .aq-score {
+    /* display: none; */
     position: fixed;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     width: 97%;
-    display: grid;
+    /* display: grid; */
     justify-content: center;
     background-color: var(--main);
     border: 2px solid var(--lightborder);

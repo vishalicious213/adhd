@@ -332,10 +332,17 @@ label {
 }
 
 .aq-score {
-    border: 1px solid var(--lightborder);
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 97%;
+    display: grid;
+    justify-content: center;
+    background-color: var(--main);
+    border: 2px solid var(--lightborder);
     border-radius: .5rem;
-    margin-top: 1rem;
-    padding: 1rem;
+    padding: 2rem 0 3rem 0;
 }
 
 .aq-subscore {
